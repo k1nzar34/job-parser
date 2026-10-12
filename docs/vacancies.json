@@ -1,4 +1,27 @@
 {
- "updated": "2026-10-12T23:48:20+00:00",
+ "updated": "2026-10-12T23:50:07+00:00",
+ "last_run": {
+  "sources": {
+   "Хабр Карьера": 100,
+   "hh.ru": 50,
+   "TG @jobforqa": 15,
+   "TG @qajoboffer": 20,
+   "TG @qajobsoffers": 17,
+   "TG @jobsearchgod": 17,
+   "TG @remoteeverafter": 17,
+   "hirehi": 102
+  },
+  "errors": [],
+  "llm_key_set": true,
+  "resume_set": true,
+  "scored": 0,
+  "llm_failed": 3,
+  "sent": 0,
+  "llm_errors": [
+   "HTTP 403: {\"detail\":\"Model not allowed\"}",
+   "HTTP 403: {\"detail\":\"Model not allowed\"}",
+   "HTTP 403: {\"detail\":\"Model not allowed\"}"
+  ]
+ },
  "vacancies": []
 }
