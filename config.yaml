@@ -29,6 +29,12 @@ exclude_keywords:
   - developer
   - аналитик данных
   - нагрузочн
+  - aqa              # автоматизация — не нужна
+  - automation
+  - автоматиз
+  - sdet
+  - auto qa
+  - qa auto
 
 sources:
   habr:
