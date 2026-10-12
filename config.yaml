@@ -48,6 +48,8 @@ sources:
       - remoteeverafter
 
 deepseek:
-  base_url: "https://api.deepseek.com"
-  # Если DeepSeek переименует модель — поменяй только эту строку
-  model: "deepseek-v4.1-flash"
+  # Ключ ProxyAPI лежит в секрете DEEPSEEK_API_KEY.
+  # Для прямого API DeepSeek было бы: base_url "https://api.deepseek.com", model "deepseek-v4-flash"
+  base_url: "https://api.proxyapi.ru/v1"
+  # Модель из каталога proxyapi.ru/models/browse — менять только эту строку
+  model: "deepseek/deepseek-v4-flash"

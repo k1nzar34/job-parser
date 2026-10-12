@@ -265,24 +265,30 @@ def score_vacancy(v: dict, resume: str, ds_cfg: dict, api_key: str) -> dict | No
         f"Название: {v['title']}\nКомпания: {v['company']}\nЗарплата: {v['salary_text']}\n"
         f"Ссылка: {v['url']}\n\n{v['text']}"
     )
+    payload = {
+        "model": ds_cfg["model"],
+        "messages": [{"role": "system", "content": SYSTEM_PROMPT},
+                     {"role": "user", "content": user_msg}],
+        "response_format": {"type": "json_object"},
+        "temperature": 0.2,
+        "max_tokens": 400,
+    }
+    url = f"{ds_cfg['base_url'].rstrip('/')}/chat/completions"
+    headers = {"Authorization": f"Bearer {api_key}"}
     try:
-        r = requests.post(
-            f"{ds_cfg['base_url']}/chat/completions",
-            headers={"Authorization": f"Bearer {api_key}"},
-            json={
-                "model": ds_cfg["model"],
-                "messages": [{"role": "system", "content": SYSTEM_PROMPT},
-                             {"role": "user", "content": user_msg}],
-                "response_format": {"type": "json_object"},
-                "temperature": 0.2,
-                "max_tokens": 400,
-            },
-            timeout=90,
-        )
-        r.raise_for_status()
-        return json.loads(r.json()["choices"][0]["message"]["content"])
-    except (requests.RequestException, KeyError, json.JSONDecodeError) as e:
-        log.warning("DeepSeek не смог оценить %s: %s", v["url"], e)
+        r = requests.post(url, headers=headers, json=payload, timeout=90)
+        if r.status_code == 400 and "response_format" in r.text:
+            # некоторые прокси не поддерживают JSON-режим — просим JSON просто промптом
+            payload.pop("response_format")
+            r = requests.post(url, headers=headers, json=payload, timeout=90)
+        if r.status_code != 200:
+            log.warning("LLM ответил %s: %s", r.status_code, r.text[:300])
+            return None
+        content = r.json()["choices"][0]["message"]["content"] or ""
+        m = re.search(r"\{.*\}", content, re.S)  # на случай ```json ... ``` вокруг ответа
+        return json.loads(m.group(0) if m else content)
+    except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError) as e:
+        log.warning("LLM не смог оценить %s: %s", v["url"], e)
         return None
 
 
