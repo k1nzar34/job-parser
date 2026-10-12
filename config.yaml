@@ -35,6 +35,7 @@ exclude_keywords:
   - sdet
   - auto qa
   - qa auto
+  - (auto)          # hirehi пишет «qa engineer (auto)»
 
 sources:
   habr:
@@ -54,6 +55,18 @@ sources:
       - qajobsoffers
       - jobsearchgod
       - remoteeverafter
+
+  sites:                   # сайты, где вакансии лежат обычным списком в HTML
+    enabled: true
+    sites:
+      - name: hirehi
+        url: "https://hirehi.ru/vacancies/qa"            # категория «тестирование»
+        link_regex: '^https://hirehi\.ru/qa/[^/?#]+-(\d+)$'
+        pages: 2
+      - name: Finder
+        url: "https://finder.work/vacancies/it_internet_svyaz_telekom"   # весь IT, QA отбирает предфильтр
+        link_regex: '^https://finder\.work/vacancies/(\d+)$'
+        pages: 3
 
 deepseek:
   # Ключ ProxyAPI лежит в секрете DEEPSEEK_API_KEY.

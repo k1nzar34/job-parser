@@ -141,6 +141,81 @@ def habr_description(url: str) -> str:
         return ""
 
 
+# ---------- источники-сайты со списком вакансий в HTML (hirehi, Finder) ----------
+
+def fetch_html_listings(cfg: dict) -> list:
+    """Универсальный сборщик: открываем страницы списка, берём ссылки на вакансии по шаблону.
+    Полный текст вакансии подгружается позже — только для тех, что прошли предфильтр."""
+    out = []
+    for site in cfg["sites"]:
+        pattern = re.compile(site["link_regex"])
+        for page in range(1, site.get("pages", 1) + 1):
+            url = site["url"] + (f"?page={page}" if page > 1 else "")
+            try:
+                r = requests.get(url, headers=HEADERS, timeout=30)
+                r.raise_for_status()
+            except requests.RequestException as e:
+                log.warning("%s: %s", site["name"], e)
+                break
+            soup = BeautifulSoup(r.text, "html.parser")
+
+            def vacancy_ids(node) -> set:
+                ids = set()
+                for x in node.find_all("a", href=True):
+                    mm = pattern.match(requests.compat.urljoin(site["url"], x["href"]).split("#")[0])
+                    if mm:
+                        ids.add(mm.group(1))
+                return ids
+
+            found_on_page = 0
+            for a in soup.find_all("a", href=True):
+                href = requests.compat.urljoin(site["url"], a["href"]).split("#")[0]
+                m = pattern.match(href)
+                title = a.get_text(" ", strip=True)
+                if not m or len(title) < 4:
+                    continue
+                # текст карточки: поднимаемся к родителю, пока в нём одна ссылка на вакансию
+                card, node = a, a
+                for _ in range(5):
+                    node = node.parent
+                    if node is None or len(vacancy_ids(node)) > 1:  # в узле уже несколько вакансий
+                        break
+                    card = node
+                out.append(make_vacancy(
+                    uid=f"{site['name'].lower()}:{m.group(1)}", source=site["name"],
+                    title=title[:150], url=href,
+                    text=card.get_text(" · ", strip=True)[:600],
+                ))
+                out[-1]["needs_detail"] = True
+                found_on_page += 1
+            if not found_on_page:
+                break
+            time.sleep(1)
+    # одна вакансия может встретиться в карточке дважды (ссылка на заголовке и на «подробнее») —
+    # оставляем вариант с самым длинным текстом ссылки, это и есть заголовок
+    best = {}
+    for v in out:
+        if v["uid"] not in best or len(v["title"]) > len(best[v["uid"]]["title"]):
+            best[v["uid"]] = v
+    return list(best.values())
+
+
+def page_text(url: str) -> str:
+    """Текст страницы вакансии для оценки (main/article, иначе body)."""
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=30)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        for tag in soup(["script", "style", "nav", "header", "footer", "noscript"]):
+            tag.decompose()
+        block = soup.find("main") or soup.find("article") or soup.body
+        text = re.sub(r"\n{2,}", "\n", block.get_text("\n", strip=True)) if block else ""
+        return text[:4000]
+    except requests.RequestException as e:
+        log.warning("Не удалось загрузить %s: %s", url, e)
+        return ""
+
+
 # ---------- источник: hh.ru (через сайт, API для соискателей закрыт) ----------
 
 def _find_vacancy_list(node):
@@ -411,7 +486,8 @@ def main() -> None:
     tg_token = os.getenv("TELEGRAM_BOT_TOKEN", "")
     tg_chat = os.getenv("TELEGRAM_CHAT_ID", "")
 
-    fetchers = {"habr": fetch_habr, "hh": fetch_hh, "telegram": fetch_telegram}
+    fetchers = {"habr": fetch_habr, "hh": fetch_hh, "telegram": fetch_telegram,
+                "sites": fetch_html_listings}
     vacancies = []
     for name, fn in fetchers.items():
         src_cfg = cfg["sources"].get(name, {})
@@ -449,6 +525,8 @@ def main() -> None:
             break
         if v["uid"].startswith("habr:"):
             v["text"] += "\n\n" + habr_description(v["url"])
+        elif v.get("needs_detail"):
+            v["text"] += "\n\n" + page_text(v["url"])
 
         s = score_vacancy(v, resume, cfg["deepseek"], ds_key) if ds_key else None
         if s is None or s.get("is_vacancy", True):
