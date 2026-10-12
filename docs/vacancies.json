@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T23:50:07+00:00",
+ "updated": "2026-10-12T23:55:04+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -18,10 +18,14 @@
   "llm_failed": 3,
   "sent": 0,
   "llm_errors": [
-   "HTTP 403: {\"detail\":\"Model not allowed\"}",
-   "HTTP 403: {\"detail\":\"Model not allowed\"}",
-   "HTTP 403: {\"detail\":\"Model not allowed\"}"
-  ]
+   "deepseek-v4-flash @ https://api.proxyapi.ru/deepseek: HTTP 404 {\"detail\":\"Not Found\"}",
+   "deepseek/deepseek-v4-flash-0731 @ https://api.proxyapi.ru/v1: HTTP 403 {\"detail\":\"Model not allowed\"}",
+   "deepseek/deepseek-v4-flash @ https://api.proxyapi.ru/v1: HTTP 403 {\"detail\":\"Model not allowed\"}",
+   "deepseek-v4-flash @ https://api.proxyapi.ru/deepseek/v1: HTTP 404 {\"detail\":\"Not Found\"}",
+   "deepseek-v4-flash @ https://api.proxyapi.ru/deepseek: HTTP 404 {\"detail\":\"Not Found\"}",
+   "deepseek/deepseek-v4-flash-0731 @ https://api.proxyapi.ru/v1: HTTP 403 {\"detail\":\"Model not allowed\"}"
+  ],
+  "llm_used": null
  },
  "vacancies": []
 }
