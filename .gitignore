@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# резюме хранится в секрете RESUME_TEXT, в публичный репо не попадает
+resume.md

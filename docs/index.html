@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QA Вакансии</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔎</text></svg>">
+<style>
+  :root {
+    --bg: #f6f5f1; --panel: #ffffff; --ink: #1d1c1a; --muted: #6f6c66; --line: #e4e1da;
+    --accent: #2f5bd3; --good: #1f8a4c; --mid: #b7791f; --low: #b5473a; --chip: #efede7;
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413; --panel: #1e1d1b; --ink: #ecebe7; --muted: #9b978f; --line: #2f2d2a;
+      --accent: #7c9bff; --good: #4cc27f; --mid: #e3a64a; --low: #ef7a6c; --chip: #2a2826;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.45 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  h1 { margin: 0; font-size: 26px; letter-spacing: -.02em; }
+  .updated { color: var(--muted); font-size: 13px; }
+
+  .kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 20px 0; }
+  .kpi { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow); }
+  .kpi b { display: block; font-size: 26px; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+  .kpi span { color: var(--muted); font-size: 12.5px; }
+
+  .bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
+  .tabs { display: flex; gap: 4px; background: var(--chip); padding: 3px; border-radius: 10px; }
+  .tabs button { border: 0; background: transparent; color: var(--muted); padding: 6px 12px; border-radius: 8px;
+    font: inherit; font-size: 14px; cursor: pointer; }
+  .tabs button.on { background: var(--panel); color: var(--ink); box-shadow: var(--shadow); font-weight: 600; }
+  .tabs button small { color: var(--muted); font-weight: 400; margin-left: 4px; }
+  input[type=search], select { font: inherit; font-size: 14px; color: var(--ink); background: var(--panel);
+    border: 1px solid var(--line); border-radius: 9px; padding: 7px 10px; }
+  input[type=search] { flex: 1; min-width: 180px; }
+  .spacer { flex: 1; }
+  .ghost { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 1px solid var(--line);
+    border-radius: 8px; padding: 5px 10px; cursor: pointer; }
+  .ghost:hover { color: var(--ink); }
+
+  .list { display: flex; flex-direction: column; gap: 10px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px;
+    display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; box-shadow: var(--shadow); }
+  .card.dim { opacity: .55; }
+  .score { width: 52px; height: 52px; border-radius: 12px; display: grid; place-items: center;
+    font-weight: 700; font-size: 20px; font-variant-numeric: tabular-nums; border: 2px solid currentColor; }
+  .s-good { color: var(--good); } .s-mid { color: var(--mid); } .s-low { color: var(--low); } .s-none { color: var(--muted); }
+  .title { font-weight: 650; font-size: 16px; color: var(--ink); text-decoration: none; }
+  .title:hover { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+  .meta .sal { color: var(--ink); font-weight: 600; }
+  .why { font-size: 13.5px; margin-top: 6px; display: grid; gap: 2px; }
+  .side { display: flex; flex-direction: column; gap: 6px; align-items: stretch; min-width: 150px; }
+  .note { font: inherit; font-size: 13px; color: var(--ink); background: transparent; border: 1px dashed var(--line);
+    border-radius: 8px; padding: 5px 8px; width: 100%; }
+  .st-new { border-color: var(--accent); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 16px; border: 1px dashed var(--line); border-radius: 14px; }
+
+  @media (max-width: 720px) {
+    .kpis { grid-template-columns: repeat(3, 1fr); }
+    .kpi:nth-child(n+4) { display: none; }
+    .card { grid-template-columns: 44px 1fr; }
+    .score { width: 44px; height: 44px; font-size: 17px; }
+    .side { grid-column: 1 / -1; flex-direction: row; min-width: 0; }
+    .side select { flex: 0 0 auto; }
+    .tabs { width: 100%; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🔎 QA Вакансии</h1>
+    <div class="updated" id="updated">загрузка…</div>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+
+  <div class="bar">
+    <div class="tabs" id="tabs"></div>
+  </div>
+  <div class="bar">
+    <input type="search" id="q" placeholder="Поиск: компания, стек, должность…">
+    <select id="minScore">
+      <option value="0">Любая оценка</option>
+      <option value="6" selected>Оценка 6+</option>
+      <option value="8">Оценка 8+</option>
+    </select>
+    <select id="source"><option value="">Все источники</option></select>
+    <select id="sort">
+      <option value="found">Сначала новые</option>
+      <option value="score">Сначала лучшие</option>
+    </select>
+  </div>
+
+  <div class="list" id="list"></div>
+
+  <div class="bar" style="margin-top:20px">
+    <span class="updated">Статусы и заметки хранятся в этом браузере.</span>
+    <span class="spacer"></span>
+    <button class="ghost" id="export">⬇️ Бэкап статусов</button>
+    <button class="ghost" id="importBtn">⬆️ Восстановить</button>
+    <input type="file" id="importFile" accept="application/json" hidden>
+  </div>
+</div>
+
+<script>
+const STATUSES = {
+  new:       "🆕 Новая",
+  applied:   "📨 Откликнулся",
+  interview: "🗣 Собес",
+  offer:     "🎉 Оффер",
+  rejected:  "❌ Отказ",
+  skip:      "🙈 Не интересно",
+};
+const TABS = [
+  ["new", "Новые", s => s === "new"],
+  ["work", "В работе", s => ["applied", "interview", "offer"].includes(s)],
+  ["archive", "Архив", s => ["rejected", "skip"].includes(s)],
+  ["all", "Все", () => true],
+];
+const KEY = "jp-status-v1";
+
+let data = [], state = {}, tab = "new";
+
+function loadState() {
+  try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch { state = {}; }
+}
+function saveState() {
+  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {}
+}
+const statusOf = id => (state[id] && state[id].status) || "new";
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function ago(iso) {
+  if (!iso) return "";
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if (m < 60) return `${Math.max(m, 1)} мин назад`;
+  if (m < 60 * 24) return `${Math.round(m / 60)} ч назад`;
+  return `${Math.round(m / 1440)} дн назад`;
+}
+function scoreClass(s) {
+  if (s == null) return "s-none";
+  return s >= 8 ? "s-good" : s >= 6 ? "s-mid" : "s-low";
+}
+
+function renderKpis() {
+  const day = Date.now() - 864e5;
+  const count = st => data.filter(v => statusOf(v.id) === st).length;
+  const items = [
+    [data.filter(v => new Date(v.found) > day && (v.score ?? 10) >= 6).length, "подходящих за сутки"],
+    [data.filter(v => statusOf(v.id) === "new" && (v.score ?? 10) >= 6).length, "ждут разбора"],
+    [count("applied"), "откликов"],
+    [count("interview"), "собесов"],
+    [count("offer"), "офферов"],
+  ];
+  document.getElementById("kpis").innerHTML =
+    items.map(([n, l]) => `<div class="kpi"><b>${n}</b><span>${l}</span></div>`).join("");
+}
+
+function filtered() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const min = +document.getElementById("minScore").value;
+  const src = document.getElementById("source").value;
+  const inTab = TABS.find(t => t[0] === tab)[2];
+  let rows = data.filter(v =>
+    inTab(statusOf(v.id)) &&
+    (v.score == null || v.score >= min) &&
+    (!src || v.source === src) &&
+    (!q || [v.title, v.company, v.match, v.gaps, v.salary, state[v.id]?.note]
+      .join(" ").toLowerCase().includes(q))
+  );
+  if (document.getElementById("sort").value === "score")
+    rows = [...rows].sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+  return rows;
+}
+
+function renderTabs() {
+  const min = +document.getElementById("minScore").value;
+  document.getElementById("tabs").innerHTML = TABS.map(([id, label, fn]) => {
+    const n = data.filter(v => fn(statusOf(v.id)) && (v.score == null || v.score >= min)).length;
+    return `<button data-tab="${id}" class="${id === tab ? "on" : ""}">${label}<small>${n}</small></button>`;
+  }).join("");
+}
+
+function renderList() {
+  const rows = filtered();
+  const list = document.getElementById("list");
+  if (!rows.length) {
+    list.innerHTML = `<div class="empty">${data.length ? "Тут пусто — попробуй другой фильтр" : "Вакансий пока нет — дождись первого запуска парсера"}</div>`;
+    return;
+  }
+  list.innerHTML = rows.map(v => {
+    const st = statusOf(v.id);
+    const opts = Object.entries(STATUSES)
+      .map(([k, l]) => `<option value="${k}" ${k === st ? "selected" : ""}>${l}</option>`).join("");
+    const meta = [v.company && esc(v.company), v.grade && v.grade !== "неясно" && esc(v.grade),
+      v.salary ? `<span class="sal">${esc(v.salary)}</span>` : "зп не указана",
+      v.remote && `удалёнка: ${esc(v.remote)}`].filter(Boolean).join(" · ");
+    return `<article class="card ${["rejected", "skip"].includes(st) ? "dim" : ""}">
+      <div class="score ${scoreClass(v.score)}" title="Оценка DeepSeek">${v.score ?? "—"}</div>
+      <div>
+        <a class="title" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a>
+        <div class="meta">${meta}</div>
+        <div class="why">
+          ${v.match ? `<div>✅ ${esc(v.match)}</div>` : ""}
+          ${v.gaps ? `<div>⚠️ ${esc(v.gaps)}</div>` : ""}
+        </div>
+        <div class="meta" style="margin-top:6px">📍 ${esc(v.source)} · найдено ${ago(v.found)}</div>
+      </div>
+      <div class="side">
+        <select data-id="${esc(v.id)}" class="status ${st === "new" ? "st-new" : ""}">${opts}</select>
+        <input class="note" data-id="${esc(v.id)}" placeholder="заметка…" value="${esc(state[v.id]?.note)}">
+      </div>
+    </article>`;
+  }).join("");
+}
+
+function render() { renderKpis(); renderTabs(); renderList(); }
+
+function setEntry(id, patch) {
+  state[id] = { ...(state[id] || {}), ...patch, at: new Date().toISOString() };
+  saveState();
+}
+
+document.addEventListener("change", e => {
+  if (e.target.matches("select.status")) { setEntry(e.target.dataset.id, { status: e.target.value }); render(); }
+  if (e.target.matches("#minScore, #source, #sort")) render();
+});
+document.addEventListener("input", e => {
+  if (e.target.matches("#q")) renderList();
+  if (e.target.matches("input.note")) setEntry(e.target.dataset.id, { note: e.target.value });
+});
+document.getElementById("tabs").addEventListener("click", e => {
+  const b = e.target.closest("button[data-tab]");
+  if (b) { tab = b.dataset.tab; render(); }
+});
+
+document.getElementById("export").onclick = () => {
+  const blob = new Blob([JSON.stringify(state, null, 1)], { type: "application/json" });
+  const a = Object.assign(document.createElement("a"), {
+    href: URL.createObjectURL(blob), download: `vacancy-statuses-${new Date().toISOString().slice(0, 10)}.json` });
+  a.click();
+};
+document.getElementById("importBtn").onclick = () => document.getElementById("importFile").click();
+document.getElementById("importFile").onchange = async e => {
+  try {
+    const imported = JSON.parse(await e.target.files[0].text());
+    state = { ...state, ...imported }; saveState(); render();
+    alert("Статусы восстановлены ✅");
+  } catch { alert("Не получилось прочитать файл"); }
+};
+
+(async () => {
+  loadState();
+  try {
+    const r = await fetch(`vacancies.json?t=${Date.now()}`);
+    const json = await r.json();
+    data = json.vacancies || [];
+    document.getElementById("updated").textContent =
+      json.updated ? `обновлено ${ago(json.updated)}` : "ещё не обновлялось";
+    const sources = [...new Set(data.map(v => v.source))].sort();
+    document.getElementById("source").innerHTML += sources.map(s => `<option>${esc(s)}</option>`).join("");
+  } catch {
+    document.getElementById("updated").textContent = "не удалось загрузить vacancies.json";
+  }
+  render();
+})();
+</script>
+</body>
+</html>

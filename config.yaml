@@ -1,0 +1,53 @@
+# ===== Настройки парсера вакансий =====
+
+# Минимальная зарплата (руб/мес). Вакансии, где ВЕРХНЯЯ граница вилки ниже — отбрасываются.
+# Если зарплата не указана — вакансия НЕ отбрасывается, её оценит DeepSeek.
+min_salary_rub: 120000
+
+# Вакансии старше N часов игнорируются (чтобы при первом запуске не прилетела сотня старых)
+max_age_hours: 48
+
+# Минимальная оценка DeepSeek (0-10), начиная с которой вакансия приходит в Telegram
+min_score: 6
+
+# Максимум сообщений за один запуск (защита от спама)
+max_messages_per_run: 25
+
+# Слова в НАЗВАНИИ вакансии (hh, Хабр) или в ТЕКСТЕ поста (Telegram), без которых вакансия даже не рассматривается
+include_keywords:
+  - qa
+  - тестиров
+  - test
+  - quality assurance
+
+# Если эти слова есть в названии — вакансия отбрасывается сразу, без DeepSeek
+exclude_keywords:
+  - стажер
+  - стажёр
+  - intern
+  - разработчик
+  - developer
+  - аналитик данных
+  - нагрузочн
+
+sources:
+  habr:
+    enabled: true
+    queries: ["QA", "тестировщик"]
+    pages: 2               # по 25 вакансий на страницу
+  hh:
+    enabled: true
+    query: "QA OR тестировщик OR тестирование"
+  telegram:
+    enabled: true
+    channels:              # публичные каналы, имя без @
+      - jobforqa
+      - qajoboffer
+      - qajobsoffers
+      - jobsearchgod
+      - remoteeverafter
+
+deepseek:
+  base_url: "https://api.deepseek.com"
+  # Если DeepSeek переименует модель — поменяй только эту строку
+  model: "deepseek-v4.1-flash"
