@@ -347,39 +347,53 @@ SYSTEM_PROMPT = """Ты — помощник по поиску работы. Т�
 LLM_ERRORS: list = []  # последние ошибки нейросети — уходят в статистику запуска
 
 
+LLM_WORKING: dict = {}  # рабочая пара base_url+model, найденная в этом запуске
+
+
+def _llm_call(base_url: str, model: str, messages: list, api_key: str):
+    url = f"{base_url.rstrip('/')}/chat/completions"
+    headers = {"Authorization": f"Bearer {api_key}"}
+    payload = {"model": model, "messages": messages, "temperature": 0.2, "max_tokens": 400,
+               "response_format": {"type": "json_object"}}
+    r = requests.post(url, headers=headers, json=payload, timeout=90)
+    if r.status_code == 400 and "response_format" in r.text:
+        # некоторые прокси не поддерживают JSON-режим — просим JSON просто промптом
+        payload.pop("response_format")
+        r = requests.post(url, headers=headers, json=payload, timeout=90)
+    return r
+
+
 def score_vacancy(v: dict, resume: str, ds_cfg: dict, api_key: str) -> dict | None:
     user_msg = (
         f"ПРОФИЛЬ КАНДИДАТА:\n{resume}\n\n---\nВАКАНСИЯ ({v['source']}):\n"
         f"Название: {v['title']}\nКомпания: {v['company']}\nЗарплата: {v['salary_text']}\n"
         f"Ссылка: {v['url']}\n\n{v['text']}"
     )
-    payload = {
-        "model": ds_cfg["model"],
-        "messages": [{"role": "system", "content": SYSTEM_PROMPT},
-                     {"role": "user", "content": user_msg}],
-        "response_format": {"type": "json_object"},
-        "temperature": 0.2,
-        "max_tokens": 400,
-    }
-    url = f"{ds_cfg['base_url'].rstrip('/')}/chat/completions"
-    headers = {"Authorization": f"Bearer {api_key}"}
-    try:
-        r = requests.post(url, headers=headers, json=payload, timeout=90)
-        if r.status_code == 400 and "response_format" in r.text:
-            # некоторые прокси не поддерживают JSON-режим — просим JSON просто промптом
-            payload.pop("response_format")
-            r = requests.post(url, headers=headers, json=payload, timeout=90)
-        if r.status_code != 200:
-            log.warning("LLM ответил %s: %s", r.status_code, r.text[:300])
-            LLM_ERRORS.append(f"HTTP {r.status_code}: {r.text[:200]}")
+    messages = [{"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": user_msg}]
+    # основной вариант + запасные (если прокси не пускает к модели по этому адресу)
+    candidates = [LLM_WORKING] if LLM_WORKING else (
+        [{"base_url": ds_cfg["base_url"], "model": ds_cfg["model"]}] + ds_cfg.get("fallbacks", []))
+    for c in candidates:
+        try:
+            r = _llm_call(c["base_url"], c["model"], messages, api_key)
+            if r.status_code in (401, 403, 404) and not LLM_WORKING:
+                LLM_ERRORS.append(f"{c['model']} @ {c['base_url']}: HTTP {r.status_code} {r.text[:120]}")
+                continue  # пробуем следующий вариант
+            if r.status_code != 200:
+                log.warning("LLM ответил %s: %s", r.status_code, r.text[:300])
+                LLM_ERRORS.append(f"HTTP {r.status_code}: {r.text[:200]}")
+                return None
+            LLM_WORKING.update(c)
+            content = r.json()["choices"][0]["message"]["content"] or ""
+            m = re.search(r"\{.*\}", content, re.S)  # на случай ```json ... ``` вокруг ответа
+            return json.loads(m.group(0) if m else content)
+        except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError) as e:
+            log.warning("LLM не смог оценить %s: %s", v["url"], e)
+            LLM_ERRORS.append(f"{type(e).__name__}: {str(e)[:200]}")
             return None
-        content = r.json()["choices"][0]["message"]["content"] or ""
-        m = re.search(r"\{.*\}", content, re.S)  # на случай ```json ... ``` вокруг ответа
-        return json.loads(m.group(0) if m else content)
-    except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError) as e:
-        log.warning("LLM не смог оценить %s: %s", v["url"], e)
-        LLM_ERRORS.append(f"{type(e).__name__}: {str(e)[:200]}")
-        return None
+    log.warning("Ни один вариант модели не подошёл: %s", LLM_ERRORS[-len(candidates):])
+    return None
 
 
 # ---------- отправка в Telegram ----------
@@ -575,7 +589,8 @@ def main() -> None:
             seen += [v["uid"], v["fp"]]
     save_seen(seen)
     stats["sent"] = sent
-    stats["llm_errors"] = LLM_ERRORS[-3:]
+    stats["llm_errors"] = LLM_ERRORS[-6:]
+    stats["llm_used"] = LLM_WORKING or None
     save_dashboard(dashboard_rows, stats)
     log.info("Отправлено: %d, в дашборд добавлено: %d", sent, len(dashboard_rows))
 

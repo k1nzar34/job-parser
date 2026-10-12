@@ -75,3 +75,8 @@ deepseek:
   base_url: "https://api.proxyapi.ru/v1"
   # Модель из каталога proxyapi.ru/models/browse — менять только эту строку
   model: "deepseek/deepseek-v4-flash"
+  # запасные варианты: пробуются по очереди, если основной не пускает (403/404)
+  fallbacks:
+    - {base_url: "https://api.proxyapi.ru/deepseek/v1", model: "deepseek-v4-flash"}
+    - {base_url: "https://api.proxyapi.ru/deepseek", model: "deepseek-v4-flash"}
+    - {base_url: "https://api.proxyapi.ru/v1", model: "deepseek/deepseek-v4-flash-0731"}
