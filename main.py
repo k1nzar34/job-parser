@@ -344,6 +344,9 @@ SYSTEM_PROMPT = """Ты — помощник по поиску работы. Т�
  "match": "что совпадает, до 12 слов", "gaps": "чего не хватает, до 12 слов или пусто"}"""
 
 
+LLM_ERRORS: list = []  # последние ошибки нейросети — уходят в статистику запуска
+
+
 def score_vacancy(v: dict, resume: str, ds_cfg: dict, api_key: str) -> dict | None:
     user_msg = (
         f"ПРОФИЛЬ КАНДИДАТА:\n{resume}\n\n---\nВАКАНСИЯ ({v['source']}):\n"
@@ -368,12 +371,14 @@ def score_vacancy(v: dict, resume: str, ds_cfg: dict, api_key: str) -> dict | No
             r = requests.post(url, headers=headers, json=payload, timeout=90)
         if r.status_code != 200:
             log.warning("LLM ответил %s: %s", r.status_code, r.text[:300])
+            LLM_ERRORS.append(f"HTTP {r.status_code}: {r.text[:200]}")
             return None
         content = r.json()["choices"][0]["message"]["content"] or ""
         m = re.search(r"\{.*\}", content, re.S)  # на случай ```json ... ``` вокруг ответа
         return json.loads(m.group(0) if m else content)
     except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError) as e:
         log.warning("LLM не смог оценить %s: %s", v["url"], e)
+        LLM_ERRORS.append(f"{type(e).__name__}: {str(e)[:200]}")
         return None
 
 
@@ -456,7 +461,7 @@ def dashboard_row(v: dict, s: dict | None) -> dict:
     }
 
 
-def save_dashboard(new_rows: list) -> None:
+def save_dashboard(new_rows: list, stats: dict) -> None:
     rows = []
     if DASHBOARD_FILE.exists():
         try:
@@ -468,6 +473,7 @@ def save_dashboard(new_rows: list) -> None:
     DASHBOARD_FILE.parent.mkdir(exist_ok=True)
     DASHBOARD_FILE.write_text(json.dumps(
         {"updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+         "last_run": stats,
          "vacancies": rows[:DASHBOARD_LIMIT]},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -489,6 +495,8 @@ def main() -> None:
     fetchers = {"habr": fetch_habr, "hh": fetch_hh, "telegram": fetch_telegram,
                 "sites": fetch_html_listings}
     vacancies = []
+    stats = {"sources": {}, "errors": [], "llm_key_set": bool(ds_key),
+             "resume_set": bool(resume), "scored": 0, "llm_failed": 0}
     for name, fn in fetchers.items():
         src_cfg = cfg["sources"].get(name, {})
         if not src_cfg.get("enabled"):
@@ -496,9 +504,14 @@ def main() -> None:
         try:
             found = fn(src_cfg)
             log.info("%s: найдено %d", name, len(found))
+            counts = {}
+            for v in found:
+                counts[v["source"]] = counts.get(v["source"], 0) + 1
+            stats["sources"].update(counts or {name: 0})
             vacancies += found
         except Exception as e:  # один упавший источник не роняет остальные
             log.error("%s: ошибка — %s", name, e)
+            stats["errors"].append(f"{name}: {str(e)[:200]}")
 
     seen = load_seen()
     seen_set = set(seen)
@@ -529,6 +542,15 @@ def main() -> None:
             v["text"] += "\n\n" + page_text(v["url"])
 
         s = score_vacancy(v, resume, cfg["deepseek"], ds_key) if ds_key else None
+        if ds_key and s is None:
+            # нейросеть не ответила — не шлём вслепую и не запоминаем: проверим в следующий раз
+            stats["llm_failed"] += 1
+            if stats["llm_failed"] >= 3 and stats["scored"] == 0:
+                log.error("Нейросеть не отвечает — оценку прекращаю до следующего запуска")
+                break
+            continue
+        if s is not None:
+            stats["scored"] += 1
         if s is None or s.get("is_vacancy", True):
             dashboard_rows.append(dashboard_row(v, s))  # в дашборд идут все вакансии, даже с низкой оценкой
         if s is not None:
@@ -552,7 +574,9 @@ def main() -> None:
         if v["uid"] not in candidate_ids:
             seen += [v["uid"], v["fp"]]
     save_seen(seen)
-    save_dashboard(dashboard_rows)
+    stats["sent"] = sent
+    stats["llm_errors"] = LLM_ERRORS[-3:]
+    save_dashboard(dashboard_rows, stats)
     log.info("Отправлено: %d, в дашборд добавлено: %d", sent, len(dashboard_rows))
 
 
