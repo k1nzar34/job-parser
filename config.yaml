@@ -35,9 +35,11 @@ sources:
     enabled: true
     queries: ["QA", "тестировщик"]
     pages: 2               # по 25 вакансий на страницу
+    remote_only: false     # false = удалёнка + гибрид + офис (офис потом отсеет DeepSeek)
   hh:
     enabled: true
     query: "QA OR тестировщик OR тестирование"
+    work_formats: ["REMOTE", "HYBRID"]   # убери HYBRID, если гибрид не нужен
   telegram:
     enabled: true
     channels:              # публичные каналы, имя без @

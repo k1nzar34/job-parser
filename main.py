@@ -99,8 +99,8 @@ def fetch_habr(cfg: dict) -> list:
         for page in range(1, cfg.get("pages", 1) + 1):
             r = requests.get(
                 "https://career.habr.com/api/frontend/vacancies",
-                params={"q": query, "remote": "true", "type": "all",
-                        "sort": "date", "page": page},
+                params={"q": query, "type": "all", "sort": "date", "page": page,
+                        **({"remote": "true"} if cfg.get("remote_only") else {})},
                 headers=HEADERS, timeout=30,
             )
             r.raise_for_status()
@@ -120,7 +120,9 @@ def fetch_habr(cfg: dict) -> list:
                     company=(v.get("company") or {}).get("title", ""),
                     salary_text=salary_text, salary_max=salary_max,
                     published=parse_dt((v.get("publishedDate") or {}).get("date")),
-                    text=f"Грейд: {grade}\nНавыки: {skills}\nУдалёнка: {v.get('remoteWork')}",
+                    text=f"Грейд: {grade}\nНавыки: {skills}\n"
+                         f"Можно удалённо: {'да' if v.get('remoteWork') else 'нет'}\n"
+                         f"Города: {', '.join(l['title'] for l in v.get('locations') or []) or '—'}",
                 ))
             time.sleep(1)
     return out
@@ -158,7 +160,8 @@ def _find_vacancy_list(node):
 def fetch_hh(cfg: dict) -> list:
     r = requests.get(
         "https://hh.ru/search/vacancy",
-        params={"text": cfg["query"], "search_field": "name", "work_format": "REMOTE",
+        params={"text": cfg["query"], "search_field": "name",
+                "work_format": cfg.get("work_formats", ["REMOTE"]),  # список → повторяющийся параметр
                 "order_by": "publication_time", "search_period": 3,
                 "items_on_page": 50},
         headers=HEADERS, timeout=30,
@@ -248,14 +251,18 @@ SYSTEM_PROMPT = """Ты — помощник по поиску работы. Т�
 
 Правила:
 - Если это не вакансия (реклама, подборка, опрос, совет) — is_vacancy=false, score=0.
-- Нужна удалённая работа. Если явно офис/гибрид без удалёнки — score не выше 2.
-- Зарплата ниже 120 000 ₽/мес (или ниже ~1300 $) — score не выше 3.
+- Определи формат работы (format): "удалёнка", "гибрид", "офис" или "неясно".
+  Удалёнка — оценивай как обычно. Гибрид — подходит (кандидат попробует договориться
+  об удалёнке), но снизь оценку на 1. Только офис без вариантов — score не выше 3.
+- Подходят грейды Junior, Junior+, Middle, Middle+, если зарплата от 120 000 ₽/мес
+  или не указана. Зарплата явно ниже 120 000 ₽ (или ниже ~1300 $) — score не выше 3.
 - Оценивай реальное совпадение стека и задач с опытом кандидата, не придумывай факты.
 
 Ответь СТРОГО JSON без пояснений:
-{"is_vacancy": bool, "remote": "да"|"нет"|"неясно", "score": 0-10,
+{"is_vacancy": bool, "format": "удалёнка"|"гибрид"|"офис"|"неясно",
+ "city": "город для гибрида/офиса или пусто", "score": 0-10,
  "title": "должность", "company": "компания или пусто", "salary": "зарплата или пусто",
- "grade": "Junior/Middle/Senior/Lead/неясно",
+ "grade": "Junior/Junior+/Middle/Middle+/Senior/Lead/неясно",
  "match": "что совпадает, до 12 слов", "gaps": "чего не хватает, до 12 слов или пусто"}"""
 
 
@@ -294,6 +301,18 @@ def score_vacancy(v: dict, resume: str, ds_cfg: dict, api_key: str) -> dict | No
 
 # ---------- отправка в Telegram ----------
 
+def format_label(s: dict) -> str:
+    fmt = (s.get("format") or "неясно").lower()
+    city = s.get("city") or ""
+    if fmt == "удалёнка":
+        return "🏠 Удалёнка"
+    if fmt == "гибрид":
+        return f"🏙 ГИБРИД{' · ' + city if city else ''} — попробуй договориться"
+    if fmt == "офис":
+        return f"🏢 Офис{' · ' + city if city else ''}"
+    return "❔ Формат не указан"
+
+
 def format_message(v: dict, s: dict | None) -> str:
     e = html.escape
     if s is None:  # без DeepSeek или при ошибке оценки
@@ -312,7 +331,7 @@ def format_message(v: dict, s: dict | None) -> str:
     lines = [
         f"{dot} <b>{score}/10 — {e(title)}</b>",
         f"🏢 {e(company or '—')} · {e(s.get('grade', ''))}",
-        f"💰 {e(salary)} · 🏠 удалёнка: {e(s.get('remote', 'неясно'))}",
+        f"💰 {e(salary)} · {e(format_label(s))}",
     ]
     if s.get("match"):
         lines.append(f"✅ {e(s['match'])}")
@@ -348,7 +367,8 @@ def dashboard_row(v: dict, s: dict | None) -> dict:
         "company": s.get("company") or v["company"],
         "salary": s.get("salary") or v["salary_text"],
         "grade": s.get("grade", ""),
-        "remote": s.get("remote", ""),
+        "format": s.get("format", ""),
+        "city": s.get("city", ""),
         "score": int(s["score"]) if "score" in s else None,
         "match": s.get("match", ""),
         "gaps": s.get("gaps", ""),

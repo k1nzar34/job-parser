@@ -56,6 +56,10 @@
   .title:hover { color: var(--accent); }
   .meta { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
   .meta .sal { color: var(--ink); font-weight: 600; }
+  .fmt { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 1px 8px; border-radius: 999px; }
+  .fmt-remote { background: color-mix(in srgb, var(--good) 15%, transparent); color: var(--good); }
+  .fmt-hybrid { background: color-mix(in srgb, var(--mid) 18%, transparent); color: var(--mid); }
+  .fmt-office { background: color-mix(in srgb, var(--low) 15%, transparent); color: var(--low); }
   .why { font-size: 13.5px; margin-top: 6px; display: grid; gap: 2px; }
   .side { display: flex; flex-direction: column; gap: 6px; align-items: stretch; min-width: 150px; }
   .note { font: inherit; font-size: 13px; color: var(--ink); background: transparent; border: 1px dashed var(--line);
@@ -92,6 +96,11 @@
       <option value="0">Любая оценка</option>
       <option value="6" selected>Оценка 6+</option>
       <option value="8">Оценка 8+</option>
+    </select>
+    <select id="format">
+      <option value="">Любой формат</option>
+      <option value="удалёнка">🏠 Только удалёнка</option>
+      <option value="гибрид">🏙 Только гибрид</option>
     </select>
     <select id="source"><option value="">Все источники</option></select>
     <select id="sort">
@@ -148,6 +157,13 @@ function ago(iso) {
   if (m < 60 * 24) return `${Math.round(m / 60)} ч назад`;
   return `${Math.round(m / 1440)} дн назад`;
 }
+function fmtBadge(v) {
+  const f = (v.format || "").toLowerCase(), city = v.city ? ` · ${esc(v.city)}` : "";
+  if (f === "удалёнка") return `<span class="fmt fmt-remote">🏠 Удалёнка</span>`;
+  if (f === "гибрид") return `<span class="fmt fmt-hybrid">🏙 Гибрид${city}</span>`;
+  if (f === "офис") return `<span class="fmt fmt-office">🏢 Офис${city}</span>`;
+  return "";
+}
 function scoreClass(s) {
   if (s == null) return "s-none";
   return s >= 8 ? "s-good" : s >= 6 ? "s-mid" : "s-low";
@@ -171,9 +187,11 @@ function filtered() {
   const q = document.getElementById("q").value.trim().toLowerCase();
   const min = +document.getElementById("minScore").value;
   const src = document.getElementById("source").value;
+  const fmt = document.getElementById("format").value;
   const inTab = TABS.find(t => t[0] === tab)[2];
   let rows = data.filter(v =>
     inTab(statusOf(v.id)) &&
+    (!fmt || (v.format || "").toLowerCase() === fmt) &&
     (v.score == null || v.score >= min) &&
     (!src || v.source === src) &&
     (!q || [v.title, v.company, v.match, v.gaps, v.salary, state[v.id]?.note]
@@ -205,7 +223,7 @@ function renderList() {
       .map(([k, l]) => `<option value="${k}" ${k === st ? "selected" : ""}>${l}</option>`).join("");
     const meta = [v.company && esc(v.company), v.grade && v.grade !== "неясно" && esc(v.grade),
       v.salary ? `<span class="sal">${esc(v.salary)}</span>` : "зп не указана",
-      v.remote && `удалёнка: ${esc(v.remote)}`].filter(Boolean).join(" · ");
+      fmtBadge(v)].filter(Boolean).join(" · ");
     return `<article class="card ${["rejected", "skip"].includes(st) ? "dim" : ""}">
       <div class="score ${scoreClass(v.score)}" title="Оценка DeepSeek">${v.score ?? "—"}</div>
       <div>
@@ -234,7 +252,7 @@ function setEntry(id, patch) {
 
 document.addEventListener("change", e => {
   if (e.target.matches("select.status")) { setEntry(e.target.dataset.id, { status: e.target.value }); render(); }
-  if (e.target.matches("#minScore, #source, #sort")) render();
+  if (e.target.matches("#minScore, #source, #sort, #format")) render();
 });
 document.addEventListener("input", e => {
   if (e.target.matches("#q")) renderList();
