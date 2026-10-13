@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T03:18:24+00:00",
+ "updated": "2026-10-13T06:23:05+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,21 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 9,
-  "llm_failed": 0,
-  "sent": 2,
-  "llm_errors": [],
+  "scored": 1,
+  "llm_failed": 1,
+  "sent": 1,
+  "llm_errors": [
+   "пустой ответ: finish=length usage={'prompt_tokens': 2257, 'completion_tokens': 3000, 'total_tokens': 5257, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3902, 'image_tokens': 0, 'audio_tokens': 0}}"
+  ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 44.2,
+  "llm_avg_sec": 40.7,
   "llm_usage_sample": {
-   "prompt_tokens": 2686,
-   "completion_tokens": 1413,
-   "total_tokens": 4099,
+   "prompt_tokens": 2386,
+   "completion_tokens": 1090,
+   "total_tokens": 3476,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,14 +36,30 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1780,
+    "reasoning_tokens": 1116,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 0
+  "left_for_next_run": 1
  },
  "vacancies": [
+  {
+   "id": "hirehi:107787",
+   "source": "hirehi",
+   "title": "QA engineer (manual) for a casino games API platform",
+   "company": "SOFTSWISS",
+   "salary": "не указана",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "API testing, Postman, REST, microservices, CI/CD, Jira, manual testing, test design, troubleshooting, databases, logs",
+   "gaps": "iGaming domain, ELK/Grafana, ClickHouse, AI agents, senior grade",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-a-casino-games-api-platform-107787",
+   "published": null,
+   "found": "2026-10-13T06:23:03+00:00"
+  },
   {
    "id": "hirehi:106999",
    "source": "hirehi",
