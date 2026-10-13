@@ -353,13 +353,20 @@ LLM_WORKING: dict = {}  # рабочая пара base_url+model, найденн
 def _llm_call(base_url: str, model: str, messages: list, api_key: str):
     url = f"{base_url.rstrip('/')}/chat/completions"
     headers = {"Authorization": f"Bearer {api_key}"}
-    payload = {"model": model, "messages": messages, "temperature": 0.2, "max_tokens": 400,
-               "response_format": {"type": "json_object"}}
-    r = requests.post(url, headers=headers, json=payload, timeout=90)
-    if r.status_code == 400 and "response_format" in r.text:
-        # некоторые прокси не поддерживают JSON-режим — просим JSON просто промптом
-        payload.pop("response_format")
-        r = requests.post(url, headers=headers, json=payload, timeout=90)
+    payload = {"model": model, "messages": messages, "temperature": 0.2, "max_tokens": 1500,
+               "response_format": {"type": "json_object"},
+               # режим «размышлений» не нужен: он медленный и съедает лимит ответа
+               "reasoning_effort": "low", "thinking": {"type": "disabled"}}
+    for _ in range(4):
+        r = requests.post(url, headers=headers, json=payload, timeout=120)
+        if r.status_code != 400:
+            return r
+        # прокси не знает какой-то параметр — убираем его и пробуем снова
+        bad = next((k for k in ("thinking", "reasoning_effort", "response_format") if k in r.text), None)
+        if bad is None or bad not in payload:
+            return r
+        log.info("Прокси не принял параметр %s — убираю", bad)
+        payload.pop(bad)
     return r
 
 
@@ -385,7 +392,16 @@ def score_vacancy(v: dict, resume: str, ds_cfg: dict, api_key: str) -> dict | No
                 LLM_ERRORS.append(f"HTTP {r.status_code}: {r.text[:200]}")
                 return None
             LLM_WORKING.update(c)
-            content = r.json()["choices"][0]["message"]["content"] or ""
+            data = r.json()
+            msg = data["choices"][0]["message"]
+            content = msg.get("content") or ""
+            if not content.strip():
+                # иногда модель кладёт ответ в reasoning_content — попробуем найти JSON там
+                content = msg.get("reasoning_content") or ""
+                if not re.search(r"\{.*\}", content, re.S):
+                    LLM_ERRORS.append(f"пустой ответ: finish={data['choices'][0].get('finish_reason')} "
+                                      f"usage={data.get('usage')}")
+                    return None
             m = re.search(r"\{.*\}", content, re.S)  # на случай ```json ... ``` вокруг ответа
             return json.loads(m.group(0) if m else content)
         except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError) as e:
