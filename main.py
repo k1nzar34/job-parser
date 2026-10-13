@@ -366,12 +366,12 @@ LLM_TIMINGS: list = []  # (секунды, usage) по каждому успеш
 def _llm_call(base_url: str, model: str, messages: list, api_key: str):
     url = f"{base_url.rstrip('/')}/chat/completions"
     headers = {"Authorization": f"Bearer {api_key}"}
-    payload = {"model": model, "messages": messages, "temperature": 0.2, "max_tokens": 1500,
+    payload = {"model": model, "messages": messages, "temperature": 0.2, "max_tokens": 3000,
                "response_format": {"type": "json_object"},
                # режим «размышлений» не нужен: он медленный и съедает лимит ответа
                "reasoning_effort": "low", "thinking": {"type": "disabled"}}
     for _ in range(4):
-        r = requests.post(url, headers=headers, json=payload, timeout=120)
+        r = requests.post(url, headers=headers, json=payload, timeout=180)
         if r.status_code != 400:
             return r
         # прокси не знает какой-то параметр — убираем его и пробуем снова
