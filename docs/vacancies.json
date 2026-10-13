@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T23:55:04+00:00",
+ "updated": "2026-10-13T00:18:57+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -18,14 +18,15 @@
   "llm_failed": 3,
   "sent": 0,
   "llm_errors": [
-   "deepseek-v4-flash @ https://api.proxyapi.ru/deepseek: HTTP 404 {\"detail\":\"Not Found\"}",
-   "deepseek/deepseek-v4-flash-0731 @ https://api.proxyapi.ru/v1: HTTP 403 {\"detail\":\"Model not allowed\"}",
-   "deepseek/deepseek-v4-flash @ https://api.proxyapi.ru/v1: HTTP 403 {\"detail\":\"Model not allowed\"}",
-   "deepseek-v4-flash @ https://api.proxyapi.ru/deepseek/v1: HTTP 404 {\"detail\":\"Not Found\"}",
-   "deepseek-v4-flash @ https://api.proxyapi.ru/deepseek: HTTP 404 {\"detail\":\"Not Found\"}",
-   "deepseek/deepseek-v4-flash-0731 @ https://api.proxyapi.ru/v1: HTTP 403 {\"detail\":\"Model not allowed\"}"
+   "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "ReadTimeout: HTTPSConnectionPool(host='api.proxyapi.ru', port=443): Read timed out. (read timeout=90)"
   ],
-  "llm_used": null
+  "llm_used": {
+   "base_url": "https://api.proxyapi.ru/v1",
+   "model": "deepseek/deepseek-v4-flash"
+  },
+  "left_for_next_run": 91
  },
  "vacancies": []
 }
