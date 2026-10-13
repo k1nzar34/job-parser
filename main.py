@@ -546,9 +546,37 @@ def main() -> None:
 
     sent = 0
     dashboard_rows = []
+    started = time.monotonic()
+    budget = cfg.get("time_budget_sec", 600)
+    max_scored = cfg.get("max_scored_per_run", 60)
+    processed = set()
+    try:
+        _process(candidates, cfg, resume, ds_key, tg_token, tg_chat,
+                 seen, dashboard_rows, stats, processed, started, budget, max_scored)
+    finally:
+        # сохраняем даже при обрыве/таймауте, чтобы не потерять сделанное
+        candidate_ids = {v["uid"] for v in candidates}
+        for v in fresh:
+            if v["uid"] not in candidate_ids:
+                seen += [v["uid"], v["fp"]]
+        save_seen(seen)
+        stats["llm_errors"] = LLM_ERRORS[-6:]
+        stats["llm_used"] = LLM_WORKING or None
+        stats["left_for_next_run"] = len([v for v in candidates if v["uid"] not in processed])
+        save_dashboard(dashboard_rows, stats)
+        log.info("Отправлено: %d, оценено: %d, осталось на следующий запуск: %d",
+                 stats.get("sent", 0), stats["scored"], stats["left_for_next_run"])
+
+
+def _process(candidates, cfg, resume, ds_key, tg_token, tg_chat,
+             seen, dashboard_rows, stats, processed, started, budget, max_scored) -> None:
+    stats["sent"] = 0
     for v in candidates:
-        if sent >= cfg["max_messages_per_run"]:
+        if stats["sent"] >= cfg["max_messages_per_run"]:
             log.info("Достигнут лимит сообщений за запуск — остальное в следующий раз")
+            break
+        if stats["scored"] >= max_scored or time.monotonic() - started > budget:
+            log.info("Лимит оценок/времени на запуск — остальное в следующий раз")
             break
         if v["uid"].startswith("habr:"):
             v["text"] += "\n\n" + habr_description(v["url"])
@@ -563,6 +591,7 @@ def main() -> None:
                 log.error("Нейросеть не отвечает — оценку прекращаю до следующего запуска")
                 break
             continue
+        processed.add(v["uid"])
         if s is not None:
             stats["scored"] += 1
         if s is None or s.get("is_vacancy", True):
@@ -580,19 +609,7 @@ def main() -> None:
         else:
             print("\n" + msg)
         seen += [v["uid"], v["fp"]]
-        sent += 1
-
-    # всё, что не прошло предфильтр, тоже запоминаем, чтобы не проверять повторно
-    candidate_ids = {v["uid"] for v in candidates}
-    for v in fresh:
-        if v["uid"] not in candidate_ids:
-            seen += [v["uid"], v["fp"]]
-    save_seen(seen)
-    stats["sent"] = sent
-    stats["llm_errors"] = LLM_ERRORS[-6:]
-    stats["llm_used"] = LLM_WORKING or None
-    save_dashboard(dashboard_rows, stats)
-    log.info("Отправлено: %d, в дашборд добавлено: %d", sent, len(dashboard_rows))
+        stats["sent"] += 1
 
 
 if __name__ == "__main__":
