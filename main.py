@@ -14,6 +14,7 @@ import os
 import re
 import time
 from datetime import datetime, timedelta, timezone
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -232,11 +233,21 @@ def _find_vacancy_list(node):
     return None
 
 
+HH_FORMAT_NAMES = {"REMOTE": "удалёнка", "HYBRID": "гибрид", "ON_SITE": "офис"}
+
+
 def fetch_hh(cfg: dict) -> list:
+    out = []
+    for fmt in cfg.get("work_formats", ["REMOTE"]):
+        out += _fetch_hh_format(cfg, fmt)
+        time.sleep(1)
+    return out
+
+
+def _fetch_hh_format(cfg: dict, fmt: str) -> list:
     r = requests.get(
         "https://hh.ru/search/vacancy",
-        params={"text": cfg["query"], "search_field": "name",
-                "work_format": cfg.get("work_formats", ["REMOTE"]),  # список → повторяющийся параметр
+        params={"text": cfg["query"], "search_field": "name", "work_format": fmt,
                 "order_by": "publication_time", "search_period": 3,
                 "items_on_page": 50},
         headers=HEADERS, timeout=30,
@@ -266,7 +277,8 @@ def fetch_hh(cfg: dict) -> list:
             salary_text=salary_text,
             salary_max=(hi or lo) if cur in (None, "RUR", "RUB") else None,
             published=parse_dt(pub),
-            text=f"Требования: {strip_tags(snippet.get('req'))}\n"
+            text=f"Формат по фильтру hh: {HH_FORMAT_NAMES.get(fmt, fmt)}\n"
+                 f"Требования: {strip_tags(snippet.get('req'))}\n"
                  f"Обязанности: {strip_tags(snippet.get('resp'))}",
         ))
     return out
@@ -348,6 +360,7 @@ LLM_ERRORS: list = []  # последние ошибки нейросети — 
 
 
 LLM_WORKING: dict = {}  # рабочая пара base_url+model, найденная в этом запуске
+LLM_TIMINGS: list = []  # (секунды, usage) по каждому успешному ответу
 
 
 def _llm_call(base_url: str, model: str, messages: list, api_key: str):
@@ -383,6 +396,7 @@ def score_vacancy(v: dict, resume: str, ds_cfg: dict, api_key: str) -> dict | No
         [{"base_url": ds_cfg["base_url"], "model": ds_cfg["model"]}] + ds_cfg.get("fallbacks", []))
     for c in candidates:
         try:
+            t0 = time.monotonic()
             r = _llm_call(c["base_url"], c["model"], messages, api_key)
             if r.status_code in (401, 403, 404) and not LLM_WORKING:
                 LLM_ERRORS.append(f"{c['model']} @ {c['base_url']}: HTTP {r.status_code} {r.text[:120]}")
@@ -393,6 +407,7 @@ def score_vacancy(v: dict, resume: str, ds_cfg: dict, api_key: str) -> dict | No
                 return None
             LLM_WORKING.update(c)
             data = r.json()
+            LLM_TIMINGS.append((round(time.monotonic() - t0, 1), data.get("usage")))
             msg = data["choices"][0]["message"]
             content = msg.get("content") or ""
             if not content.strip():
@@ -578,34 +593,55 @@ def main() -> None:
         save_seen(seen)
         stats["llm_errors"] = LLM_ERRORS[-6:]
         stats["llm_used"] = LLM_WORKING or None
+        if LLM_TIMINGS:
+            secs = [t for t, _ in LLM_TIMINGS]
+            stats["llm_avg_sec"] = round(sum(secs) / len(secs), 1)
+            stats["llm_usage_sample"] = LLM_TIMINGS[-1][1]
         stats["left_for_next_run"] = len([v for v in candidates if v["uid"] not in processed])
         save_dashboard(dashboard_rows, stats)
         log.info("Отправлено: %d, оценено: %d, осталось на следующий запуск: %d",
                  stats.get("sent", 0), stats["scored"], stats["left_for_next_run"])
 
 
+def _prepare_and_score(v, resume, cfg, ds_key):
+    """Подгрузка полного текста + оценка. Выполняется в нескольких потоках параллельно."""
+    if v["uid"].startswith("habr:"):
+        v["text"] += "\n\n" + habr_description(v["url"])
+    elif v.get("needs_detail"):
+        v["text"] += "\n\n" + page_text(v["url"])
+    return score_vacancy(v, resume, cfg["deepseek"], ds_key) if ds_key else None
+
+
 def _process(candidates, cfg, resume, ds_key, tg_token, tg_chat,
              seen, dashboard_rows, stats, processed, started, budget, max_scored) -> None:
     stats["sent"] = 0
-    for v in candidates:
-        if stats["sent"] >= cfg["max_messages_per_run"]:
-            log.info("Достигнут лимит сообщений за запуск — остальное в следующий раз")
-            break
-        if stats["scored"] >= max_scored or time.monotonic() - started > budget:
-            log.info("Лимит оценок/времени на запуск — остальное в следующий раз")
-            break
-        if v["uid"].startswith("habr:"):
-            v["text"] += "\n\n" + habr_description(v["url"])
-        elif v.get("needs_detail"):
-            v["text"] += "\n\n" + page_text(v["url"])
+    workers = cfg.get("parallel_workers", 6)
+    queue = candidates[:max_scored]
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for i in range(0, len(queue), workers):
+            if time.monotonic() - started > budget:
+                log.info("Лимит времени на запуск — остальное в следующий раз")
+                break
+            if stats["sent"] >= cfg["max_messages_per_run"]:
+                log.info("Достигнут лимит сообщений за запуск — остальное в следующий раз")
+                break
+            batch = queue[i:i + workers]
+            results = list(pool.map(lambda x: _prepare_and_score(x, resume, cfg, ds_key), batch))
+            if _handle_batch(batch, results, cfg, ds_key, tg_token, tg_chat,
+                             seen, dashboard_rows, stats, processed):
+                break
 
-        s = score_vacancy(v, resume, cfg["deepseek"], ds_key) if ds_key else None
+
+def _handle_batch(batch, results, cfg, ds_key, tg_token, tg_chat,
+                  seen, dashboard_rows, stats, processed) -> bool:
+    """Обрабатывает оценённую пачку. Возвращает True, если пора остановиться."""
+    for v, s in zip(batch, results):
         if ds_key and s is None:
             # нейросеть не ответила — не шлём вслепую и не запоминаем: проверим в следующий раз
             stats["llm_failed"] += 1
             if stats["llm_failed"] >= 3 and stats["scored"] == 0:
                 log.error("Нейросеть не отвечает — оценку прекращаю до следующего запуска")
-                break
+                return True
             continue
         processed.add(v["uid"])
         if s is not None:
@@ -626,6 +662,10 @@ def _process(candidates, cfg, resume, ds_key, tg_token, tg_chat,
             print("\n" + msg)
         seen += [v["uid"], v["fp"]]
         stats["sent"] += 1
+        if stats["sent"] >= cfg["max_messages_per_run"]:
+            # оценённые, но не отправленные остаются необработанными — придут в следующий раз
+            return True
+    return False
 
 
 if __name__ == "__main__":
