@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T18:23:37+00:00",
+ "updated": "2026-10-13T21:24:08+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -9,26 +9,24 @@
    "TG @qajobsoffers": 17,
    "TG @jobsearchgod": 17,
    "TG @remoteeverafter": 17,
-   "Finder": 75
+   "hirehi": 102
   },
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 8,
-  "llm_failed": 1,
-  "sent": 2,
-  "llm_errors": [
-   "пустой ответ: finish=stop usage={'prompt_tokens': 2699, 'completion_tokens': 113, 'total_tokens': 2812, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 93, 'image_tokens': 0, 'audio_tokens': 0}}"
-  ],
+  "scored": 1,
+  "llm_failed": 0,
+  "sent": 0,
+  "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 27.8,
+  "llm_avg_sec": 5.3,
   "llm_usage_sample": {
-   "prompt_tokens": 1446,
-   "completion_tokens": 1016,
-   "total_tokens": 2462,
+   "prompt_tokens": 2413,
+   "completion_tokens": 386,
+   "total_tokens": 2799,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -36,14 +34,30 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1221,
+    "reasoning_tokens": 284,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 1
+  "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:108148",
+   "source": "hirehi",
+   "title": "QA team lead for computer systems validation (manual)",
+   "company": "Simtra",
+   "salary": "",
+   "grade": "Lead",
+   "format": "офис",
+   "city": "Halle",
+   "score": 0,
+   "match": "",
+   "gaps": "CSV, GMP, pharma, team lead, office in Germany, German language",
+   "url": "https://hirehi.ru/qa/qa-team-lead-for-computer-systems-validation-manual-108148",
+   "published": null,
+   "found": "2026-10-13T21:24:08+00:00"
+  },
   {
    "id": "hh:138447055",
    "source": "hh.ru",
