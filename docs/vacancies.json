@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T18:32:59+00:00",
+ "updated": "2026-10-14T21:26:49+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,21 +14,21 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 20,
+  "scored": 7,
   "llm_failed": 1,
-  "sent": 13,
+  "sent": 2,
   "llm_errors": [
-   "JSONDecodeError: Expecting value: line 2 column 16 (char 17)"
+   "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"
   ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 15.5,
+  "llm_avg_sec": 19.1,
   "llm_usage_sample": {
-   "prompt_tokens": 2818,
-   "completion_tokens": 1505,
-   "total_tokens": 4323,
+   "prompt_tokens": 2796,
+   "completion_tokens": 1296,
+   "total_tokens": 4092,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -36,7 +36,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1388,
+    "reasoning_tokens": 1518,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -44,6 +44,118 @@
   "left_for_next_run": 1
  },
  "vacancies": [
+  {
+   "id": "hh:138494030",
+   "source": "hh.ru",
+   "title": "QA Engineer",
+   "company": "FORTECH",
+   "salary": "",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "ручное тестирование, API, удалённая работа",
+   "gaps": "",
+   "url": "https://hh.ru/vacancy/138494030",
+   "published": "2026-10-14T22:53:46.197000+03:00",
+   "found": "2026-10-14T21:26:46+00:00"
+  },
+  {
+   "id": "hirehi:144081",
+   "source": "hirehi",
+   "title": "ручной тестировщик (manual) сетевой безопасности",
+   "company": "АМИКОН",
+   "salary": "зп не указана",
+   "grade": "middle",
+   "format": "офис",
+   "city": "Москва",
+   "score": 2,
+   "match": "ручное тестирование, функциональное, регрессионное, баг-трекинг, Linux, тест-документация",
+   "gaps": "сетевая безопасность, физическое оборудование, Wireshark, tcpdump, сетевые протоколы, автоматизация",
+   "url": "https://hirehi.ru/qa/ruchnoi-testirovshchik-manual-setevoi-bezopasnosti-144081",
+   "published": null,
+   "found": "2026-10-14T21:26:48+00:00"
+  },
+  {
+   "id": "hirehi:142792",
+   "source": "hirehi",
+   "title": "инженер по тестированию и внедрению нового оборудования (manual)",
+   "company": "Сервисный центр Транстелематика",
+   "salary": "",
+   "grade": "Senior",
+   "format": "офис",
+   "city": "Москва",
+   "score": 2,
+   "match": "ручное тестирование, работа с документацией, анализ",
+   "gaps": "телематика, оборудование, аппаратно-программные комплексы, командировки",
+   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-i-vnedreniiu-novogo-oborudovaniia-manual-142792",
+   "published": null,
+   "found": "2026-10-14T21:26:48+00:00"
+  },
+  {
+   "id": "hirehi:142773",
+   "source": "hirehi",
+   "title": "QA специалист (manual) распределённых систем",
+   "company": "ТехАргос",
+   "salary": "",
+   "grade": "senior",
+   "format": "офис",
+   "city": "Москва",
+   "score": 3,
+   "match": "микросервисы, Kafka, Postman, SQL, Linux, API, CI/CD, Allure, Jira, тест-дизайн",
+   "gaps": "офис, senior, gRPC, NATS, XML, CLI, bash",
+   "url": "https://hirehi.ru/qa/qa-spetsialist-manual-raspredelionnykh-sistem-142773",
+   "published": null,
+   "found": "2026-10-14T21:26:48+00:00"
+  },
+  {
+   "id": "hirehi:142762",
+   "source": "hirehi",
+   "title": "специалист по тестированию (manual)",
+   "company": "Rambler&Co",
+   "salary": "",
+   "grade": "Junior",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 7,
+   "match": "ручное тестирование API, frontend, backend, Jira, Postman, SQL, удалёнка после адаптации",
+   "gaps": "грейд junior, гибрид на испытательном сроке, зарплата не указана",
+   "url": "https://hirehi.ru/qa/spetsialist-po-testirovaniiu-manual-142762",
+   "published": null,
+   "found": "2026-10-14T21:26:48+00:00"
+  },
+  {
+   "id": "hirehi:142745",
+   "source": "hirehi",
+   "title": "тестировщик (manual) мобильных устройств",
+   "company": "Техностар",
+   "salary": "~ 90 000 ₽",
+   "grade": "middle",
+   "format": "офис",
+   "city": "Санкт-Петербург",
+   "score": 3,
+   "match": "ручное тестирование, мобильные устройства, Postman, SQL, DevTools, Charles, Git, TMS",
+   "gaps": "офис, зарплата ниже 120 000, нет удалёнки",
+   "url": "https://hirehi.ru/qa/testirovshchik-manual-mobil-nykh-ustroistv-142745",
+   "published": null,
+   "found": "2026-10-14T21:26:49+00:00"
+  },
+  {
+   "id": "hirehi:142667",
+   "source": "hirehi",
+   "title": "head of QA (manual) in hosting and VPN services",
+   "company": "АИМОР",
+   "salary": "",
+   "grade": "Lead",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "manual QA, API, Postman, Swagger, Jira, Confluence, тест-документация, CI/CD",
+   "gaps": "руководство командой, опыт VPN/хостинг, сетевые протоколы, кроссплатформенное тестирование",
+   "url": "https://hirehi.ru/qa/head-of-qa-manual-in-hosting-and-vpn-services-142667",
+   "published": null,
+   "found": "2026-10-14T21:26:49+00:00"
+  },
   {
    "id": "hh:138491917",
    "source": "hh.ru",
