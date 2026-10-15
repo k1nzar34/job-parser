@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T21:26:49+00:00",
+ "updated": "2026-10-15T00:31:29+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,21 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 7,
-  "llm_failed": 1,
-  "sent": 2,
-  "llm_errors": [
-   "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"
-  ],
+  "scored": 1,
+  "llm_failed": 0,
+  "sent": 1,
+  "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 19.1,
+  "llm_avg_sec": 19.7,
   "llm_usage_sample": {
-   "prompt_tokens": 2796,
-   "completion_tokens": 1296,
-   "total_tokens": 4092,
+   "prompt_tokens": 2802,
+   "completion_tokens": 937,
+   "total_tokens": 3739,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -36,14 +34,30 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1518,
+    "reasoning_tokens": 827,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 1
+  "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:144821",
+   "source": "hirehi",
+   "title": "qa engineer (manual) in high-load systems",
+   "company": "FORTECH",
+   "salary": "",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "ручное тестирование, REST API, SQL, Jira, DevTools, тест-дизайн, удалёнка",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-high-load-systems-144821",
+   "published": null,
+   "found": "2026-10-15T00:31:28+00:00"
+  },
   {
    "id": "hh:138494030",
    "source": "hh.ru",
