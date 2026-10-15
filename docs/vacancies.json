@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T18:28:33+00:00",
+ "updated": "2026-10-15T21:27:22+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -9,32 +9,32 @@
    "TG @qajobsoffers": 17,
    "TG @jobsearchgod": 17,
    "TG @remoteeverafter": 17,
-   "hirehi": 101
+   "hirehi": 102
   },
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 7,
+  "scored": 5,
   "llm_failed": 0,
-  "sent": 5,
+  "sent": 0,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 11.1,
+  "llm_avg_sec": 9.8,
   "llm_usage_sample": {
-   "prompt_tokens": 2798,
-   "completion_tokens": 1952,
-   "total_tokens": 4750,
+   "prompt_tokens": 2749,
+   "completion_tokens": 1243,
+   "total_tokens": 3992,
    "prompt_tokens_details": {
-    "cached_tokens": 0,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1826,
+    "reasoning_tokens": 1103,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,86 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "habr:1000169258",
+   "source": "Хабр Карьера",
+   "title": "QAA на Java",
+   "company": "Top Selection",
+   "salary": "от 180 000 до 190 000 ₽",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 1,
+   "match": "Postman SQL Docker Kubernetes GitLab CI",
+   "gaps": "Java Selenide JUnit Mockito автоматизация на Java 3 года",
+   "url": "https://career.habr.com/vacancies/1000169258",
+   "published": "2026-10-15T23:21:21+03:00",
+   "found": "2026-10-15T21:27:22+00:00"
+  },
+  {
+   "id": "hirehi:152354",
+   "source": "hirehi",
+   "title": "Инженер по тестированию (manual) автономного вождения",
+   "company": "Яндекс Транспорт",
+   "salary": "не указана",
+   "grade": "Senior",
+   "format": "офис",
+   "city": "Москва",
+   "score": 1,
+   "match": "ручное тестирование, тест-дизайн, баг-репорты",
+   "gaps": "автомобильные системы, CAN, LIN, CANoe, Vector, V-модель, FuSa, водительские права",
+   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-avtonomnogo-vozhdeniia-152354",
+   "published": null,
+   "found": "2026-10-15T21:27:22+00:00"
+  },
+  {
+   "id": "hirehi:152319",
+   "source": "hirehi",
+   "title": "Инженер по тестированию (manual) в банковской сфере",
+   "company": "Промсвязьбанк",
+   "salary": "от 100 000 ₽",
+   "grade": "senior",
+   "format": "гибрид",
+   "city": "",
+   "score": 3,
+   "match": "ручное тестирование, API, мобильное, SQL, Postman, Swagger, DevTools, тест-дизайн, TestIT",
+   "gaps": "зарплата ниже 120к, грейд senior, офис 9-18",
+   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-v-bankovskoi-sfere-152319",
+   "published": null,
+   "found": "2026-10-15T21:27:22+00:00"
+  },
+  {
+   "id": "hirehi:151528",
+   "source": "hirehi",
+   "title": "тестировщик (manual) систем информационной безопасности",
+   "company": "АйТи БАСТИОН",
+   "salary": "не указана",
+   "grade": "senior",
+   "format": "офис",
+   "city": "Москва",
+   "score": 2,
+   "match": "ручное тестирование, API, SQL, Jira, тест-документация",
+   "gaps": "информационная безопасность, Linux/Windows администрирование, сети, виртуализация, скрипты Bash/PowerShell",
+   "url": "https://hirehi.ru/qa/testirovshchik-manual-sistem-informatsionnoi-bezopasnosti-151528",
+   "published": null,
+   "found": "2026-10-15T21:27:22+00:00"
+  },
+  {
+   "id": "hirehi:151932",
+   "source": "hirehi",
+   "title": "Test engineer- Electromobility high-voltage laboatories (manual)",
+   "company": "Bosch Group",
+   "salary": "",
+   "grade": "Junor",
+   "format": "удалёнка",
+   "city": "",
+   "score": 1,
+   "match": "manual testing",
+   "gaps": "high-voltage, automotive, lab experience",
+   "url": "https://hirehi.ru/qa/test-engineer-electromobility-high-voltage-laboratories-manual-151932",
+   "published": null,
+   "found": "2026-10-15T21:27:22+00:00"
+  },
   {
    "id": "hh:138530039",
    "source": "hh.ru",
