@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T15:33:05+00:00",
+ "updated": "2026-10-15T18:28:33+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -9,24 +9,24 @@
    "TG @qajobsoffers": 17,
    "TG @jobsearchgod": 17,
    "TG @remoteeverafter": 17,
-   "hirehi": 102
+   "hirehi": 101
   },
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 23,
+  "scored": 7,
   "llm_failed": 0,
-  "sent": 8,
+  "sent": 5,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 12.8,
+  "llm_avg_sec": 11.1,
   "llm_usage_sample": {
-   "prompt_tokens": 2732,
-   "completion_tokens": 1459,
-   "total_tokens": 4191,
+   "prompt_tokens": 2798,
+   "completion_tokens": 1952,
+   "total_tokens": 4750,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1328,
+    "reasoning_tokens": 1826,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,118 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138530039",
+   "source": "hh.ru",
+   "title": "QA-тестировщик (ручное тестирование)",
+   "company": "ГК Орбита",
+   "salary": "213 000 RUR",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "ручное тестирование, удалёнка, высокая зарплата",
+   "gaps": "",
+   "url": "https://hh.ru/vacancy/138530039",
+   "published": "2026-10-15T17:52:43.363000+03:00",
+   "found": "2026-10-15T18:28:26+00:00"
+  },
+  {
+   "id": "hh:138529919",
+   "source": "hh.ru",
+   "title": "QA Fullstack на Python",
+   "company": "ГК Орбита",
+   "salary": "",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "удалёнка, fullstack, Python pet project",
+   "gaps": "отсутствие коммерческого Python, возможна автоматизация как основная",
+   "url": "https://hh.ru/vacancy/138529919",
+   "published": "2026-10-15T17:47:15.896000+03:00",
+   "found": "2026-10-15T18:28:28+00:00"
+  },
+  {
+   "id": "hh:138532005",
+   "source": "hh.ru",
+   "title": "QA-инженер",
+   "company": "Системная Интеграция",
+   "salary": "",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "",
+   "score": 7,
+   "match": "ручное и API тестирование, опыт 4 года",
+   "gaps": "нет деталей по задачам",
+   "url": "https://hh.ru/vacancy/138532005",
+   "published": "2026-10-15T20:46:50.538000+03:00",
+   "found": "2026-10-15T18:28:28+00:00"
+  },
+  {
+   "id": "hirehi:151398",
+   "source": "hirehi",
+   "title": "QA-инженер (manual) картографического продукта",
+   "company": "Системная Интеграция",
+   "salary": "",
+   "grade": "senior",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 6,
+   "match": "Manual, REST API, SQL, Postman, Swagger, Charles, Kibana, DevTools, Android, GitLab",
+   "gaps": "грейд senior, опыт с SOAP, картографический домен",
+   "url": "https://hirehi.ru/qa/qa-inzhener-manual-kartograficheskogo-produkta-151398",
+   "published": null,
+   "found": "2026-10-15T18:28:29+00:00"
+  },
+  {
+   "id": "hirehi:151381",
+   "source": "hirehi",
+   "title": "Тестировщик (manual)",
+   "company": "KOLDEXI LTD",
+   "salary": "~ 95 000 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, API, Postman, Swagger, SQL, удалёнка",
+   "gaps": "зарплата ниже 120 000 ₽",
+   "url": "https://hirehi.ru/qa/testirovshchik-manual-151381",
+   "published": null,
+   "found": "2026-10-15T18:28:30+00:00"
+  },
+  {
+   "id": "hirehi:150889",
+   "source": "hirehi",
+   "title": "qa-тестировщик (manual) мобильных приложений",
+   "company": "ГК Орбита",
+   "salary": "до 185 000 ₽",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "мобильное тестирование, manual, API, Postman, Charles, Kibana, удалёнка",
+   "gaps": "требуется senior, кандидат ищет Junior/Middle",
+   "url": "https://hirehi.ru/qa/qa-testirovshchik-manual-mobil-nykh-prilozhenii-150889",
+   "published": null,
+   "found": "2026-10-15T18:28:30+00:00"
+  },
+  {
+   "id": "hirehi:150868",
+   "source": "hirehi",
+   "title": "Game QA engineer (manual) for consoles",
+   "company": "Samustai",
+   "salary": "зп не указана",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "ручное тестирование, регресс, баг-репорты, удалёнка, middle",
+   "gaps": "опыт тестирования игр, консоли, сертификация",
+   "url": "https://hirehi.ru/qa/game-qa-engineer-manual-for-consoles-150868",
+   "published": null,
+   "found": "2026-10-15T18:28:32+00:00"
+  },
   {
    "id": "habr:1000169246",
    "source": "Хабр Карьера",
