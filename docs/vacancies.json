@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T15:28:00+00:00",
+ "updated": "2026-10-16T18:27:05+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,36 +14,114 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 16,
-  "llm_failed": 1,
-  "sent": 4,
-  "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 2910, 'completion_tokens': 3000, 'total_tokens': 5910, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3080, 'image_tokens': 0, 'audio_tokens': 0}}"
-  ],
+  "scored": 6,
+  "llm_failed": 0,
+  "sent": 2,
+  "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 29.0,
+  "llm_avg_sec": 18.1,
   "llm_usage_sample": {
-   "prompt_tokens": 2775,
-   "completion_tokens": 961,
-   "total_tokens": 3736,
+   "prompt_tokens": 2573,
+   "completion_tokens": 1247,
+   "total_tokens": 3820,
    "prompt_tokens_details": {
-    "cached_tokens": 0,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1039,
+    "reasoning_tokens": 1131,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 1
+  "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "tg:qajobsoffers/2005",
+   "source": "TG @qajobsoffers",
+   "title": "Инженер по тестированию",
+   "company": "ООО «Нейро-Комьюнити»",
+   "salary": "55 000 - 65 000 ₽",
+   "grade": "Junior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "удалёнка, ручное тестирование",
+   "gaps": "зарплата ниже 120 000, грейд Junior",
+   "url": "https://t.me/qajobsoffers/2005",
+   "published": "2026-10-16T15:34:01+00:00",
+   "found": "2026-10-16T18:27:02+00:00"
+  },
+  {
+   "id": "tg:jobsearchgod/1017",
+   "source": "TG @jobsearchgod",
+   "title": "Manual QA тестировщик игр",
+   "company": "Igaming-Soft",
+   "salary": "от 500 до 700 $ + премия",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "удалёнка, manual QA",
+   "gaps": "зарплата ниже 120к, игровая индустрия, нет API/backend",
+   "url": "https://t.me/jobsearchgod/1017",
+   "published": "2026-10-16T15:58:01+00:00",
+   "found": "2026-10-16T18:27:02+00:00"
+  },
+  {
+   "id": "hirehi:155680",
+   "source": "hirehi",
+   "title": "QA Engineer (Manual) in Fintech",
+   "company": "Staq",
+   "salary": "",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "Manual QA, API testing, Postman, SQL, Jira, Confluence, Docker, k8s, fintech",
+   "gaps": "Fluent English required",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-fintech-155680",
+   "published": null,
+   "found": "2026-10-16T18:27:02+00:00"
+  },
+  {
+   "id": "hirehi:155595",
+   "source": "hirehi",
+   "title": "qa engineer (manual)",
+   "company": "RITS",
+   "salary": "до 412 865 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "manual QA, REST API, PostgreSQL, Docker, Jira, удалёнка",
+   "gaps": "английский fluent, AI/LLM, React/Next.js",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-155595",
+   "published": null,
+   "found": "2026-10-16T18:27:03+00:00"
+  },
+  {
+   "id": "hirehi:155084",
+   "source": "hirehi",
+   "title": "Инженер по ручному тестированию (manual) бэкенда",
+   "company": "Перфоманс Лаб",
+   "salary": "до 100 000 ₽",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "Manual backend, REST API, Postman, SQL, логирование, тест-дизайн, дефекты",
+   "gaps": "Зарплата ниже 120k; требуется Java, Cucumber, автоматизация API; удалёнка из Москвы/МО",
+   "url": "https://hirehi.ru/qa/inzhener-po-ruchnomu-testirovaniiu-manual-bekenda-155084",
+   "published": null,
+   "found": "2026-10-16T18:27:05+00:00"
+  },
   {
    "id": "habr:1000169327",
    "source": "Хабр Карьера",
