@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T18:27:05+00:00",
+ "updated": "2026-10-16T21:24:06+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 6,
+  "scored": 5,
   "llm_failed": 0,
   "sent": 2,
   "llm_errors": [],
@@ -22,19 +22,19 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 18.1,
+  "llm_avg_sec": 9.7,
   "llm_usage_sample": {
-   "prompt_tokens": 2573,
-   "completion_tokens": 1247,
-   "total_tokens": 3820,
+   "prompt_tokens": 2185,
+   "completion_tokens": 1368,
+   "total_tokens": 3553,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1131,
+    "reasoning_tokens": 1246,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,86 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:156676",
+   "source": "hirehi",
+   "title": "QA specialist (manual) in mortgage lending",
+   "company": "ABB",
+   "salary": "",
+   "grade": "senior",
+   "format": "офис",
+   "city": "Баку",
+   "score": 3,
+   "match": "manual QA, API, SQL, Postman, Swagger, Jira, DevTools, CI/CD, регресс, smoke",
+   "gaps": "senior грейд, офис в Баку, автоматизация в задачах",
+   "url": "https://hirehi.ru/qa/qa-specialist-manual-in-mortgage-lending-156676",
+   "published": null,
+   "found": "2026-10-16T21:24:03+00:00"
+  },
+  {
+   "id": "hirehi:156315",
+   "source": "hirehi",
+   "title": "Integration Test Engineer (manual)",
+   "company": "Avenga",
+   "salary": "",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Prague/Brno",
+   "score": 6,
+   "match": "ручное тестирование, API, SQL, Kibana, Jira, интеграционное тестирование",
+   "gaps": "банковская сфера, SoapUI, Enterprise Architect, WS-Security",
+   "url": "https://hirehi.ru/qa/integration-test-engineer-manual-156315",
+   "published": null,
+   "found": "2026-10-16T21:24:03+00:00"
+  },
+  {
+   "id": "hirehi:157018",
+   "source": "hirehi",
+   "title": "QA Analyst (manual)",
+   "company": "Expleo",
+   "salary": "",
+   "grade": "Middle",
+   "format": "гибрид",
+   "city": "Belfast",
+   "score": 9,
+   "match": "ручное тестирование, API, SQL, регресс, Agile, Jira, документация",
+   "gaps": "ISTQB, accessibility testing, SQL Server, опыт в Belfast",
+   "url": "https://hirehi.ru/qa/qa-analyst-manual-157018",
+   "published": null,
+   "found": "2026-10-16T21:24:05+00:00"
+  },
+  {
+   "id": "hirehi:156253",
+   "source": "hirehi",
+   "title": "QA Engineer (manual)",
+   "company": "Aloplay",
+   "salary": "",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 5,
+   "match": "manual, API testing, SQL, Postman",
+   "gaps": "automated tests with AI, Claude Code, MCP",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-156253",
+   "published": null,
+   "found": "2026-10-16T21:24:06+00:00"
+  },
+  {
+   "id": "hirehi:155957",
+   "source": "hirehi",
+   "title": "Test Engineer (manual)",
+   "company": "Airbus Defence and Space Limited",
+   "salary": "",
+   "grade": "junior",
+   "format": "гибрид",
+   "city": "Portsmouth OR Stevenage",
+   "score": 2,
+   "match": "",
+   "gaps": "автоматизация Python/Java, SC Clearance, Великобритания",
+   "url": "https://hirehi.ru/qa/test-engineer-manual-155957",
+   "published": null,
+   "found": "2026-10-16T21:24:06+00:00"
+  },
   {
    "id": "tg:qajobsoffers/2005",
    "source": "TG @qajobsoffers",
