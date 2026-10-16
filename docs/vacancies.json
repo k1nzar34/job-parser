@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T03:25:40+00:00",
+ "updated": "2026-10-16T06:30:54+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,14 +14,82 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 0,
+  "scored": 3,
   "llm_failed": 0,
-  "sent": 0,
+  "sent": 1,
   "llm_errors": [],
-  "llm_used": null,
+  "llm_used": {
+   "base_url": "https://api.proxyapi.ru/v1",
+   "model": "deepseek/deepseek-v4-flash"
+  },
+  "llm_avg_sec": 18.6,
+  "llm_usage_sample": {
+   "prompt_tokens": 2502,
+   "completion_tokens": 984,
+   "total_tokens": 3486,
+   "prompt_tokens_details": {
+    "cached_tokens": 1280,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 855,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138540079",
+   "source": "hh.ru",
+   "title": "Специалист по ручному тестированию/Junior QA",
+   "company": "TEAMSCORE",
+   "salary": "",
+   "grade": "Junior",
+   "format": "гибрид",
+   "city": "",
+   "score": 7,
+   "match": "ручное тестирование, гибридный формат, возможна работа с API",
+   "gaps": "не указан стек, уровень Junior может быть ниже опыта",
+   "url": "https://hh.ru/vacancy/138540079",
+   "published": "2026-10-16T08:57:52.919000+03:00",
+   "found": "2026-10-16T06:30:52+00:00"
+  },
+  {
+   "id": "hirehi:153421",
+   "source": "hirehi",
+   "title": "LQA Games Tester",
+   "company": "TransPerfect",
+   "salary": "",
+   "grade": "Junior",
+   "format": "офис",
+   "city": "Warsaw",
+   "score": 1,
+   "match": "ручное тестирование, manual QA",
+   "gaps": "испанский язык, локализация игр, работа в офисе в Варшаве, нет опыта в играх",
+   "url": "https://hirehi.ru/qa/freelance-lqa-games-tester-warsaw-spanish-spain-and-english-speaker-manual-153421",
+   "published": null,
+   "found": "2026-10-16T06:30:54+00:00"
+  },
+  {
+   "id": "hirehi:153191",
+   "source": "hirehi",
+   "title": "QA Game Tester (manual) for mobile and console games",
+   "company": "Marmalade Game Studio",
+   "salary": "",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "ручное тестирование, JIRA, тест-кейсы, мобильные платформы",
+   "gaps": "нет опыта в играх, консоли, требуется право работы в EU",
+   "url": "https://hirehi.ru/qa/qa-game-tester-manual-for-mobile-and-console-games-153191",
+   "published": null,
+   "found": "2026-10-16T06:30:54+00:00"
+  },
   {
    "id": "hirehi:152902",
    "source": "hirehi",
