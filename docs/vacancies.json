@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T21:27:22+00:00",
+ "updated": "2026-10-16T00:29:47+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 5,
+  "scored": 2,
   "llm_failed": 0,
   "sent": 0,
   "llm_errors": [],
@@ -22,19 +22,19 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 9.8,
+  "llm_avg_sec": 21.0,
   "llm_usage_sample": {
-   "prompt_tokens": 2749,
-   "completion_tokens": 1243,
-   "total_tokens": 3992,
+   "prompt_tokens": 2789,
+   "completion_tokens": 1218,
+   "total_tokens": 4007,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1103,
+    "reasoning_tokens": 1062,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,38 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:152902",
+   "source": "hirehi",
+   "title": "QA-инженер (manual) AI-агентов",
+   "company": "Альвента",
+   "salary": "80 000–120 000 ₽",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "Manual QA, API-тестирование, тест-дизайн, TMS, JSON, Postman, Swagger, удалёнка",
+   "gaps": "Зарплата ниже 120 000, грейд senior, нет опыта AI/LLM, разметка данных",
+   "url": "https://hirehi.ru/qa/qa-inzhener-manual-ai-agentov-152902",
+   "published": null,
+   "found": "2026-10-16T00:29:47+00:00"
+  },
+  {
+   "id": "hirehi:152685",
+   "source": "hirehi",
+   "title": "English Game QA Tester (manual)",
+   "company": "TransPerfect",
+   "salary": "",
+   "grade": "middle",
+   "format": "офис",
+   "city": "Варшава",
+   "score": 2,
+   "match": "manual QA, тест-дизайн, баг-трекинг",
+   "gaps": "game testing, офис, низкая зарплата, не backend",
+   "url": "https://hirehi.ru/qa/english-game-qa-tester-manual-152685",
+   "published": null,
+   "found": "2026-10-16T00:29:47+00:00"
+  },
   {
    "id": "habr:1000169258",
    "source": "Хабр Карьера",
