@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T15:21:29+00:00",
+ "updated": "2026-10-17T18:21:38+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 2,
+  "scored": 6,
   "llm_failed": 0,
-  "sent": 0,
+  "sent": 4,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 15.7,
+  "llm_avg_sec": 11.2,
   "llm_usage_sample": {
-   "prompt_tokens": 1357,
-   "completion_tokens": 626,
-   "total_tokens": 1983,
+   "prompt_tokens": 2844,
+   "completion_tokens": 1341,
+   "total_tokens": 4185,
    "prompt_tokens_details": {
-    "cached_tokens": 0,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 528,
+    "reasoning_tokens": 1210,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,102 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138575319",
+   "source": "hh.ru",
+   "title": "QA-инженер (Web / API)",
+   "company": "Ревин Федор Витальевич",
+   "salary": "180 000 RUR",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "Web и API тестирование, удалёнка, зарплата",
+   "gaps": "",
+   "url": "https://hh.ru/vacancy/138575319",
+   "published": "2026-10-17T19:20:33.486000+03:00",
+   "found": "2026-10-17T18:21:33+00:00"
+  },
+  {
+   "id": "tg:qajoboffer/2193",
+   "source": "TG @qajoboffer",
+   "title": "Младший тестировщик",
+   "company": "Здравсити Медицина",
+   "salary": "70 000 - 100 000 руб.",
+   "grade": "Junior",
+   "format": "удалёнка",
+   "city": "Москва",
+   "score": 3,
+   "match": "удалёнка, ручное тестирование, полная занятость",
+   "gaps": "зарплата ниже ожидаемой",
+   "url": "https://t.me/qajoboffer/2193",
+   "published": "2026-10-17T15:24:01+00:00",
+   "found": "2026-10-17T18:21:34+00:00"
+  },
+  {
+   "id": "hirehi:158456",
+   "source": "hirehi",
+   "title": "QA engineer (manual)",
+   "company": "Fireart",
+   "salary": "зп не указана",
+   "grade": "middle",
+   "format": "офис",
+   "city": "Варшава",
+   "score": 3,
+   "match": "manual QA API testing Postman Swagger SQL CI/CD микросервисы",
+   "gaps": "офис в Варшаве без удалёнки",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-158456",
+   "published": null,
+   "found": "2026-10-17T18:21:34+00:00"
+  },
+  {
+   "id": "hirehi:158400",
+   "source": "hirehi",
+   "title": "QA-специалист (manual) веб-сервисов и мобильных приложений",
+   "company": "Amex Development",
+   "salary": "не указана",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "Manual QA, backend, API, mobile, Postman, SQL, Git, регресс, релизы, документация",
+   "gaps": "SOAP, SoapUI",
+   "url": "https://hirehi.ru/qa/qa-spetsialist-manual-veb-servisov-i-mobil-nykh-prilozhenii-158400",
+   "published": null,
+   "found": "2026-10-17T18:21:34+00:00"
+  },
+  {
+   "id": "hirehi:158364",
+   "source": "hirehi",
+   "title": "qa-инженер (manual) веб-приложений",
+   "company": "",
+   "salary": "от 180 000 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "ручное тестирование, REST API, Postman, DevTools, регресс, тест-дизайн, веб-приложения",
+   "gaps": "микросервисы, Kafka, Docker, Kubernetes, CI/CD",
+   "url": "https://hirehi.ru/qa/qa-inzhener-manual-veb-prilozhenii-158364",
+   "published": null,
+   "found": "2026-10-17T18:21:36+00:00"
+  },
+  {
+   "id": "hirehi:158350",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in AI systems",
+   "company": "Recruitment Room - Global",
+   "salary": "",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "Manual QA, test design, defect reporting, remote work, good salary",
+   "gaps": "No AI/ML testing experience, data annotation, model evaluation",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-ai-systems-158350",
+   "published": null,
+   "found": "2026-10-17T18:21:37+00:00"
+  },
   {
    "id": "hh:138574553",
    "source": "hh.ru",
