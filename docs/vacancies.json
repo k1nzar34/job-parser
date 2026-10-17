@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T06:27:13+00:00",
+ "updated": "2026-10-17T09:22:38+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -22,11 +22,11 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 6.7,
+  "llm_avg_sec": 10.9,
   "llm_usage_sample": {
-   "prompt_tokens": 2226,
-   "completion_tokens": 749,
-   "total_tokens": 2975,
+   "prompt_tokens": 1379,
+   "completion_tokens": 1022,
+   "total_tokens": 2401,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 647,
+    "reasoning_tokens": 956,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,38 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:133296357",
+   "source": "hh.ru",
+   "title": "Head of QA",
+   "company": "ОпенМайГейм",
+   "salary": "",
+   "grade": "Lead",
+   "format": "гибрид",
+   "city": "",
+   "score": 2,
+   "match": "QA background, manual and API testing",
+   "gaps": "leadership, team management experience",
+   "url": "https://hh.ru/vacancy/133296357",
+   "published": "2026-10-17T11:39:03.408000+03:00",
+   "found": "2026-10-17T09:22:38+00:00"
+  },
+  {
+   "id": "hirehi:158062",
+   "source": "hirehi",
+   "title": "Test Engineer (manual)",
+   "company": "Methods Business and Digital Technology",
+   "salary": "",
+   "grade": "Lead",
+   "format": "гибрид",
+   "city": "Лондон",
+   "score": 2,
+   "match": "manual testing, API, microservices, BDD/TDD concept, remote possible",
+   "gaps": "automation expert, lead test team, Java/Node.js dev, UK security clearance, London hybrid, senior level",
+   "url": "https://hirehi.ru/qa/test-engineer-manual-158062",
+   "published": null,
+   "found": "2026-10-17T09:22:38+00:00"
+  },
   {
    "id": "hirehi:157829",
    "source": "hirehi",
