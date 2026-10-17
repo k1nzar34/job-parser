@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T09:22:38+00:00",
+ "updated": "2026-10-17T12:25:06+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 2,
+  "scored": 5,
   "llm_failed": 0,
-  "sent": 0,
+  "sent": 1,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 10.9,
+  "llm_avg_sec": 11.7,
   "llm_usage_sample": {
-   "prompt_tokens": 1379,
-   "completion_tokens": 1022,
-   "total_tokens": 2401,
+   "prompt_tokens": 2861,
+   "completion_tokens": 1777,
+   "total_tokens": 4638,
    "prompt_tokens_details": {
-    "cached_tokens": 0,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 956,
+    "reasoning_tokens": 1656,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,86 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "habr:1000169118",
+   "source": "Хабр Карьера",
+   "title": "Web Pentester",
+   "company": "Артис",
+   "salary": "180000 - 250000 ₽",
+   "grade": "неясно",
+   "format": "офис",
+   "city": "Санкт-Петербург",
+   "score": 2,
+   "match": "ручное тестирование, SQL, PostgreSQL",
+   "gaps": "пентест, Burp Suite, WAF, веб-уязвимости, информационная безопасность",
+   "url": "https://career.habr.com/vacancies/1000169118",
+   "published": "2026-10-17T13:37:40+03:00",
+   "found": "2026-10-17T12:25:04+00:00"
+  },
+  {
+   "id": "hirehi:158235",
+   "source": "hirehi",
+   "title": "QA engineer (manual) for an e-commerce platform",
+   "company": "Инсейлс Рус",
+   "salary": "",
+   "grade": "Junior",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 9,
+   "match": "e-commerce, manual, API, DevTools, тест-дизайн, документация",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-an-e-commerce-platform-158235",
+   "published": null,
+   "found": "2026-10-17T12:25:04+00:00"
+  },
+  {
+   "id": "hirehi:158226",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in iGaming",
+   "company": "Международное кадровое агентство",
+   "salary": "",
+   "grade": "senior",
+   "format": "офис",
+   "city": "Санкт-Петербург",
+   "score": 3,
+   "match": "ручное тестирование, API, Postman, Swagger, Kibana, E2E",
+   "gaps": "desktop, iGaming, офис, грейд senior",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-igaming-158226",
+   "published": null,
+   "found": "2026-10-17T12:25:06+00:00"
+  },
+  {
+   "id": "hirehi:158197",
+   "source": "hirehi",
+   "title": "QA Engineer (manual)",
+   "company": "TEAMSCORE",
+   "salary": "до 100 000 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, SQL, тест-кейсы, баг-репорты",
+   "gaps": "зарплата ниже 120 000, нет API/микросервисов",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-158197",
+   "published": null,
+   "found": "2026-10-17T12:25:06+00:00"
+  },
+  {
+   "id": "hirehi:158174",
+   "source": "hirehi",
+   "title": "QA (manual) in iGaming",
+   "company": "БИЗОН БЕТ",
+   "salary": "",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Минск",
+   "score": 4,
+   "match": "ручное тестирование, API, Jira, Agile, smoke, регресс, тест-кейсы",
+   "gaps": "опыт в iGaming, беттинг, знание игровых механик",
+   "url": "https://hirehi.ru/qa/qa-manual-in-igaming-158174",
+   "published": null,
+   "found": "2026-10-17T12:25:06+00:00"
+  },
   {
    "id": "hh:133296357",
    "source": "hh.ru",
