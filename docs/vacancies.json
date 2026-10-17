@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T21:24:06+00:00",
+ "updated": "2026-10-17T00:30:39+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 5,
+  "scored": 1,
   "llm_failed": 0,
-  "sent": 2,
+  "sent": 0,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 9.7,
+  "llm_avg_sec": 13.5,
   "llm_usage_sample": {
-   "prompt_tokens": 2185,
-   "completion_tokens": 1368,
-   "total_tokens": 3553,
+   "prompt_tokens": 2381,
+   "completion_tokens": 1027,
+   "total_tokens": 3408,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1246,
+    "reasoning_tokens": 910,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,22 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:157647",
+   "source": "hirehi",
+   "title": "QA engineer (manual) for music platform",
+   "company": "Resident Advisor",
+   "salary": "€60,000 - €72,000",
+   "grade": "Senior",
+   "format": "офис",
+   "city": "Берлин",
+   "score": 2,
+   "match": "manual, API, SQL, web, mobile, risk assessment, bug reporting",
+   "gaps": "senior, office Berlin, automation mandatory, Playwright/Cypress/XCUITest",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-music-platform-157647",
+   "published": null,
+   "found": "2026-10-17T00:30:39+00:00"
+  },
   {
    "id": "hirehi:156676",
    "source": "hirehi",
