@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T12:25:03+00:00",
+ "updated": "2026-10-18T15:20:45+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,31 +14,11 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 1,
+  "scored": 0,
   "llm_failed": 0,
   "sent": 0,
   "llm_errors": [],
-  "llm_used": {
-   "base_url": "https://api.proxyapi.ru/v1",
-   "model": "deepseek/deepseek-v4-flash"
-  },
-  "llm_avg_sec": 14.1,
-  "llm_usage_sample": {
-   "prompt_tokens": 2489,
-   "completion_tokens": 695,
-   "total_tokens": 3184,
-   "prompt_tokens_details": {
-    "cached_tokens": 0,
-    "cache_write_tokens": 0,
-    "audio_tokens": 0,
-    "video_tokens": 0
-   },
-   "completion_tokens_details": {
-    "reasoning_tokens": 568,
-    "image_tokens": 0,
-    "audio_tokens": 0
-   }
-  },
+  "llm_used": null,
   "left_for_next_run": 0
  },
  "vacancies": [
