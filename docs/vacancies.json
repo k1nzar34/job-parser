@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T00:29:52+00:00",
+ "updated": "2026-10-18T03:24:20+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 1,
+  "scored": 4,
   "llm_failed": 0,
-  "sent": 0,
+  "sent": 3,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 11.1,
+  "llm_avg_sec": 10.4,
   "llm_usage_sample": {
-   "prompt_tokens": 2573,
-   "completion_tokens": 981,
-   "total_tokens": 3554,
+   "prompt_tokens": 2577,
+   "completion_tokens": 1521,
+   "total_tokens": 4098,
    "prompt_tokens_details": {
-    "cached_tokens": 0,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 866,
+    "reasoning_tokens": 1415,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,70 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:159125",
+   "source": "hirehi",
+   "title": "Mobile Games QA (manual)",
+   "company": "CrazyLabs",
+   "salary": "не указана",
+   "grade": "middle",
+   "format": "офис",
+   "city": "Скопье",
+   "score": 1,
+   "match": "ручное тестирование, функциональное тестирование",
+   "gaps": "нет опыта в мобильных играх, офис в Скопье",
+   "url": "https://hirehi.ru/qa/mobile-games-qa-manual-159125",
+   "published": null,
+   "found": "2026-10-18T03:24:15+00:00"
+  },
+  {
+   "id": "hirehi:159101",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in fintech",
+   "company": "Weltrade",
+   "salary": "",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "手动测试 API SQL Postman DevTools Jira Confluence 敏捷流程",
+   "gaps": "金融交易经验 交易流程知识 实时系统",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-fintech-159101",
+   "published": null,
+   "found": "2026-10-18T03:24:15+00:00"
+  },
+  {
+   "id": "hirehi:159098",
+   "source": "hirehi",
+   "title": "Quality Assurance Engineer (manual)",
+   "company": "RichBrains",
+   "salary": "",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "ручное тестирование, API, Postman, Jira, регресс, web/мобильные",
+   "gaps": "UAT, продвинутый английский, опыт с EdTech",
+   "url": "https://hirehi.ru/qa/quality-assurance-engineer-manual-159098",
+   "published": null,
+   "found": "2026-10-18T03:24:17+00:00"
+  },
+  {
+   "id": "hirehi:159083",
+   "source": "hirehi",
+   "title": "QA engineer (manual) for trading platforms",
+   "company": "HFM",
+   "salary": "зп не указана",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Ларнака",
+   "score": 8,
+   "match": "manual testing, web, mobile, test cases, defect reporting, functional testing",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-trading-platforms-159083",
+   "published": null,
+   "found": "2026-10-18T03:24:18+00:00"
+  },
   {
    "id": "hirehi:159015",
    "source": "hirehi",
