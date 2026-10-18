@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T09:22:39+00:00",
+ "updated": "2026-10-18T12:25:03+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 2,
+  "scored": 1,
   "llm_failed": 0,
   "sent": 0,
   "llm_errors": [],
@@ -22,11 +22,11 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 9.1,
+  "llm_avg_sec": 14.1,
   "llm_usage_sample": {
-   "prompt_tokens": 1501,
-   "completion_tokens": 1076,
-   "total_tokens": 2577,
+   "prompt_tokens": 2489,
+   "completion_tokens": 695,
+   "total_tokens": 3184,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 945,
+    "reasoning_tokens": 568,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,22 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:159440",
+   "source": "hirehi",
+   "title": "тестировщик HTML5-игр (manual) для YouTube Playables",
+   "company": "Mediacube",
+   "salary": "",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "удалёнка, manual, middle, зп не указана",
+   "gaps": "нет опыта тестирования игр, HTML5, WebGL, Godot, Phaser",
+   "url": "https://hirehi.ru/qa/testirovshchik-html5-igr-manual-dlia-youtube-playables-159440",
+   "published": null,
+   "found": "2026-10-18T12:25:03+00:00"
+  },
   {
    "id": "hh:132327563",
    "source": "hh.ru",
