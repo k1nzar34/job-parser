@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T06:26:57+00:00",
+ "updated": "2026-10-18T09:22:39+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 1,
+  "scored": 2,
   "llm_failed": 0,
   "sent": 0,
   "llm_errors": [],
@@ -22,11 +22,11 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 4.8,
+  "llm_avg_sec": 9.1,
   "llm_usage_sample": {
-   "prompt_tokens": 1382,
-   "completion_tokens": 255,
-   "total_tokens": 1637,
+   "prompt_tokens": 1501,
+   "completion_tokens": 1076,
+   "total_tokens": 2577,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 195,
+    "reasoning_tokens": 945,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,38 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:132327563",
+   "source": "hh.ru",
+   "title": "Full-stack QA Engineer (Java, Python)",
+   "company": "QA Service Lab",
+   "salary": "",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "удалёнка, возможно работа с API",
+   "gaps": "автоматизация как основная задача (Java/Python), неинтересно",
+   "url": "https://hh.ru/vacancy/132327563",
+   "published": "2026-10-18T11:12:47.258000+03:00",
+   "found": "2026-10-18T09:22:39+00:00"
+  },
+  {
+   "id": "tg:jobforqa/1577",
+   "source": "TG @jobforqa",
+   "title": "QA Fullstack (Java)",
+   "company": "КА HR Prime",
+   "salary": "от 200 т.р. + квартальная премия по KPI",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "Санкт-Петербург",
+   "score": 1,
+   "match": "ручное и API-тестирование, гибридный формат, зарплата выше",
+   "gaps": "требуется Java-автоматизация, не интересует AQA",
+   "url": "https://t.me/jobforqa/1577",
+   "published": "2026-10-18T07:04:32+00:00",
+   "found": "2026-10-18T09:22:39+00:00"
+  },
   {
    "id": "hirehi:159125",
    "source": "hirehi",
