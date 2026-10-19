@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T18:28:49+00:00",
+ "updated": "2026-10-19T21:25:41+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 10,
+  "scored": 7,
   "llm_failed": 0,
-  "sent": 5,
+  "sent": 4,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 14.2,
+  "llm_avg_sec": 11.6,
   "llm_usage_sample": {
-   "prompt_tokens": 2709,
-   "completion_tokens": 1690,
-   "total_tokens": 4399,
+   "prompt_tokens": 2412,
+   "completion_tokens": 1247,
+   "total_tokens": 3659,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1571,
+    "reasoning_tokens": 1151,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,118 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138630623",
+   "source": "hh.ru",
+   "title": "Ведущий инженер-тестировщик JS/TS",
+   "company": "Платформа Национальной Технологической Инициативы",
+   "salary": "257 000 RUR",
+   "grade": "Senior/Lead",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "Удалёнка, высокая зарплата, опыт тестирования",
+   "gaps": "Требуется JS/TS, автоматизация основная, грейд выше",
+   "url": "https://hh.ru/vacancy/138630623",
+   "published": "2026-10-19T22:55:48.086000+03:00",
+   "found": "2026-10-19T21:25:34+00:00"
+  },
+  {
+   "id": "hirehi:163787",
+   "source": "hirehi",
+   "title": "ServiceNow QA engineer (manual) in telecom",
+   "company": "Astek",
+   "salary": "до 276 000 ₽",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "Manual QA, functional testing, integration testing, remote work",
+   "gaps": "ServiceNow, English C1, telecom domain",
+   "url": "https://hirehi.ru/qa/servicenow-qa-engineer-manual-in-telecom-163787",
+   "published": null,
+   "found": "2026-10-19T21:25:34+00:00"
+  },
+  {
+   "id": "hirehi:163771",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in SaaS platforms",
+   "company": "Progress Partners",
+   "salary": "",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "manual+API testing, SaaS, Postman, SQL, Kibana, remote, bug reports",
+   "gaps": "Zendesk, Twilio experience",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-saas-platforms-163771",
+   "published": null,
+   "found": "2026-10-19T21:25:36+00:00"
+  },
+  {
+   "id": "hirehi:162723",
+   "source": "hirehi",
+   "title": "QA engineer (manual) веб-приложений и REST API",
+   "company": "Centicore",
+   "salary": "~ 205 000 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 10,
+   "match": "ручное тестирование, REST API, Postman, Swagger, SQL, удалёнка",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-veb-prilozhenii-i-rest-api-162723",
+   "published": null,
+   "found": "2026-10-19T21:25:38+00:00"
+  },
+  {
+   "id": "hirehi:162976",
+   "source": "hirehi",
+   "title": "Tester/Test Analyst (manual)",
+   "company": "Avenga",
+   "salary": "",
+   "grade": "Junior",
+   "format": "гибрид",
+   "city": "Прага",
+   "score": 8,
+   "match": "ручное тестирование, SQL, Postman, системное тестирование, анализ требований",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/tester-test-analyst-manual-162976",
+   "published": null,
+   "found": "2026-10-19T21:25:40+00:00"
+  },
+  {
+   "id": "hirehi:163005",
+   "source": "hirehi",
+   "title": "Game Tester",
+   "company": "TransPerfect",
+   "salary": "",
+   "grade": "Junior",
+   "format": "офис",
+   "city": "Варшава",
+   "score": 2,
+   "match": "manual testing, bug tracking, Jira, test cases",
+   "gaps": "game testing experience, on-site Warsaw, game testing tools",
+   "url": "https://hirehi.ru/qa/game-tester-on-site-manual-163005",
+   "published": null,
+   "found": "2026-10-19T21:25:41+00:00"
+  },
+  {
+   "id": "hirehi:163235",
+   "source": "hirehi",
+   "title": "QA Networking Engineer (manual)",
+   "company": "Check Point Software Technologies",
+   "salary": "не указана",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "",
+   "score": 2,
+   "match": "manual QA, Jira, документация",
+   "gaps": "networking, TCP/IP, VPN, BGP, Linux, безопасность",
+   "url": "https://hirehi.ru/qa/qa-networking-engineer-manual-163235",
+   "published": null,
+   "found": "2026-10-19T21:25:41+00:00"
+  },
   {
    "id": "hh:138628523",
    "source": "hh.ru",
