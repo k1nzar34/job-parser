@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T03:26:20+00:00",
+ "updated": "2026-10-20T06:31:35+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,14 +14,82 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 0,
+  "scored": 3,
   "llm_failed": 0,
-  "sent": 0,
+  "sent": 2,
   "llm_errors": [],
-  "llm_used": null,
+  "llm_used": {
+   "base_url": "https://api.proxyapi.ru/v1",
+   "model": "deepseek/deepseek-v4-flash"
+  },
+  "llm_avg_sec": 24.0,
+  "llm_usage_sample": {
+   "prompt_tokens": 2556,
+   "completion_tokens": 1093,
+   "total_tokens": 3649,
+   "prompt_tokens_details": {
+    "cached_tokens": 1280,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 963,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "habr:1000169348",
+   "source": "Хабр Карьера",
+   "title": "QA Engineer (Manual, retail / POS)",
+   "company": "BGStaff",
+   "salary": "",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 7,
+   "match": "ручное тестирование, API, микросервисы, retail, Postman, Swagger, DevTools, Figma, логи, интеграционное тестирование",
+   "gaps": "опыт с POS/кассовым оборудованием, desktop-приложения, RabbitMQ",
+   "url": "https://career.habr.com/vacancies/1000169348",
+   "published": "2026-10-20T06:51:41+03:00",
+   "found": "2026-10-20T06:31:32+00:00"
+  },
+  {
+   "id": "hh:138640212",
+   "source": "hh.ru",
+   "title": "Ведущий тестировщик",
+   "company": "Цифролаб",
+   "salary": "",
+   "grade": "Senior",
+   "format": "гибрид",
+   "city": "",
+   "score": 2,
+   "match": "",
+   "gaps": "нет информации о задачах и стеке",
+   "url": "https://hh.ru/vacancy/138640212",
+   "published": "2026-10-20T09:17:18.902000+03:00",
+   "found": "2026-10-20T06:31:34+00:00"
+  },
+  {
+   "id": "hirehi:164073",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in retail POS",
+   "company": "BGStaff",
+   "salary": "",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "ручное тестирование, API, микросервисы, Postman, Swagger, Charles, DevTools, retail, e-commerce, интеграционное тестирование",
+   "gaps": "RabbitMQ, физическое POS-оборудование",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-retail-pos-164073",
+   "published": null,
+   "found": "2026-10-20T06:31:34+00:00"
+  },
   {
    "id": "hirehi:164005",
    "source": "hirehi",
