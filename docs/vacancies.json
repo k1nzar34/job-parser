@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T18:30:00+00:00",
+ "updated": "2026-10-20T21:26:54+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 8,
+  "scored": 6,
   "llm_failed": 0,
-  "sent": 4,
+  "sent": 3,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 9.8,
+  "llm_avg_sec": 12.7,
   "llm_usage_sample": {
-   "prompt_tokens": 2358,
-   "completion_tokens": 972,
-   "total_tokens": 3330,
+   "prompt_tokens": 2298,
+   "completion_tokens": 1490,
+   "total_tokens": 3788,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 869,
+    "reasoning_tokens": 1347,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,102 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138680962",
+   "source": "hh.ru",
+   "title": "Тестировщик веб-приложений",
+   "company": "Черняков С. В.",
+   "salary": "96 000 – 140 000 RUR",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "ручное тестирование, веб-приложения, API",
+   "gaps": "зарплата ниже 120k, проектная занятость",
+   "url": "https://hh.ru/vacancy/138680962",
+   "published": "2026-10-20T21:51:41.646000+03:00",
+   "found": "2026-10-20T21:26:50+00:00"
+  },
+  {
+   "id": "hirehi:167494",
+   "source": "hirehi",
+   "title": "тестировщик веб-приложений (manual)",
+   "company": "ИП Черняков С.В.",
+   "salary": "96 000–140 000 ₽ на руки",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "веб-тестирование, API, SQL, Postman, DevTools, тест-дизайн, Git, Docker",
+   "gaps": "проектная работа, зарплата ниже желаемой",
+   "url": "https://hirehi.ru/qa/testirovshchik-veb-prilozhenii-manual-167494",
+   "published": null,
+   "found": "2026-10-20T21:26:50+00:00"
+  },
+  {
+   "id": "hirehi:167187",
+   "source": "hirehi",
+   "title": "QA Engineer (World of Tanks) (manual)",
+   "company": "Wargaming",
+   "salary": "от 326 311 ₽ / 3500-5000 EUR",
+   "grade": "Middle",
+   "format": "гибрид",
+   "city": "Вильнюс",
+   "score": 6,
+   "match": "ручное тестирование, клиент-сервер, Jira, Confluence, Git, Jenkins, тестовая документация, SQL",
+   "gaps": "game testing, World of Tanks, SVN, Perforce, опыт в геймдеве",
+   "url": "https://hirehi.ru/qa/qa-engineer-world-of-tanks-manual-167187",
+   "published": null,
+   "found": "2026-10-20T21:26:51+00:00"
+  },
+  {
+   "id": "hirehi:167200",
+   "source": "hirehi",
+   "title": "Quality Assurance Engineer (manual) / Senior",
+   "company": "Zeal Network",
+   "salary": "139 847 ₽",
+   "grade": "Senior",
+   "format": "гибрид",
+   "city": "Гамбург",
+   "score": 2,
+   "match": "ручное тестирование, API, SQL, CI/CD, Docker, Postman",
+   "gaps": "автоматизация Playwright+TypeScript, разработка фреймворков, Senior, офисный гибрид",
+   "url": "https://hirehi.ru/qa/quality-assurance-engineer-manual-167200",
+   "published": null,
+   "found": "2026-10-20T21:26:52+00:00"
+  },
+  {
+   "id": "hirehi:167347",
+   "source": "hirehi",
+   "title": "QA analyst (manual)",
+   "company": "Creative Clicks B.V.",
+   "salary": "от 139 847 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "ручное тестирование, удалёнка, BrowserStack, тест-дизайн, интеграции, опыт 4 года",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/qa-analyst-manual-167347",
+   "published": null,
+   "found": "2026-10-20T21:26:52+00:00"
+  },
+  {
+   "id": "hirehi:166682",
+   "source": "hirehi",
+   "title": "QA Engineer (manual)",
+   "company": "Hitachi Energy",
+   "salary": "",
+   "grade": "junior",
+   "format": "гибрид",
+   "city": "Krakow",
+   "score": 2,
+   "match": "manual QA, Agile, SQL, Docker, Kubernetes",
+   "gaps": "automation as main task, Python, energy domain",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-166682",
+   "published": null,
+   "found": "2026-10-20T21:26:54+00:00"
+  },
   {
    "id": "hh:138678827",
    "source": "hh.ru",
