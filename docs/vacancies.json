@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T21:25:41+00:00",
+ "updated": "2026-10-20T00:33:27+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 7,
+  "scored": 2,
   "llm_failed": 0,
-  "sent": 4,
+  "sent": 1,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 11.6,
+  "llm_avg_sec": 17.9,
   "llm_usage_sample": {
-   "prompt_tokens": 2412,
-   "completion_tokens": 1247,
-   "total_tokens": 3659,
+   "prompt_tokens": 2322,
+   "completion_tokens": 774,
+   "total_tokens": 3096,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1151,
+    "reasoning_tokens": 659,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,38 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:164005",
+   "source": "hirehi",
+   "title": "Backend QA engineer (manual)",
+   "company": "Air Apps",
+   "salary": "не указана",
+   "grade": "middle",
+   "format": "офис",
+   "city": "Лиссабон",
+   "score": 2,
+   "match": "Backend manual QA, API testing, PostgreSQL, Postman, Swagger",
+   "gaps": "Node.js, TypeScript, office in Lisbon, relocation",
+   "url": "https://hirehi.ru/qa/backend-qa-engineer-manual-for-planning-software-164005",
+   "published": null,
+   "found": "2026-10-20T00:33:25+00:00"
+  },
+  {
+   "id": "hirehi:163889",
+   "source": "hirehi",
+   "title": "QA engineer (manual)",
+   "company": "Luza Tecnologia",
+   "salary": "не указана",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "manual testing, API, Agile, remote, CI/CD",
+   "gaps": "Salesforce, Azure, Genesys Cloud, English C1",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-163889",
+   "published": null,
+   "found": "2026-10-20T00:33:26+00:00"
+  },
   {
    "id": "hh:138630623",
    "source": "hh.ru",
