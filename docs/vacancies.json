@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T03:27:26+00:00",
+ "updated": "2026-10-21T06:33:07+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 1,
+  "scored": 6,
   "llm_failed": 0,
-  "sent": 1,
+  "sent": 3,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 16.0,
+  "llm_avg_sec": 23.0,
   "llm_usage_sample": {
-   "prompt_tokens": 2369,
-   "completion_tokens": 612,
-   "total_tokens": 2981,
+   "prompt_tokens": 2829,
+   "completion_tokens": 1227,
+   "total_tokens": 4056,
    "prompt_tokens_details": {
-    "cached_tokens": 0,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 489,
+    "reasoning_tokens": 1090,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,102 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138692192",
+   "source": "hh.ru",
+   "title": "QA manual engineer / Инженер по ручному тестированию (Цифровые сервисы)",
+   "company": "YADRO",
+   "salary": "",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "ручное тестирование, удалёнка, цифровые сервисы",
+   "gaps": "нет информации о стеке и задачах",
+   "url": "https://hh.ru/vacancy/138692192",
+   "published": "2026-10-21T09:16:46.729000+03:00",
+   "found": "2026-10-21T06:33:03+00:00"
+  },
+  {
+   "id": "hh:137566845",
+   "source": "hh.ru",
+   "title": "Тестировщик",
+   "company": "АШАН Ритейл Россия",
+   "salary": "",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "",
+   "score": 7,
+   "match": "ручное тестирование, API, e-commerce, ритейл",
+   "gaps": "нет полного описания вакансии",
+   "url": "https://hh.ru/vacancy/137566845",
+   "published": "2026-10-21T09:09:43.045000+03:00",
+   "found": "2026-10-21T06:33:04+00:00"
+  },
+  {
+   "id": "hh:136079025",
+   "source": "hh.ru",
+   "title": "Руководитель группы тестирования",
+   "company": "Дром",
+   "salary": "",
+   "grade": "Senior/Lead",
+   "format": "гибрид",
+   "city": "",
+   "score": 2,
+   "match": "опыт тестирования, API, SQL, микросервисы",
+   "gaps": "руководство, управление командой, планирование",
+   "url": "https://hh.ru/vacancy/136079025",
+   "published": "2026-10-21T06:56:27.949000+03:00",
+   "found": "2026-10-21T06:33:06+00:00"
+  },
+  {
+   "id": "hirehi:167753",
+   "source": "hirehi",
+   "title": "инженер-тестировщик (manual) финансовых приложений",
+   "company": "Центр финансовых технологий",
+   "salary": "",
+   "grade": "junior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, SQL, регрессионное тестирование, CI, баг-трекинг, тестовая документация",
+   "gaps": "автоматизация на Java, Java, 50% автотестов",
+   "url": "https://hirehi.ru/qa/inzhener-testirovshchik-manual-finansovykh-prilozhenii-167753",
+   "published": null,
+   "found": "2026-10-21T06:33:06+00:00"
+  },
+  {
+   "id": "hirehi:167747",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in creator marketing",
+   "company": "Insense",
+   "salary": "",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "Manual QA, API testing, SQL, Postman, logs investigation, remote, middle grade",
+   "gaps": "AI tools experience, EST time zone availability",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-creator-marketing-167747",
+   "published": null,
+   "found": "2026-10-21T06:33:06+00:00"
+  },
+  {
+   "id": "hirehi:167736",
+   "source": "hirehi",
+   "title": "qa тестировщик (manual) карточного процессинга",
+   "company": "Т1",
+   "salary": "",
+   "grade": "lead",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "manual QA, удалёнка, Postman, SQL, Jira, Linux, ELK",
+   "gaps": "опыт процессинга, ISO 8583/20022, Compass Plus/Way4, TestLink, SoapUI",
+   "url": "https://hirehi.ru/qa/qa-testirovshchik-manual-kartochnogo-protsessinga-167736",
+   "published": null,
+   "found": "2026-10-21T06:33:07+00:00"
+  },
   {
    "id": "hirehi:167712",
    "source": "hirehi",
