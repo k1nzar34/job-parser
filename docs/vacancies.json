@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T15:30:49+00:00",
+ "updated": "2026-10-21T18:28:59+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 14,
+  "scored": 6,
   "llm_failed": 0,
   "sent": 5,
   "llm_errors": [],
@@ -22,11 +22,11 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 12.6,
+  "llm_avg_sec": 11.5,
   "llm_usage_sample": {
-   "prompt_tokens": 2614,
-   "completion_tokens": 1436,
-   "total_tokens": 4050,
+   "prompt_tokens": 2782,
+   "completion_tokens": 1274,
+   "total_tokens": 4056,
    "prompt_tokens_details": {
     "cached_tokens": 1280,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1313,
+    "reasoning_tokens": 1156,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,102 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138723308",
+   "source": "hh.ru",
+   "title": "QA Manual",
+   "company": "ATI.SU",
+   "salary": "",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "",
+   "score": 9,
+   "match": "ручное и API-тестирование, SQL, Postman, микросервисы",
+   "gaps": "",
+   "url": "https://hh.ru/vacancy/138723308",
+   "published": "2026-10-21T19:30:28.044000+03:00",
+   "found": "2026-10-21T18:28:52+00:00"
+  },
+  {
+   "id": "hh:138722986",
+   "source": "hh.ru",
+   "title": "Тестировщик junior+ / middle",
+   "company": "ОНИН",
+   "salary": "",
+   "grade": "Junior+ / Middle",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 8,
+   "match": "ручное и API-тестирование, микросервисы, e-commerce",
+   "gaps": "",
+   "url": "https://hh.ru/vacancy/138722986",
+   "published": "2026-10-21T18:56:13.485000+03:00",
+   "found": "2026-10-21T18:28:54+00:00"
+  },
+  {
+   "id": "tg:qajoboffer/2208",
+   "source": "TG @qajoboffer",
+   "title": "Junior Tester",
+   "company": "EvaTeam",
+   "salary": "от 35 тыс. рублей",
+   "grade": "Junior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "удалёнка, ручное тестирование",
+   "gaps": "зарплата значительно ниже, грейд Junior",
+   "url": "https://t.me/qajoboffer/2208",
+   "published": "2026-10-21T15:44:02+00:00",
+   "found": "2026-10-21T18:28:55+00:00"
+  },
+  {
+   "id": "hirehi:170073",
+   "source": "hirehi",
+   "title": "QA engineer for AI agentic workflows (manual)",
+   "company": "Kake",
+   "salary": "",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "manual testing, API, Postman, regression, bug reports, CI/CD, microservices",
+   "gaps": "AI/LLM workflows, agentic pipelines",
+   "url": "https://hirehi.ru/qa/qa-engineer-for-ai-agentic-workflows-manual-170073",
+   "published": null,
+   "found": "2026-10-21T18:28:55+00:00"
+  },
+  {
+   "id": "hirehi:169984",
+   "source": "hirehi",
+   "title": "Тестировщик (manual)",
+   "company": "ОНИН",
+   "salary": "",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 9,
+   "match": "ручное тестирование, SQL, Postman, Kafka, DevTools, работа с требованиями, релизы",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/testirovshchik-manual-169984",
+   "published": null,
+   "found": "2026-10-21T18:28:56+00:00"
+  },
+  {
+   "id": "hirehi:169978",
+   "source": "hirehi",
+   "title": "QA (manual)",
+   "company": "ATI.SU",
+   "salary": "",
+   "grade": "senior",
+   "format": "гибрид",
+   "city": "Санкт-Петербург",
+   "score": 7,
+   "match": "ручное тестирование, API, SQL, Postman, Swagger, интеграционное тестирование, микросервисы",
+   "gaps": "грейд senior, гибридный формат, другая сфера",
+   "url": "https://hirehi.ru/qa/qa-manual-169978",
+   "published": null,
+   "found": "2026-10-21T18:28:58+00:00"
+  },
   {
    "id": "hh:138722369",
    "source": "hh.ru",
