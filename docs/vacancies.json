@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T03:27:36+00:00",
+ "updated": "2026-10-22T06:33:52+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 1,
+  "scored": 3,
   "llm_failed": 0,
-  "sent": 1,
+  "sent": 0,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 22.1,
+  "llm_avg_sec": 29.0,
   "llm_usage_sample": {
-   "prompt_tokens": 2576,
-   "completion_tokens": 851,
-   "total_tokens": 3427,
+   "prompt_tokens": 1370,
+   "completion_tokens": 696,
+   "total_tokens": 2066,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 751,
+    "reasoning_tokens": 570,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,54 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138733557",
+   "source": "hh.ru",
+   "title": "Тестировщик ПО (Junior QA)",
+   "company": "Управляющая компания Легарис",
+   "salary": "3 000 BYR",
+   "grade": "Junior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, удалёнка",
+   "gaps": "зарплата ниже 120 000 руб",
+   "url": "https://hh.ru/vacancy/138733557",
+   "published": "2026-10-22T08:46:25.525000+03:00",
+   "found": "2026-10-22T06:33:52+00:00"
+  },
+  {
+   "id": "hh:138172294",
+   "source": "hh.ru",
+   "title": "QA Engineer (Python) / Инженер по тестированию",
+   "company": "Инженерный Центр Ядро",
+   "salary": "",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, API, Python",
+   "gaps": "автоматизация как основная задача, не указаны обязанности",
+   "url": "https://hh.ru/vacancy/138172294",
+   "published": "2026-10-22T09:08:31.983000+03:00",
+   "found": "2026-10-22T06:33:52+00:00"
+  },
+  {
+   "id": "hh:138730450",
+   "source": "hh.ru",
+   "title": "Fullstack QA (Java)",
+   "company": "АЙФЭЛЛ",
+   "salary": "",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "",
+   "score": 1,
+   "match": "",
+   "gaps": "Java automation, fullstack QA, автотесты",
+   "url": "https://hh.ru/vacancy/138730450",
+   "published": "2026-10-22T06:33:37.011000+03:00",
+   "found": "2026-10-22T06:33:52+00:00"
+  },
   {
    "id": "hirehi:171632",
    "source": "hirehi",
