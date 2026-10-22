@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T18:28:01+00:00",
+ "updated": "2026-10-22T21:27:23+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 9,
+  "scored": 6,
   "llm_failed": 0,
-  "sent": 4,
+  "sent": 0,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 10.1,
+  "llm_avg_sec": 12.0,
   "llm_usage_sample": {
-   "prompt_tokens": 2516,
-   "completion_tokens": 1734,
-   "total_tokens": 4250,
+   "prompt_tokens": 2736,
+   "completion_tokens": 1632,
+   "total_tokens": 4368,
    "prompt_tokens_details": {
-    "cached_tokens": 1024,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1609,
+    "reasoning_tokens": 1507,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,102 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:174169",
+   "source": "hirehi",
+   "title": "QA-инженер (manual) серверного оборудования",
+   "company": "ЛАНИТ",
+   "salary": "",
+   "grade": "lead",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 2,
+   "match": "manual тестирование SQL Linux Bash/Python CI/CD",
+   "gaps": "серверное оборудование нагрузочное тестирование IPMI/Redfish BMC BIOS работа с железом Lead",
+   "url": "https://hirehi.ru/qa/qa-inzhener-manual-servernogo-oborudovaniia-174169",
+   "published": null,
+   "found": "2026-10-22T21:27:23+00:00"
+  },
+  {
+   "id": "hirehi:174163",
+   "source": "hirehi",
+   "title": "Инженер по тестированию (manual)",
+   "company": "Лантер",
+   "salary": "",
+   "grade": "middle",
+   "format": "офис",
+   "city": "Москва",
+   "score": 3,
+   "match": "ручное тестирование, API, SQL, Postman, Jira, базы данных",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-174163",
+   "published": null,
+   "found": "2026-10-22T21:27:23+00:00"
+  },
+  {
+   "id": "hirehi:174724",
+   "source": "hirehi",
+   "title": "System Test Engineer – Residential Robotics R&D (manual)",
+   "company": "Husqvarna Group",
+   "salary": "",
+   "grade": "senior",
+   "format": "гибрид",
+   "city": "Husqvarna, Швеция",
+   "score": 3,
+   "match": "manual testing, test cases, agile, teamwork",
+   "gaps": "embedded systems, robotics, field testing, senior грейд",
+   "url": "https://hirehi.ru/qa/system-test-engineer-residential-robotics-r-d-manual-174724",
+   "published": null,
+   "found": "2026-10-22T21:27:23+00:00"
+  },
+  {
+   "id": "hirehi:174207",
+   "source": "hirehi",
+   "title": "LQA Game Tester (French)",
+   "company": "Side",
+   "salary": "",
+   "grade": "Junior",
+   "format": "офис",
+   "city": "Braga",
+   "score": 1,
+   "match": "ручное тестирование",
+   "gaps": "игровой опыт, французский язык",
+   "url": "https://hirehi.ru/qa/lqa-game-tester-french-full-time-onsite-manual-174207",
+   "published": null,
+   "found": "2026-10-22T21:27:23+00:00"
+  },
+  {
+   "id": "hirehi:174206",
+   "source": "hirehi",
+   "title": "LQA Game Tester (European Spanish)",
+   "company": "Side",
+   "salary": "",
+   "grade": "Junior",
+   "format": "офис",
+   "city": "Braga",
+   "score": 1,
+   "match": "manual testing",
+   "gaps": "game localization, European Spanish, office in Braga, no API/backend experience",
+   "url": "https://hirehi.ru/qa/lqa-game-tester-european-spanish-full-time-onsite-manual-174206",
+   "published": null,
+   "found": "2026-10-22T21:27:23+00:00"
+  },
+  {
+   "id": "hirehi:175081",
+   "source": "hirehi",
+   "title": "LATAM QA Analyst (Data & ETL) (manual)",
+   "company": "Praxent",
+   "salary": "",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "Manual QA, SQL, QA methodology, Agile",
+   "gaps": "ETL testing, data warehouse, BI testing, T-SQL, senior experience",
+   "url": "https://hirehi.ru/qa/latam-qa-analyst-data-etl-manual-175081",
+   "published": null,
+   "found": "2026-10-22T21:27:23+00:00"
+  },
   {
    "id": "tg:jobforqa/1585",
    "source": "TG @jobforqa",
