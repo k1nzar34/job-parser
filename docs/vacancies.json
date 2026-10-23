@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T15:30:25+00:00",
+ "updated": "2026-10-23T18:28:03+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 7,
+  "scored": 5,
   "llm_failed": 0,
   "sent": 4,
   "llm_errors": [],
@@ -22,11 +22,11 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 13.0,
+  "llm_avg_sec": 12.5,
   "llm_usage_sample": {
-   "prompt_tokens": 2205,
-   "completion_tokens": 1549,
-   "total_tokens": 3754,
+   "prompt_tokens": 2869,
+   "completion_tokens": 1282,
+   "total_tokens": 4151,
    "prompt_tokens_details": {
     "cached_tokens": 1280,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1425,
+    "reasoning_tokens": 1159,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,86 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "tg:qajoboffer/2213",
+   "source": "TG @qajoboffer",
+   "title": "Middle Auto/Manual QA",
+   "company": "Fix Price",
+   "salary": "",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "удалёнка, Middle, ритейл, ручное и API тестирование",
+   "gaps": "возможна высокая доля автоматизации",
+   "url": "https://t.me/qajoboffer/2213",
+   "published": "2026-10-23T15:31:01+00:00",
+   "found": "2026-10-23T18:27:57+00:00"
+  },
+  {
+   "id": "tg:qajobsoffers/2022",
+   "source": "TG @qajobsoffers",
+   "title": "Fullstack QA Engineer",
+   "company": "Сбербанк Страхование",
+   "salary": "от 160 000 ₽",
+   "grade": "Middle",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 8,
+   "match": "ручное тестирование API SQL микросервисы",
+   "gaps": "",
+   "url": "https://t.me/qajobsoffers/2022",
+   "published": "2026-10-23T15:48:01+00:00",
+   "found": "2026-10-23T18:27:59+00:00"
+  },
+  {
+   "id": "tg:jobsearchgod/1024",
+   "source": "TG @jobsearchgod",
+   "title": "QA Full stack инженер",
+   "company": "Selecty",
+   "salary": "от 300 000 до 380 000 руб/мес",
+   "grade": "Middle+",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "Удалёнка, Fullstack QA, ручное и API тестирование, зарплата высокая",
+   "gaps": "",
+   "url": "https://t.me/jobsearchgod/1024",
+   "published": "2026-10-23T15:44:01+00:00",
+   "found": "2026-10-23T18:28:00+00:00"
+  },
+  {
+   "id": "hirehi:177504",
+   "source": "hirehi",
+   "title": "QA engineer (manual)",
+   "company": "",
+   "salary": "~141 970 ₽ ($1500-2000 Gross)",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "REST API, Jira, Confluence, Agile/Scrum, manual QA, удалёнка, зарплата",
+   "gaps": "Xray, AI tools, ISTQB CTFL, English, cloud",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-177504",
+   "published": null,
+   "found": "2026-10-23T18:28:02+00:00"
+  },
+  {
+   "id": "hirehi:177399",
+   "source": "hirehi",
+   "title": "тестировщик 1с (manual)",
+   "company": "ВОДОВОЗ.RU",
+   "salary": "",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 3,
+   "match": "ручное тестирование, регресс, тест-документация, баг-трекинг",
+   "gaps": "опыт работы с 1С, знание конфигураций 1С",
+   "url": "https://hirehi.ru/qa/testirovshchik-1s-manual-177399",
+   "published": null,
+   "found": "2026-10-23T18:28:03+00:00"
+  },
   {
    "id": "hh:138799159",
    "source": "hh.ru",
