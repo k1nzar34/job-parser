@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T18:28:03+00:00",
+ "updated": "2026-10-23T21:25:43+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 5,
+  "scored": 4,
   "llm_failed": 0,
-  "sent": 4,
+  "sent": 1,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 12.5,
+  "llm_avg_sec": 11.2,
   "llm_usage_sample": {
-   "prompt_tokens": 2869,
-   "completion_tokens": 1282,
-   "total_tokens": 4151,
+   "prompt_tokens": 2268,
+   "completion_tokens": 1373,
+   "total_tokens": 3641,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1159,
+    "reasoning_tokens": 1253,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,70 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:178423",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in iGaming",
+   "company": "powertalent (ООО ЦЕНТР НАЦИОНАЛЬНЫХ ИНТЕЛЛЕКТУАЛЬНЫХ СИСТЕМ)",
+   "salary": "",
+   "grade": "senior",
+   "format": "гибрид",
+   "city": "Лиссабон",
+   "score": 4,
+   "match": "ручное тестирование, API, exploratory, risk-based, bug reporting",
+   "gaps": "грейд senior, релокация в Лиссабон, офисные дни, iGaming",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-igaming-178423",
+   "published": null,
+   "found": "2026-10-23T21:25:41+00:00"
+  },
+  {
+   "id": "hirehi:178116",
+   "source": "hirehi",
+   "title": "QA Practice Lead",
+   "company": "Hostinger",
+   "salary": "601 500 ₽",
+   "grade": "Lead",
+   "format": "гибрид",
+   "city": "Вильнюс",
+   "score": 1,
+   "match": "ручное тестирование, CI/CD, частичная автоматизация",
+   "gaps": "лидерский опыт, AI-инструменты, 5+ лет, автоматизация как основа",
+   "url": "https://hirehi.ru/qa/qa-practice-manual-178116",
+   "published": null,
+   "found": "2026-10-23T21:25:41+00:00"
+  },
+  {
+   "id": "hirehi:178150",
+   "source": "hirehi",
+   "title": "QA Engineer (manual)",
+   "company": "BITĖ Lietuva",
+   "salary": "1900-2600 EUR/мес",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Вильнюс",
+   "score": 8,
+   "match": "manual, API testing, Postman, SQL, Agile, risk-based testing",
+   "gaps": "relocation to Vilnius, telco advantage",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-178150",
+   "published": null,
+   "found": "2026-10-23T21:25:41+00:00"
+  },
+  {
+   "id": "hirehi:177956",
+   "source": "hirehi",
+   "title": "Central Technical Operations & Resilience QA (manual)",
+   "company": "Capco",
+   "salary": "",
+   "grade": "lead",
+   "format": "офис",
+   "city": "",
+   "score": 1,
+   "match": "ручное тестирование, API, SQL, логи, Docker, Jenkins",
+   "gaps": "банковский опыт, немецкий язык, batch processing, resilience, lead, офис",
+   "url": "https://hirehi.ru/qa/central-technical-operations-resilience-qa-manual-177956",
+   "published": null,
+   "found": "2026-10-23T21:25:43+00:00"
+  },
   {
    "id": "tg:qajoboffer/2213",
    "source": "TG @qajoboffer",
