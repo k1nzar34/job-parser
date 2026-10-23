@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T12:30:03+00:00",
+ "updated": "2026-10-23T15:30:25+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 11,
+  "scored": 7,
   "llm_failed": 0,
-  "sent": 3,
+  "sent": 4,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 24.5,
+  "llm_avg_sec": 13.0,
   "llm_usage_sample": {
-   "prompt_tokens": 2823,
-   "completion_tokens": 950,
-   "total_tokens": 3773,
+   "prompt_tokens": 2205,
+   "completion_tokens": 1549,
+   "total_tokens": 3754,
    "prompt_tokens_details": {
     "cached_tokens": 1280,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 820,
+    "reasoning_tokens": 1425,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,118 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138799159",
+   "source": "hh.ru",
+   "title": "QA Engineer (manual)",
+   "company": "EcoFinance",
+   "salary": "",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 10,
+   "match": "ручное и API тестирование, удалёнка",
+   "gaps": "",
+   "url": "https://hh.ru/vacancy/138799159",
+   "published": "2026-10-23T17:36:45.873000+03:00",
+   "found": "2026-10-23T15:30:19+00:00"
+  },
+  {
+   "id": "hh:138752517",
+   "source": "hh.ru",
+   "title": "Младший инженер по тестированию",
+   "company": "ЛАНИТ. Департамент корпоративных систем",
+   "salary": "",
+   "grade": "Junior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "удалёнка, ручное тестирование, Junior грейд, крупная компания",
+   "gaps": "не указаны обязанности, стек",
+   "url": "https://hh.ru/vacancy/138752517",
+   "published": "2026-10-23T17:23:31.177000+03:00",
+   "found": "2026-10-23T15:30:21+00:00"
+  },
+  {
+   "id": "hh:138799619",
+   "source": "hh.ru",
+   "title": "Тестировщик 1С (QA-инженер 1С)",
+   "company": "ВОДОВОЗ.RU",
+   "salary": "",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, опыт QA",
+   "gaps": "нет опыта с 1С, другая технология",
+   "url": "https://hh.ru/vacancy/138799619",
+   "published": "2026-10-23T17:55:03.303000+03:00",
+   "found": "2026-10-23T15:30:22+00:00"
+  },
+  {
+   "id": "hh:138796142",
+   "source": "hh.ru",
+   "title": "Старший специалист ИБ по тестированию обновлений безопасности",
+   "company": "Гринатом. ИТ",
+   "salary": "",
+   "grade": "Senior",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 2,
+   "match": "ручное тестирование, API, регресс",
+   "gaps": "нет опыта в ИБ, безопасности, автоматизация скриптов",
+   "url": "https://hh.ru/vacancy/138796142",
+   "published": "2026-10-23T16:26:41.924000+03:00",
+   "found": "2026-10-23T15:30:22+00:00"
+  },
+  {
+   "id": "hirehi:177183",
+   "source": "hirehi",
+   "title": "qa engineer (manual)",
+   "company": "EcoFinance",
+   "salary": "",
+   "grade": "senior",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 6,
+   "match": "Postman, REST API, SQL, тест-дизайн, TestIT, DevTools, регресс, smoke, интеграционное, микросервисы",
+   "gaps": "RabbitMQ, Graylog, финтех, senior грейд",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-177183",
+   "published": null,
+   "found": "2026-10-23T15:30:22+00:00"
+  },
+  {
+   "id": "hirehi:177149",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in fintech",
+   "company": "InvestEngine",
+   "salary": "",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "manual testing, API testing, Postman, SQL, Charles, mobile testing, test design, web, client-server",
+   "gaps": "fintech domain experience not required but possible gap",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-fintech-177149",
+   "published": null,
+   "found": "2026-10-23T15:30:23+00:00"
+  },
+  {
+   "id": "hirehi:176848",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in iGaming",
+   "company": "SkillOnNet",
+   "salary": "",
+   "grade": "senior",
+   "format": "гибрид",
+   "city": "Лиссабон",
+   "score": 2,
+   "match": "Manual QA, API testing, Postman, web/mobile, функциональное тестирование",
+   "gaps": "Senior грейд, релокация, английский, iGaming",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-igaming-176848",
+   "published": null,
+   "found": "2026-10-23T15:30:25+00:00"
+  },
   {
    "id": "habr:1000169485",
    "source": "Хабр Карьера",
