@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T12:27:06+00:00",
+ "updated": "2026-10-24T15:22:43+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -16,17 +16,17 @@
   "resume_set": true,
   "scored": 3,
   "llm_failed": 0,
-  "sent": 2,
+  "sent": 1,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 12.3,
+  "llm_avg_sec": 10.8,
   "llm_usage_sample": {
-   "prompt_tokens": 2528,
-   "completion_tokens": 1878,
-   "total_tokens": 4406,
+   "prompt_tokens": 1388,
+   "completion_tokens": 1271,
+   "total_tokens": 2659,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1746,
+    "reasoning_tokens": 1153,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,54 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138806137",
+   "source": "hh.ru",
+   "title": "QA Fullstack(python)",
+   "company": "Чанов Константин Витальевич",
+   "salary": "170 000 RUR",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "ручное тестирование, API, удалёнка, зарплата, микросервисы, PostgreSQL",
+   "gaps": "обязательные автотесты на Python (предположительно)",
+   "url": "https://hh.ru/vacancy/138806137",
+   "published": "2026-10-24T16:00:50.892000+03:00",
+   "found": "2026-10-24T15:22:42+00:00"
+  },
+  {
+   "id": "hirehi:179158",
+   "source": "hirehi",
+   "title": "QA инженер (manual) информационно-аналитической системы",
+   "company": "",
+   "salary": "от 150 000 ₽",
+   "grade": "Middle",
+   "format": "офис",
+   "city": "Москва",
+   "score": 3,
+   "match": "manual QA, REST API, SQL, Git, Linux, тест-кейсы, баг-репорты",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/qa-inzhener-manual-informatsionno-analiticheskoi-sistemy-179158",
+   "published": null,
+   "found": "2026-10-24T15:22:42+00:00"
+  },
+  {
+   "id": "hirehi:179152",
+   "source": "hirehi",
+   "title": "QA-инженер (manual)",
+   "company": "",
+   "salary": "",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "manual testing, test design, requirements analysis, risk assessment, SDLC/STLC",
+   "gaps": "",
+   "url": "https://hirehi.ru/qa/qa-inzhener-manual-179152",
+   "published": null,
+   "found": "2026-10-24T15:22:42+00:00"
+  },
   {
    "id": "hh:137741434",
    "source": "hh.ru",
