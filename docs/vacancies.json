@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T15:22:42+00:00",
+ "updated": "2026-10-25T18:24:10+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,14 +14,98 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 0,
+  "scored": 4,
   "llm_failed": 0,
-  "sent": 0,
+  "sent": 2,
   "llm_errors": [],
-  "llm_used": null,
+  "llm_used": {
+   "base_url": "https://api.proxyapi.ru/v1",
+   "model": "deepseek/deepseek-v4-flash"
+  },
+  "llm_avg_sec": 9.9,
+  "llm_usage_sample": {
+   "prompt_tokens": 2673,
+   "completion_tokens": 1232,
+   "total_tokens": 3905,
+   "prompt_tokens_details": {
+    "cached_tokens": 1280,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1115,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "tg:qajoboffer/2215",
+   "source": "TG @qajoboffer",
+   "title": "Инженер по тестированию",
+   "company": "Selecty",
+   "salary": "от 270 300 до 305 400 рублей",
+   "grade": "Middle",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 8,
+   "match": "ручное тестирование, API, гибкий график, высокая зарплата",
+   "gaps": "неизвестны конкретные задачи и стек",
+   "url": "https://t.me/qajoboffer/2215",
+   "published": "2026-10-25T15:55:08+00:00",
+   "found": "2026-10-25T18:24:07+00:00"
+  },
+  {
+   "id": "tg:qajobsoffers/2024",
+   "source": "TG @qajobsoffers",
+   "title": "QAA на Java",
+   "company": "Top Selection",
+   "salary": "от 180 000 до 190 000 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 1,
+   "match": "",
+   "gaps": "Java automation, not manual QA",
+   "url": "https://t.me/qajobsoffers/2024",
+   "published": "2026-10-25T15:38:02+00:00",
+   "found": "2026-10-25T18:24:09+00:00"
+  },
+  {
+   "id": "tg:jobsearchgod/1025",
+   "source": "TG @jobsearchgod",
+   "title": "Manual QA Engineer",
+   "company": "Новэлект",
+   "salary": "от 150 000 до 188 000 ₽",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "ручное тестирование API удалёнка зарплата middle Postman SQL Docker Kafka",
+   "gaps": "",
+   "url": "https://t.me/jobsearchgod/1025",
+   "published": "2026-10-25T15:43:01+00:00",
+   "found": "2026-10-25T18:24:09+00:00"
+  },
+  {
+   "id": "hirehi:179966",
+   "source": "hirehi",
+   "title": "QA engineer (manual) в igaming",
+   "company": "Made of Storm",
+   "salary": "от 161 076 ₽",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "manual QA, API, remote, salary above 120k",
+   "gaps": "no iGaming exp, load testing, game math, senior",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-v-igaming-179966",
+   "published": null,
+   "found": "2026-10-25T18:24:10+00:00"
+  },
   {
    "id": "tg:jobforqa/1588",
    "source": "TG @jobforqa",
