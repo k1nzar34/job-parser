@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T03:29:28+00:00",
+ "updated": "2026-10-26T06:37:26+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,14 +14,84 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 0,
-  "llm_failed": 0,
-  "sent": 0,
-  "llm_errors": [],
-  "llm_used": null,
-  "left_for_next_run": 0
+  "scored": 3,
+  "llm_failed": 1,
+  "sent": 1,
+  "llm_errors": [
+   "JSONDecodeError: Extra data: line 1 column 318 (char 317)"
+  ],
+  "llm_used": {
+   "base_url": "https://api.proxyapi.ru/v1",
+   "model": "deepseek/deepseek-v4-flash"
+  },
+  "llm_avg_sec": 9.7,
+  "llm_usage_sample": {
+   "prompt_tokens": 2954,
+   "completion_tokens": 891,
+   "total_tokens": 3845,
+   "prompt_tokens_details": {
+    "cached_tokens": 2363,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 765,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "left_for_next_run": 1
  },
  "vacancies": [
+  {
+   "id": "hh:137463853",
+   "source": "hh.ru",
+   "title": "Тестировщик",
+   "company": "Сбербанк АСТ",
+   "salary": "",
+   "grade": "неясно",
+   "format": "гибрид",
+   "city": "",
+   "score": 6,
+   "match": "e-commerce, ручное и API-тестирование, гибрид",
+   "gaps": "не указаны требования и обязанности",
+   "url": "https://hh.ru/vacancy/137463853",
+   "published": "2026-10-26T09:06:51.979000+03:00",
+   "found": "2026-10-26T06:37:25+00:00"
+  },
+  {
+   "id": "hirehi:180370",
+   "source": "hirehi",
+   "title": "тестировщик (manual) видеоигр с русским языком",
+   "company": "Keywords Studios",
+   "salary": "",
+   "grade": "Middle",
+   "format": "офис",
+   "city": "Дублин",
+   "score": 2,
+   "match": "ручное тестирование, регрессионное тестирование, поиск ошибок",
+   "gaps": "опыт тестирования видеоигр, локализация, офис в Дублине без удалёнки",
+   "url": "https://hirehi.ru/qa/testirovshchik-manual-videoigr-s-russkim-iazykom-180370",
+   "published": null,
+   "found": "2026-10-26T06:37:26+00:00"
+  },
+  {
+   "id": "hirehi:180310",
+   "source": "hirehi",
+   "title": "QA-специалист (manual) в банковском процессинге",
+   "company": "Национальный межбанковский процессинговый центр",
+   "salary": "не указана",
+   "grade": "Senior",
+   "format": "офис",
+   "city": "Ташкент",
+   "score": 2,
+   "match": "ручное тестирование, API, SQL, микросервисы, банковский процессинг, мобильное тестирование",
+   "gaps": "только офис, Ташкент, грейд Senior, участие в автотестах",
+   "url": "https://hirehi.ru/qa/qa-spetsialist-manual-v-bankovskom-protsessinge-180310",
+   "published": null,
+   "found": "2026-10-26T06:37:26+00:00"
+  },
   {
    "id": "tg:qajoboffer/2215",
    "source": "TG @qajoboffer",
