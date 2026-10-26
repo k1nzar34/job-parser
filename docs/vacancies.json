@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T15:59:47+00:00",
+ "updated": "2026-10-26T18:38:14+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 9,
+  "scored": 1,
   "llm_failed": 0,
-  "sent": 3,
+  "sent": 0,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 12.3,
+  "llm_avg_sec": 14.1,
   "llm_usage_sample": {
-   "prompt_tokens": 1456,
-   "completion_tokens": 1770,
-   "total_tokens": 3226,
+   "prompt_tokens": 2303,
+   "completion_tokens": 1104,
+   "total_tokens": 3407,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1678,
+    "reasoning_tokens": 995,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,22 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:183359",
+   "source": "hirehi",
+   "title": "QA tester in game development (manual)",
+   "company": "Sloclap",
+   "salary": "",
+   "grade": "Middle",
+   "format": "гибрид",
+   "city": "Париж",
+   "score": 2,
+   "match": "manual testing, regression, functional, bug tracking, test plans",
+   "gaps": "game development, Unreal Engine, English fluency, Paris relocation",
+   "url": "https://hirehi.ru/qa/qa-tester-in-game-development-manual-183359",
+   "published": null,
+   "found": "2026-10-26T18:38:14+00:00"
+  },
   {
    "id": "hh:129947738",
    "source": "hh.ru",
