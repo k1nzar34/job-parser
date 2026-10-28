@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T21:29:04+00:00",
+ "updated": "2026-10-28T00:41:22+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 3,
+  "scored": 1,
   "llm_failed": 0,
   "sent": 0,
   "llm_errors": [],
@@ -22,11 +22,11 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 9.8,
+  "llm_avg_sec": 10.9,
   "llm_usage_sample": {
-   "prompt_tokens": 2293,
-   "completion_tokens": 1405,
-   "total_tokens": 3698,
+   "prompt_tokens": 2810,
+   "completion_tokens": 979,
+   "total_tokens": 3789,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1281,
+    "reasoning_tokens": 867,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,22 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:188025",
+   "source": "hirehi",
+   "title": "Инженер по ручному тестированию (manual)",
+   "company": "МТС",
+   "salary": "",
+   "grade": "Senior/Lead",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 3,
+   "match": "ручное тестирование Android, мобильные приложения, Allure, TMS, логи",
+   "gaps": "нет опыта AOSP, системных драйверов, виртуализации, глубокой архитектуры ОС",
+   "url": "https://hirehi.ru/qa/inzhener-po-ruchnomu-testirovaniiu-manual-188025",
+   "published": null,
+   "found": "2026-10-28T00:41:22+00:00"
+  },
   {
    "id": "hirehi:187615",
    "source": "hirehi",
@@ -16025,22 +16041,6 @@
    "url": "https://hh.ru/vacancy/137570407",
    "published": "2026-10-12T12:38:45.885000+03:00",
    "found": "2026-10-13T00:49:13+00:00"
-  },
-  {
-   "id": "hh:138364560",
-   "source": "hh.ru",
-   "title": "QA Engineer manual",
-   "company": "eXpress",
-   "salary": "",
-   "grade": "неясно",
-   "format": "удалёнка",
-   "city": "",
-   "score": 8,
-   "match": "ручное тестирование, удалёнка, manual QA",
-   "gaps": "не указаны обязанности, стек",
-   "url": "https://hh.ru/vacancy/138364560",
-   "published": "2026-10-12T12:16:33.944000+03:00",
-   "found": "2026-10-13T00:49:14+00:00"
   }
  ]
 }
