@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T18:39:21+00:00",
+ "updated": "2026-10-28T21:32:32+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 4,
+  "scored": 3,
   "llm_failed": 0,
   "sent": 1,
   "llm_errors": [],
@@ -22,11 +22,11 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 10.6,
+  "llm_avg_sec": 9.7,
   "llm_usage_sample": {
-   "prompt_tokens": 2674,
-   "completion_tokens": 1265,
-   "total_tokens": 3939,
+   "prompt_tokens": 2403,
+   "completion_tokens": 1759,
+   "total_tokens": 4162,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1146,
+    "reasoning_tokens": 1640,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,54 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:191175",
+   "source": "hirehi",
+   "title": "Compliance & Quality Assurance Specialist (manual)",
+   "company": "Rakuten",
+   "salary": "не указана",
+   "grade": "Junior",
+   "format": "офис",
+   "city": "Лондон",
+   "score": 1,
+   "match": "Manual QA, финансовые услуги, внимание к деталям, работа с данными",
+   "gaps": "Compliance/account management вместо QA, офис Лондон, MS Office, без удалёнки",
+   "url": "https://hirehi.ru/qa/compliance-quality-assurance-specialist-manual-191175",
+   "published": null,
+   "found": "2026-10-28T21:32:31+00:00"
+  },
+  {
+   "id": "hirehi:190864",
+   "source": "hirehi",
+   "title": "QA engineer (manual) for high-load platforms",
+   "company": "Digis",
+   "salary": "",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "Manual QA, REST API, SQL, web testing, high-load",
+   "gaps": "Требуется senior, 5+ лет, английский B2",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-high-load-platforms-190864",
+   "published": null,
+   "found": "2026-10-28T21:32:31+00:00"
+  },
+  {
+   "id": "hirehi:190607",
+   "source": "hirehi",
+   "title": "Test Engineer - Manual 4G/5G - Tieto Tech Consulting (manual)",
+   "company": "Tieto",
+   "salary": "",
+   "grade": "Junior",
+   "format": "гибрид",
+   "city": "",
+   "score": 5,
+   "match": "Manual QA, junior, обучение, удалёнка/гибрид, зп не указана",
+   "gaps": "нет опыта 5G, телеком, RF, IP-сетей",
+   "url": "https://hirehi.ru/qa/test-engineer-manual-4g-5g-tieto-tech-consulting-manual-190607",
+   "published": null,
+   "found": "2026-10-28T21:32:32+00:00"
+  },
   {
    "id": "hirehi:190200",
    "source": "hirehi",
@@ -15993,54 +16041,6 @@
    "url": "https://hirehi.ru/qa/testirovshchik-manual-ekosistemy-saby-107548",
    "published": null,
    "found": "2026-10-13T01:01:24+00:00"
-  },
-  {
-   "id": "hirehi:107490",
-   "source": "hirehi",
-   "title": "QA инженер (manual) банковских сервисов",
-   "company": "Сбер",
-   "salary": "не указана",
-   "grade": "Middle",
-   "format": "офис",
-   "city": "Москва",
-   "score": 3,
-   "match": "ручное тестирование, API, SQL, Kafka, Kubernetes, Charles, DevTools, микросервисы, регресс, тест-дизайн",
-   "gaps": "React/JS UI, Insomnia, HAR, OpenShift, Java backend, автотесты Java",
-   "url": "https://hirehi.ru/qa/qa-inzhener-manual-bankovskikh-servisov-107490",
-   "published": null,
-   "found": "2026-10-13T01:01:25+00:00"
-  },
-  {
-   "id": "hirehi:107423",
-   "source": "hirehi",
-   "title": "Инженер по тестированию (manual)",
-   "company": "Ozon",
-   "salary": "",
-   "grade": "Middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 7,
-   "match": "manual QA, мобильные Android-приложения, REST API, регресс, логи",
-   "gaps": "adb logcat, парк физических устройств, OTA/прошивки, broadcast API",
-   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-107423",
-   "published": null,
-   "found": "2026-10-13T01:01:25+00:00"
-  },
-  {
-   "id": "hirehi:107410",
-   "source": "hirehi",
-   "title": "QA Engineer (manual) для SmartTV",
-   "company": "Виасат Тех",
-   "salary": "120 000 ₽",
-   "grade": "Middle",
-   "format": "гибрид",
-   "city": "Москва",
-   "score": 7,
-   "match": "ручное тестирование web и mobile, тест-дизайн, чек-листы, баг-трекинг",
-   "gaps": "нет опыта SmartTV, гибрид в Москве",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-dlia-smarttv-107410",
-   "published": null,
-   "found": "2026-10-13T01:01:26+00:00"
   }
  ]
 }
