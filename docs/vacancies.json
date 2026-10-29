@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T21:32:32+00:00",
+ "updated": "2026-10-29T04:58:22+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 3,
+  "scored": 1,
   "llm_failed": 0,
-  "sent": 1,
+  "sent": 0,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 9.7,
+  "llm_avg_sec": 21.4,
   "llm_usage_sample": {
-   "prompt_tokens": 2403,
-   "completion_tokens": 1759,
-   "total_tokens": 4162,
+   "prompt_tokens": 1352,
+   "completion_tokens": 949,
+   "total_tokens": 2301,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1640,
+    "reasoning_tokens": 1164,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,22 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138948221",
+   "source": "hh.ru",
+   "title": "Fullstack QA (Java)",
+   "company": "IBS",
+   "salary": "",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "удалёнка, fullstack QA",
+   "gaps": "автоматизация Java, не ручное тестирование",
+   "url": "https://hh.ru/vacancy/138948221",
+   "published": "2026-10-29T07:07:24.355000+03:00",
+   "found": "2026-10-29T04:58:22+00:00"
+  },
   {
    "id": "hirehi:191175",
    "source": "hirehi",
@@ -16025,22 +16041,6 @@
    "url": "https://hirehi.ru/qa/testirovshchik-kreativov-i-prelendingov-manual-107615",
    "published": null,
    "found": "2026-10-13T00:58:20+00:00"
-  },
-  {
-   "id": "hirehi:107548",
-   "source": "hirehi",
-   "title": "тестировщик (manual) экосистемы Saby",
-   "company": "Тензор",
-   "salary": "",
-   "grade": "junior",
-   "format": "удалёнка",
-   "city": "",
-   "score": 8,
-   "match": "ручное тестирование, тест-дизайн, регресс, исследовательское, баг-репорты",
-   "gaps": "",
-   "url": "https://hirehi.ru/qa/testirovshchik-manual-ekosistemy-saby-107548",
-   "published": null,
-   "found": "2026-10-13T01:01:24+00:00"
   }
  ]
 }
