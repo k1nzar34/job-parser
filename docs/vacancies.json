@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-31T04:45:01+00:00",
+ "updated": "2026-10-31T11:55:07+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
    "hh.ru": 100,
    "TG @jobforqa": 20,
-   "TG @qajoboffer": 19,
+   "TG @qajoboffer": 20,
    "TG @qajobsoffers": 20,
    "TG @jobsearchgod": 20,
    "TG @remoteeverafter": 17,
@@ -14,19 +14,21 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 1,
-  "llm_failed": 0,
-  "sent": 0,
-  "llm_errors": [],
+  "scored": 5,
+  "llm_failed": 1,
+  "sent": 2,
+  "llm_errors": [
+   "пустой ответ: finish=length usage={'prompt_tokens': 2622, 'completion_tokens': 3000, 'total_tokens': 5622, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3207, 'image_tokens': 0, 'audio_tokens': 0}}"
+  ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 30.2,
+  "llm_avg_sec": 16.4,
   "llm_usage_sample": {
-   "prompt_tokens": 2446,
-   "completion_tokens": 1020,
-   "total_tokens": 3466,
+   "prompt_tokens": 2622,
+   "completion_tokens": 3000,
+   "total_tokens": 5622,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,14 +36,94 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 971,
+    "reasoning_tokens": 3207,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 0
+  "left_for_next_run": 1
  },
  "vacancies": [
+  {
+   "id": "hh:139026565",
+   "source": "hh.ru",
+   "title": "Senior QA Engineer",
+   "company": "COMTEK Inc.",
+   "salary": "5 500 – 6 000 USD",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "удалёнка, QA Engineer",
+   "gaps": "грейд Senior, не указаны обязанности",
+   "url": "https://hh.ru/vacancy/139026565",
+   "published": "2026-10-31T13:31:50.998000+03:00",
+   "found": "2026-10-31T11:55:05+00:00"
+  },
+  {
+   "id": "tg:jobforqa/1601",
+   "source": "TG @jobforqa",
+   "title": "Middle Manual QA Engineer",
+   "company": "Arcsinus",
+   "salary": "",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "Manual QA, удалёнка, Middle, полная занятость",
+   "gaps": "",
+   "url": "https://t.me/jobforqa/1601",
+   "published": "2026-10-31T07:00:00+00:00",
+   "found": "2026-10-31T11:55:05+00:00"
+  },
+  {
+   "id": "hirehi:199653",
+   "source": "hirehi",
+   "title": "QA manager (manual) for growth products",
+   "company": "Natural Cycles",
+   "salary": "",
+   "grade": "Lead",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "удалёнка, manual QA, growth продукты, QA стратегия",
+   "gaps": "опыт управления командой, Lead грейд, автоматизация, AI, коммерческие воронки",
+   "url": "https://hirehi.ru/qa/qa-manager-manual-for-growth-products-199653",
+   "published": null,
+   "found": "2026-10-31T11:55:06+00:00"
+  },
+  {
+   "id": "hirehi:199515",
+   "source": "hirehi",
+   "title": "qa engineer (manual) for e-commerce",
+   "company": "DigitalSuits",
+   "salary": "зп не указана",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "manual QA, e-commerce, web testing, API, remote, middle",
+   "gaps": "AI-powered QA automation, English Upper-Intermediate",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-e-commerce-199515",
+   "published": null,
+   "found": "2026-10-31T11:55:06+00:00"
+  },
+  {
+   "id": "hirehi:199485",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in live sports data",
+   "company": "GamblingCareers.com",
+   "salary": "",
+   "grade": "senior",
+   "format": "офис",
+   "city": "Варшава",
+   "score": 2,
+   "match": "manual QA, API testing, SQL, data validation, exploratory testing",
+   "gaps": "офис Варшава, senior, sports betting, Java, AI tools",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-live-sports-data-199485",
+   "published": null,
+   "found": "2026-10-31T11:55:07+00:00"
+  },
   {
    "id": "hirehi:199379",
    "source": "hirehi",
@@ -15961,86 +16043,6 @@
    "url": "https://hh.ru/vacancy/138447055",
    "published": "2026-10-13T19:18:44.151000+03:00",
    "found": "2026-10-13T18:23:34+00:00"
-  },
-  {
-   "id": "hh:138446302",
-   "source": "hh.ru",
-   "title": "QA Specialist(ERP)",
-   "company": "Коде Лаб",
-   "salary": "",
-   "grade": "неясно",
-   "format": "гибрид",
-   "city": "",
-   "score": 4,
-   "match": "QA-позиция, гибрид, ручное/API тестирование",
-   "gaps": "ERP-домен, нет требований и зарплаты",
-   "url": "https://hh.ru/vacancy/138446302",
-   "published": "2026-10-13T18:25:11.058000+03:00",
-   "found": "2026-10-13T18:23:34+00:00"
-  },
-  {
-   "id": "tg:jobforqa/1557",
-   "source": "TG @jobforqa",
-   "title": "Junior QA / ручной тестировщик",
-   "company": "IT Atlasnet",
-   "salary": "до 80 000 ₽",
-   "grade": "Junior",
-   "format": "офис",
-   "city": "Москва",
-   "score": 2,
-   "match": "ручное тестирование, API, Postman, SQL, опыт подходит",
-   "gaps": "зарплата ниже 120 000, только офис, нет удалёнки",
-   "url": "https://t.me/jobforqa/1557",
-   "published": "2026-10-13T15:45:43+00:00",
-   "found": "2026-10-13T18:23:34+00:00"
-  },
-  {
-   "id": "tg:qajoboffer/2175",
-   "source": "TG @qajoboffer",
-   "title": "Full Stack QA",
-   "company": "HR Prime",
-   "salary": "от 200 тыс. рублей",
-   "grade": "Middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 8,
-   "match": "Fullstack QA, удалёнка, высокая ЗП, опыт backend/API",
-   "gaps": "",
-   "url": "https://t.me/qajoboffer/2175",
-   "published": "2026-10-13T15:29:01+00:00",
-   "found": "2026-10-13T18:23:34+00:00"
-  },
-  {
-   "id": "tg:qajobsoffers/2001",
-   "source": "TG @qajobsoffers",
-   "title": "QA Fullstack Mobile Java",
-   "company": "",
-   "salary": "от 250 000 до 280 000 ₽",
-   "grade": "Middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 2,
-   "match": "удалёнка, зарплата, мобильное тестирование, fullstack",
-   "gaps": "Java, автоматизация как основная задача",
-   "url": "https://t.me/qajobsoffers/2001",
-   "published": "2026-10-13T15:59:01+00:00",
-   "found": "2026-10-13T18:23:36+00:00"
-  },
-  {
-   "id": "finder:36878588",
-   "source": "Finder",
-   "title": "Junior QA Engineer",
-   "company": "Квитто",
-   "salary": "90 000 - 110 000 ₽",
-   "grade": "Junior",
-   "format": "удалёнка",
-   "city": "",
-   "score": 3,
-   "match": "Postman, SQL, REST API, DevTools, Jira, Git, ручное тестирование",
-   "gaps": "FinTech, платежи, 54-ФЗ, зарплата ниже 120k",
-   "url": "https://finder.work/vacancies/36878588",
-   "published": null,
-   "found": "2026-10-13T18:23:36+00:00"
   }
  ]
 }
