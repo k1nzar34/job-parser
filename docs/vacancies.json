@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T05:05:30+00:00",
+ "updated": "2026-11-01T12:53:43+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,14 +14,66 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 0,
+  "scored": 2,
   "llm_failed": 0,
   "sent": 0,
   "llm_errors": [],
-  "llm_used": null,
+  "llm_used": {
+   "base_url": "https://api.proxyapi.ru/v1",
+   "model": "deepseek/deepseek-v4-flash"
+  },
+  "llm_avg_sec": 12.8,
+  "llm_usage_sample": {
+   "prompt_tokens": 2761,
+   "completion_tokens": 1151,
+   "total_tokens": 3912,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1040,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:200561",
+   "source": "hirehi",
+   "title": "Инженер по тестированию (manual) банковских продуктов",
+   "company": "Перфоманс Лаб",
+   "salary": "до 100 000 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "manual testing, SQL, Kafka, remote, middle grade",
+   "gaps": "salary below 120k, no OpenShift exp",
+   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-bankovskikh-produktov-200561",
+   "published": null,
+   "found": "2026-11-01T12:53:43+00:00"
+  },
+  {
+   "id": "hirehi:200542",
+   "source": "hirehi",
+   "title": "тестировщик сервисов процессинга (manual)",
+   "company": "Всероссийский Банк Развития Регионов",
+   "salary": "до 200 000 ₽",
+   "grade": "senior",
+   "format": "офис",
+   "city": "Москва",
+   "score": 2,
+   "match": "ручное тестирование SQL Postman Jira Confluence регресс",
+   "gaps": "Kotlin PL/SQL банковский домен офис senior",
+   "url": "https://hirehi.ru/qa/testirovshchik-servisov-protsessinga-manual-200542",
+   "published": null,
+   "found": "2026-11-01T12:53:43+00:00"
+  },
   {
    "id": "tg:qajoboffer/2226",
    "source": "TG @qajoboffer",
@@ -15989,38 +16041,6 @@
    "url": "https://hirehi.ru/qa/quality-assurance-engineer-manual-111614",
    "published": null,
    "found": "2026-10-14T00:33:19+00:00"
-  },
-  {
-   "id": "hirehi:109845",
-   "source": "hirehi",
-   "title": "Quality Assurance Engineer (manual)",
-   "company": "Elekta",
-   "salary": "не указана",
-   "grade": "Middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 8,
-   "match": "Manual QA, удалёнка, middle, регресс, процессы, инженерная практика",
-   "gaps": "не указан стек, нет данных о задачах/API",
-   "url": "https://hirehi.ru/qa/quality-assurance-engineer-manual-109845",
-   "published": null,
-   "found": "2026-10-14T00:33:19+00:00"
-  },
-  {
-   "id": "hirehi:109876",
-   "source": "hirehi",
-   "title": "Quality Assurance Manager - Discovery & Consideration (manual)",
-   "company": "ABOUT YOU SE & Co. KG",
-   "salary": "",
-   "grade": "Senior",
-   "format": "удалёнка",
-   "city": "",
-   "score": 7,
-   "match": "Manual QA, мобильное тестирование, e-commerce, Jira/Confluence, регресс, тест-дизайн",
-   "gaps": "Требуется TestRail, опыт 3+ года, senior, автоматизация в требованиях",
-   "url": "https://hirehi.ru/qa/quality-assurance-manager-discovery-consideration-manual-109876",
-   "published": null,
-   "found": "2026-10-14T00:33:21+00:00"
   }
  ]
 }
