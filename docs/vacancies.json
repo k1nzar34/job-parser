@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T19:28:55+00:00",
+ "updated": "2026-11-02T00:25:36+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,21 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 6,
-  "llm_failed": 1,
-  "sent": 2,
-  "llm_errors": [
-   "ReadTimeout: HTTPSConnectionPool(host='api.proxyapi.ru', port=443): Read timed out. (read timeout=180)"
-  ],
+  "scored": 1,
+  "llm_failed": 0,
+  "sent": 0,
+  "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 72.9,
+  "llm_avg_sec": 13.0,
   "llm_usage_sample": {
-   "prompt_tokens": 1441,
-   "completion_tokens": 911,
-   "total_tokens": 2352,
+   "prompt_tokens": 2478,
+   "completion_tokens": 1358,
+   "total_tokens": 3836,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -36,14 +34,30 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 911,
+    "reasoning_tokens": 1612,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 1
+  "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:200717",
+   "source": "hirehi",
+   "title": "QA engineer (manual)",
+   "company": "OneDome",
+   "salary": "~ 100 696 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "manual QA, REST API, functional testing, regression testing, test documentation, client-server architecture",
+   "gaps": "English Upper-Intermediate, Business Analyst experience, Cypress, location Ukraine/Azerbaijan",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-200717",
+   "published": null,
+   "found": "2026-11-02T00:25:36+00:00"
+  },
   {
    "id": "hh:132808186",
    "source": "hh.ru",
@@ -16025,22 +16039,6 @@
    "match": "ручное тестирование, тест-дизайн, API, JSON, TMS, работа с логами",
    "gaps": "опыт с голосовыми AI, LLM, разметка данных, зарплата ниже 120 000",
    "url": "https://hirehi.ru/qa/qa-inzhener-manual-golosovogo-ai-agenta-108308",
-   "published": null,
-   "found": "2026-10-14T00:32:12+00:00"
-  },
-  {
-   "id": "hirehi:108299",
-   "source": "hirehi",
-   "title": "qa engineer (manual) мобильных игр",
-   "company": "BarHat Games",
-   "salary": "~ 50 000 ₽",
-   "grade": "junior",
-   "format": "удалёнка",
-   "city": "",
-   "score": 2,
-   "match": "Удалёнка, manual QA, мобильное тестирование, Jira, Git, тест-кейсы",
-   "gaps": "Зарплата 50k, игровая специфика, junior, нет API/backend",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-mobil-nykh-igr-108299",
    "published": null,
    "found": "2026-10-14T00:32:12+00:00"
   }
