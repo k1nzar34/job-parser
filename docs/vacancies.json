@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T21:34:11+00:00",
+ "updated": "2026-11-03T05:53:16+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 42,
+  "scored": 1,
   "llm_failed": 0,
-  "sent": 18,
+  "sent": 1,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 9.8,
+  "llm_avg_sec": 16.8,
   "llm_usage_sample": {
-   "prompt_tokens": 2882,
-   "completion_tokens": 860,
-   "total_tokens": 3742,
+   "prompt_tokens": 1352,
+   "completion_tokens": 835,
+   "total_tokens": 2187,
    "prompt_tokens_details": {
-    "cached_tokens": 1024,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 731,
+    "reasoning_tokens": 1004,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,22 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:139090956",
+   "source": "hh.ru",
+   "title": "QA manual",
+   "company": "Koronatech",
+   "salary": "",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 6,
+   "match": "Manual QA, удалёнка, опыт 4 года",
+   "gaps": "Нет описания требований и стека",
+   "url": "https://hh.ru/vacancy/139090956",
+   "published": "2026-11-03T08:28:56.610000+03:00",
+   "found": "2026-11-03T05:53:15+00:00"
+  },
   {
    "id": "hh:136176829",
    "source": "hh.ru",
@@ -16024,22 +16040,6 @@
    "gaps": "Java автоматизация, нет ручного тестирования",
    "url": "https://t.me/jobsearchgod/1016",
    "published": "2026-10-14T12:24:01+00:00",
-   "found": "2026-10-14T12:33:51+00:00"
-  },
-  {
-   "id": "hirehi:136134",
-   "source": "hirehi",
-   "title": "backend tester (manual) for saas products",
-   "company": "PROJECTS (GK Consulting)",
-   "salary": "от 70 000 ₽",
-   "grade": "middle",
-   "format": "офис",
-   "city": "Ташкент",
-   "score": 2,
-   "match": "backend/API тестирование, Postman, SQL, REST API",
-   "gaps": "офис в Ташкенте, зарплата ниже 120 000 ₽",
-   "url": "https://hirehi.ru/qa/backend-tester-manual-for-saas-products-136134",
-   "published": null,
    "found": "2026-10-14T12:33:51+00:00"
   }
  ]
