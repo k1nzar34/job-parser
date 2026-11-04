@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T20:51:38+00:00",
+ "updated": "2026-11-04T01:07:14+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,27 +14,27 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 30,
+  "scored": 2,
   "llm_failed": 0,
-  "sent": 13,
+  "sent": 0,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 8.5,
+  "llm_avg_sec": 9.7,
   "llm_usage_sample": {
-   "prompt_tokens": 2726,
-   "completion_tokens": 639,
-   "total_tokens": 3365,
+   "prompt_tokens": 2389,
+   "completion_tokens": 464,
+   "total_tokens": 2853,
    "prompt_tokens_details": {
-    "cached_tokens": 0,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 512,
+    "reasoning_tokens": 348,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,38 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:207716",
+   "source": "hirehi",
+   "title": "QA engineer (manual) in X-ray scanners",
+   "company": "AICON X-RAY GmbH",
+   "salary": "",
+   "grade": "Middle",
+   "format": "гибрид",
+   "city": "Варшава",
+   "score": 2,
+   "match": "ручное тестирование, тест-документация, верификация багов",
+   "gaps": "hardware-тестирование, Azure DevOps, офис 4/1 в Варшаве, релокация",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-x-ray-scanners-207716",
+   "published": null,
+   "found": "2026-11-04T01:07:14+00:00"
+  },
+  {
+   "id": "hirehi:207714",
+   "source": "hirehi",
+   "title": "QA Engineer (manual) in AdTech",
+   "company": "5Blue Software",
+   "salary": "не указана",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "manual, exploratory, Android, web, API Postman, DevTools, Charles, Playwright",
+   "gaps": "грейд Senior, 1+ год коммерческой автоматизации, английский, AI-инструменты",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-adtech-207714",
+   "published": null,
+   "found": "2026-11-04T01:07:14+00:00"
+  },
   {
    "id": "hh:139124964",
    "source": "hh.ru",
@@ -16007,38 +16039,6 @@
    "match": "Manual QA, тестирование, русский язык, внимание к деталям",
    "gaps": "Офис в Варшаве, право на работу, локализация игр, junior",
    "url": "https://hirehi.ru/qa/freelance-lqa-games-tester-warsaw-russian-and-english-speaker-manual-147031",
-   "published": null,
-   "found": "2026-10-15T09:31:56+00:00"
-  },
-  {
-   "id": "hirehi:147032",
-   "source": "hirehi",
-   "title": "Russian LQA Games Tester (manual)",
-   "company": "TransPerfect",
-   "salary": "не указана",
-   "grade": "Junior",
-   "format": "офис",
-   "city": "Warsaw",
-   "score": 1,
-   "match": "manual testing, attention to detail",
-   "gaps": "games testing, onsite Warsaw, junior level, no remote",
-   "url": "https://hirehi.ru/qa/russian-lqa-games-tester-manual-147032",
-   "published": null,
-   "found": "2026-10-15T09:31:56+00:00"
-  },
-  {
-   "id": "hirehi:147033",
-   "source": "hirehi",
-   "title": "Spanish (LATAM) Localization Games Tester (manual)",
-   "company": "TransPerfect",
-   "salary": "",
-   "grade": "Junior",
-   "format": "офис",
-   "city": "Варшава",
-   "score": 2,
-   "match": "ручное тестирование, manual QA",
-   "gaps": "игровая локализация, испанский язык, офис в Варшаве, отсутствие опыта в играх",
-   "url": "https://hirehi.ru/qa/spanish-latam-localization-games-tester-manual-147033",
    "published": null,
    "found": "2026-10-15T09:31:56+00:00"
   }
