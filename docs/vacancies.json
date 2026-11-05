@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T19:34:58+00:00",
+ "updated": "2026-11-05T01:22:50+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,36 +14,117 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 36,
-  "llm_failed": 1,
-  "sent": 16,
+  "scored": 5,
+  "llm_failed": 2,
+  "sent": 1,
   "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 2698, 'completion_tokens': 3000, 'total_tokens': 5698, 'prompt_tokens_details': {'cached_tokens': 2347, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3000, 'image_tokens': 0, 'audio_tokens': 0}}"
+   "пустой ответ: finish=length usage={'prompt_tokens': 2218, 'completion_tokens': 3000, 'total_tokens': 5218, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3078, 'image_tokens': 0, 'audio_tokens': 0}}",
+   "пустой ответ: finish=length usage={'prompt_tokens': 2307, 'completion_tokens': 3000, 'total_tokens': 5307, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3037, 'image_tokens': 0, 'audio_tokens': 0}}"
   ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 15.2,
+  "llm_avg_sec": 18.7,
   "llm_usage_sample": {
-   "prompt_tokens": 2852,
-   "completion_tokens": 2454,
-   "total_tokens": 5306,
+   "prompt_tokens": 2307,
+   "completion_tokens": 3000,
+   "total_tokens": 5307,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 2326,
+    "reasoning_tokens": 3037,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 1
+  "left_for_next_run": 2
  },
  "vacancies": [
+  {
+   "id": "hirehi:210437",
+   "source": "hirehi",
+   "title": "qa engineer (manual) for salesforce applications",
+   "company": "EPAM",
+   "salary": "не указана",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "ручное тестирование, тест-кейсы, регресс, дефекты, smoke",
+   "gaps": "опыт Salesforce, грейд senior",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-salesforce-applications-210437",
+   "published": null,
+   "found": "2026-11-05T01:22:49+00:00"
+  },
+  {
+   "id": "hirehi:210078",
+   "source": "hirehi",
+   "title": "Junior Software Tester",
+   "company": "Dedalus",
+   "salary": "",
+   "grade": "Junior",
+   "format": "гибрид",
+   "city": "Лидс",
+   "score": 6,
+   "match": "Manual QA, тест-дизайн, работа с требованиями, дефектами, документация, Agile",
+   "gaps": "Опыт в healthcare, гибрид в Лидсе, junior грейд",
+   "url": "https://hirehi.ru/qa/software-tester-manual-210078",
+   "published": null,
+   "found": "2026-11-05T01:22:49+00:00"
+  },
+  {
+   "id": "hirehi:209993",
+   "source": "hirehi",
+   "title": "Content QA Analyst - Military training simulation (PRG) (manual)",
+   "company": "BAE Systems OneArc USA, Inc",
+   "salary": "",
+   "grade": "Junior",
+   "format": "гибрид",
+   "city": "Прага",
+   "score": 5,
+   "match": "Manual QA, Jira, дефекты, логи, базовые скрипты, внимательность",
+   "gaps": "нет опыта military simulation, игровых движков, modding; гибрид за рубежом, junior",
+   "url": "https://hirehi.ru/qa/content-qa-analyst-military-training-simulation-prg-manual-209993",
+   "published": null,
+   "found": "2026-11-05T01:22:50+00:00"
+  },
+  {
+   "id": "hirehi:209583",
+   "source": "hirehi",
+   "title": "Test Engineer - Ground (manual)",
+   "company": "Helsing",
+   "salary": "229 002 ₽",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 1,
+   "match": "ручное тестирование, JIRA, тест-документация",
+   "gaps": "аппаратное тестирование, HIL/SIL, GCS, осциллографы, авиационная отрасль",
+   "url": "https://hirehi.ru/qa/test-engineer-ground-manual-209583",
+   "published": null,
+   "found": "2026-11-05T01:22:50+00:00"
+  },
+  {
+   "id": "hirehi:208508",
+   "source": "hirehi",
+   "title": "QA (manual) in EdTech",
+   "company": "Bilim Land (Bilim Group)",
+   "salary": "",
+   "grade": "lead",
+   "format": "гибрид",
+   "city": "Астана",
+   "score": 3,
+   "match": "ручное тестирование, API, регресс, базы данных, анализ первопричин",
+   "gaps": "lead, управление командой, нагрузочное тестирование, гибрид в Астане",
+   "url": "https://hirehi.ru/qa/qa-manual-in-edtech-208508",
+   "published": null,
+   "found": "2026-11-05T01:22:50+00:00"
+  },
   {
    "id": "hh:139131833",
    "source": "hh.ru",
@@ -15963,86 +16044,6 @@
    "url": "https://hirehi.ru/qa/testirovshchik-manual-148442",
    "published": null,
    "found": "2026-10-15T12:34:07+00:00"
-  },
-  {
-   "id": "hirehi:148418",
-   "source": "hirehi",
-   "title": "QA (manual) / Lead QA",
-   "company": "Crazy Panda",
-   "salary": "",
-   "grade": "head",
-   "format": "удалёнка",
-   "city": "",
-   "score": 2,
-   "match": "ручное тестирование, мобильные приложения, API, Postman, Charles, TestFlight, BrowserStack, Jira",
-   "gaps": "lead-опыт, управление командой, автоматизация, игровая индустрия, коучинг",
-   "url": "https://hirehi.ru/qa/qa-manual-148418",
-   "published": null,
-   "found": "2026-10-15T12:34:07+00:00"
-  },
-  {
-   "id": "hirehi:148394",
-   "source": "hirehi",
-   "title": "Тестировщик 1С (manual)",
-   "company": "БКС",
-   "salary": "зп не указана",
-   "grade": "middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 6,
-   "match": "ручное тестирование, SQL, Jira, Confluence, регресс",
-   "gaps": "опыт 1С, Gherkin, написание автотестов",
-   "url": "https://hirehi.ru/qa/testirovshchik-1s-manual-148394",
-   "published": null,
-   "found": "2026-10-15T12:34:07+00:00"
-  },
-  {
-   "id": "hirehi:148350",
-   "source": "hirehi",
-   "title": "QA engineer функционального и регрессионного тестирования (manual)",
-   "company": "Grosssoft",
-   "salary": "~ 142 800 ₽",
-   "grade": "senior",
-   "format": "удалёнка",
-   "city": "",
-   "score": 3,
-   "match": "ручное тестирование, функциональное, регрессионное, тест-дизайн, анализ дефектов",
-   "gaps": "автоматизация, разработка автотестов, опыт от 5 лет, грейд senior",
-   "url": "https://hirehi.ru/qa/qa-engineer-funktsional-nogo-i-regressionnogo-testirovaniia-manual-148350",
-   "published": null,
-   "found": "2026-10-15T12:34:08+00:00"
-  },
-  {
-   "id": "habr:1000166921",
-   "source": "Хабр Карьера",
-   "title": "Специалист по функциональному тестированию",
-   "company": "Extyl",
-   "salary": "",
-   "grade": "Middle",
-   "format": "гибрид",
-   "city": "Москва",
-   "score": 9,
-   "match": "ручное тестирование, API, Postman, Swagger, SQL, Test IT, функциональное тестирование",
-   "gaps": "банковская сфера, офис первые 2-3 недели",
-   "url": "https://career.habr.com/vacancies/1000166921",
-   "published": "2026-10-15T11:52:52+03:00",
-   "found": "2026-10-15T09:30:01+00:00"
-  },
-  {
-   "id": "hh:137395480",
-   "source": "hh.ru",
-   "title": "Ручной функциональный инженер-тестировщик",
-   "company": "Банк ВТБ (ПАО), Технологический блок",
-   "salary": "",
-   "grade": "неясно",
-   "format": "удалёнка",
-   "city": "",
-   "score": 9,
-   "match": "ручное тестирование, функциональное, удалёнка, финтех",
-   "gaps": "",
-   "url": "https://hh.ru/vacancy/137395480",
-   "published": "2026-10-15T11:47:34.988000+03:00",
-   "found": "2026-10-15T09:30:02+00:00"
   }
  ]
 }
