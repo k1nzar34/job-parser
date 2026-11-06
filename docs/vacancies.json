@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T19:42:44+00:00",
+ "updated": "2026-11-06T01:26:43+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,29 +14,29 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 23,
+  "scored": 4,
   "llm_failed": 1,
-  "sent": 8,
+  "sent": 1,
   "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 1439, 'completion_tokens': 3000, 'total_tokens': 4439, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 2872, 'image_tokens': 0, 'audio_tokens': 0}}"
+   "пустой ответ: finish=length usage={'prompt_tokens': 2236, 'completion_tokens': 3000, 'total_tokens': 5236, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3262, 'image_tokens': 0, 'audio_tokens': 0}}"
   ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 12.8,
+  "llm_avg_sec": 21.6,
   "llm_usage_sample": {
-   "prompt_tokens": 2808,
-   "completion_tokens": 2213,
-   "total_tokens": 5021,
+   "prompt_tokens": 2168,
+   "completion_tokens": 1423,
+   "total_tokens": 3591,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 2080,
+    "reasoning_tokens": 1678,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -44,6 +44,70 @@
   "left_for_next_run": 1
  },
  "vacancies": [
+  {
+   "id": "hh:139179862",
+   "source": "hh.ru",
+   "title": "QA Engineer",
+   "company": "BMGM",
+   "salary": "1 000 – 2 000 USD",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 6,
+   "match": "QA Engineer, удалёнка, ручное и API-тестирование, релевантный опыт",
+   "gaps": "Зарплата ниже ожидаемой, нет описания задач и стека",
+   "url": "https://hh.ru/vacancy/139179862",
+   "published": "2026-11-05T18:02:43.481000+03:00",
+   "found": "2026-11-06T01:26:42+00:00"
+  },
+  {
+   "id": "hirehi:214437",
+   "source": "hirehi",
+   "title": "end-to-end test manager (manual)",
+   "company": "EPAM",
+   "salary": "не указана",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 1,
+   "match": "manual testing, E2E testing, Agile, Jira",
+   "gaps": "test management, senior level, Coupa, 10+ years",
+   "url": "https://hirehi.ru/qa/end-to-end-test-manager-manual-214437",
+   "published": null,
+   "found": "2026-11-06T01:26:43+00:00"
+  },
+  {
+   "id": "hirehi:214045",
+   "source": "hirehi",
+   "title": "QA Testers wanted in Spain (manual)",
+   "company": "Tester Work",
+   "salary": "зп не указана",
+   "grade": "Junior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, удалёнка, проектная работа, junior",
+   "gaps": "зарплата ниже 120k, требуется Испания, не полная занятость",
+   "url": "https://hirehi.ru/qa/qa-testers-wanted-in-spain-manual-214045",
+   "published": null,
+   "found": "2026-11-06T01:26:43+00:00"
+  },
+  {
+   "id": "hirehi:213565",
+   "source": "hirehi",
+   "title": "Salesforce QA Analyst (manual)",
+   "company": "Corpay",
+   "salary": "12 124 - 15 154 PLN gross per month (~281 813 ₽)",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 5,
+   "match": "ручное тестирование, удалёнка, зарплата, middle, manual QA, CI/CD",
+   "gaps": "нет опыта с Salesforce, требуется опыт CRM",
+   "url": "https://hirehi.ru/qa/salesforce-qa-analyst-manual-213565",
+   "published": null,
+   "found": "2026-11-06T01:26:43+00:00"
+  },
   {
    "id": "hh:139175055",
    "source": "hh.ru",
@@ -15979,70 +16043,6 @@
    "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-avtonomnogo-vozhdeniia-152354",
    "published": null,
    "found": "2026-10-15T21:27:22+00:00"
-  },
-  {
-   "id": "hirehi:152319",
-   "source": "hirehi",
-   "title": "Инженер по тестированию (manual) в банковской сфере",
-   "company": "Промсвязьбанк",
-   "salary": "от 100 000 ₽",
-   "grade": "senior",
-   "format": "гибрид",
-   "city": "",
-   "score": 3,
-   "match": "ручное тестирование, API, мобильное, SQL, Postman, Swagger, DevTools, тест-дизайн, TestIT",
-   "gaps": "зарплата ниже 120к, грейд senior, офис 9-18",
-   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-v-bankovskoi-sfere-152319",
-   "published": null,
-   "found": "2026-10-15T21:27:22+00:00"
-  },
-  {
-   "id": "hirehi:151528",
-   "source": "hirehi",
-   "title": "тестировщик (manual) систем информационной безопасности",
-   "company": "АйТи БАСТИОН",
-   "salary": "не указана",
-   "grade": "senior",
-   "format": "офис",
-   "city": "Москва",
-   "score": 2,
-   "match": "ручное тестирование, API, SQL, Jira, тест-документация",
-   "gaps": "информационная безопасность, Linux/Windows администрирование, сети, виртуализация, скрипты Bash/PowerShell",
-   "url": "https://hirehi.ru/qa/testirovshchik-manual-sistem-informatsionnoi-bezopasnosti-151528",
-   "published": null,
-   "found": "2026-10-15T21:27:22+00:00"
-  },
-  {
-   "id": "hirehi:151932",
-   "source": "hirehi",
-   "title": "Test engineer- Electromobility high-voltage laboatories (manual)",
-   "company": "Bosch Group",
-   "salary": "",
-   "grade": "Junor",
-   "format": "удалёнка",
-   "city": "",
-   "score": 1,
-   "match": "manual testing",
-   "gaps": "high-voltage, automotive, lab experience",
-   "url": "https://hirehi.ru/qa/test-engineer-electromobility-high-voltage-laboratories-manual-151932",
-   "published": null,
-   "found": "2026-10-15T21:27:22+00:00"
-  },
-  {
-   "id": "hh:138530039",
-   "source": "hh.ru",
-   "title": "QA-тестировщик (ручное тестирование)",
-   "company": "ГК Орбита",
-   "salary": "213 000 RUR",
-   "grade": "неясно",
-   "format": "удалёнка",
-   "city": "",
-   "score": 9,
-   "match": "ручное тестирование, удалёнка, высокая зарплата",
-   "gaps": "",
-   "url": "https://hh.ru/vacancy/138530039",
-   "published": "2026-10-15T17:52:43.363000+03:00",
-   "found": "2026-10-15T18:28:26+00:00"
   }
  ]
 }
