@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T17:37:09+00:00",
+ "updated": "2026-11-07T21:36:38+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,22 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 1,
-  "llm_failed": 2,
-  "sent": 0,
-  "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 1524, 'completion_tokens': 3000, 'total_tokens': 4524, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 4108, 'image_tokens': 0, 'audio_tokens': 0}}",
-   "пустой ответ: finish=length usage={'prompt_tokens': 1526, 'completion_tokens': 3000, 'total_tokens': 4526, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 2997, 'image_tokens': 0, 'audio_tokens': 0}}"
-  ],
+  "scored": 3,
+  "llm_failed": 0,
+  "sent": 1,
+  "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 20.2,
+  "llm_avg_sec": 6.2,
   "llm_usage_sample": {
-   "prompt_tokens": 1526,
-   "completion_tokens": 3000,
-   "total_tokens": 4526,
+   "prompt_tokens": 2172,
+   "completion_tokens": 727,
+   "total_tokens": 2899,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -37,14 +34,62 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 2997,
+    "reasoning_tokens": 640,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 2
+  "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "tg:qajoboffer/2248",
+   "source": "TG @qajoboffer",
+   "title": "QA Fullstack инженер",
+   "company": "Selecty",
+   "salary": "от 300 до 368 тыс. рублей",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 10,
+   "match": "Fullstack QA, удалёнка, высокая зарплата, Middle",
+   "gaps": "",
+   "url": "https://t.me/qajoboffer/2248",
+   "published": "2026-11-07T15:53:01+00:00",
+   "found": "2026-11-07T21:36:36+00:00"
+  },
+  {
+   "id": "tg:qajobsoffers/2049",
+   "source": "TG @qajobsoffers",
+   "title": "Fullstack QA Java",
+   "company": "ИЦ АЙ-ТЕКО",
+   "salary": "до 140 000 ₽",
+   "grade": "middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "удалёнка, зарплата, грейд middle",
+   "gaps": "Java, автоматизация как основная задача",
+   "url": "https://t.me/qajobsoffers/2049",
+   "published": "2026-11-07T15:13:01+00:00",
+   "found": "2026-11-07T21:36:38+00:00"
+  },
+  {
+   "id": "hirehi:218253",
+   "source": "hirehi",
+   "title": "QA Director (manual)",
+   "company": "Scopely",
+   "salary": "",
+   "grade": "Lead",
+   "format": "гибрид",
+   "city": "Барселона",
+   "score": 2,
+   "match": "manual QA experience",
+   "gaps": "lack of 10+ years, management, game QA experience",
+   "url": "https://hirehi.ru/qa/qa-director-manual-218253",
+   "published": null,
+   "found": "2026-11-07T21:36:38+00:00"
+  },
   {
    "id": "hirehi:217989",
    "source": "hirehi",
@@ -15996,54 +16041,6 @@
    "url": "https://hirehi.ru/qa/integration-test-engineer-manual-156315",
    "published": null,
    "found": "2026-10-16T21:24:03+00:00"
-  },
-  {
-   "id": "hirehi:157018",
-   "source": "hirehi",
-   "title": "QA Analyst (manual)",
-   "company": "Expleo",
-   "salary": "",
-   "grade": "Middle",
-   "format": "гибрид",
-   "city": "Belfast",
-   "score": 9,
-   "match": "ручное тестирование, API, SQL, регресс, Agile, Jira, документация",
-   "gaps": "ISTQB, accessibility testing, SQL Server, опыт в Belfast",
-   "url": "https://hirehi.ru/qa/qa-analyst-manual-157018",
-   "published": null,
-   "found": "2026-10-16T21:24:05+00:00"
-  },
-  {
-   "id": "hirehi:156253",
-   "source": "hirehi",
-   "title": "QA Engineer (manual)",
-   "company": "Aloplay",
-   "salary": "",
-   "grade": "Middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 5,
-   "match": "manual, API testing, SQL, Postman",
-   "gaps": "automated tests with AI, Claude Code, MCP",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-156253",
-   "published": null,
-   "found": "2026-10-16T21:24:06+00:00"
-  },
-  {
-   "id": "hirehi:155957",
-   "source": "hirehi",
-   "title": "Test Engineer (manual)",
-   "company": "Airbus Defence and Space Limited",
-   "salary": "",
-   "grade": "junior",
-   "format": "гибрид",
-   "city": "Portsmouth OR Stevenage",
-   "score": 2,
-   "match": "",
-   "gaps": "автоматизация Python/Java, SC Clearance, Великобритания",
-   "url": "https://hirehi.ru/qa/test-engineer-manual-155957",
-   "published": null,
-   "found": "2026-10-16T21:24:06+00:00"
   }
  ]
 }
