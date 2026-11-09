@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T19:25:52+00:00",
+ "updated": "2026-11-09T00:38:33+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,7 +14,7 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 5,
+  "scored": 1,
   "llm_failed": 0,
   "sent": 0,
   "llm_errors": [],
@@ -22,11 +22,11 @@
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 14.4,
+  "llm_avg_sec": 8.3,
   "llm_usage_sample": {
-   "prompt_tokens": 1449,
-   "completion_tokens": 1061,
-   "total_tokens": 2510,
+   "prompt_tokens": 2733,
+   "completion_tokens": 643,
+   "total_tokens": 3376,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 948,
+    "reasoning_tokens": 514,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,22 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:218950",
+   "source": "hirehi",
+   "title": "тестировщик (manual) веб-приложений",
+   "company": "Xoxwe IT",
+   "salary": "70 000 ₽",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, API, SQL, Postman, Jira, удалёнка",
+   "gaps": "зарплата 70 000, грейд senior",
+   "url": "https://hirehi.ru/qa/testirovshchik-manual-veb-prilozhenii-218950",
+   "published": null,
+   "found": "2026-11-09T00:38:33+00:00"
+  },
   {
    "id": "tg:qajoboffer/2249",
    "source": "TG @qajoboffer",
@@ -16024,22 +16040,6 @@
    "gaps": "пентест, Burp Suite, WAF, веб-уязвимости, информационная безопасность",
    "url": "https://career.habr.com/vacancies/1000169118",
    "published": "2026-10-17T13:37:40+03:00",
-   "found": "2026-10-17T12:25:04+00:00"
-  },
-  {
-   "id": "hirehi:158235",
-   "source": "hirehi",
-   "title": "QA engineer (manual) for an e-commerce platform",
-   "company": "Инсейлс Рус",
-   "salary": "",
-   "grade": "Junior",
-   "format": "гибрид",
-   "city": "Москва",
-   "score": 9,
-   "match": "e-commerce, manual, API, DevTools, тест-дизайн, документация",
-   "gaps": "",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-an-e-commerce-platform-158235",
-   "published": null,
    "found": "2026-10-17T12:25:04+00:00"
   }
  ]
