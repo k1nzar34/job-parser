@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T22:59:13+00:00",
+ "updated": "2026-11-11T05:22:28+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,37 +14,66 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 17,
-  "llm_failed": 2,
-  "sent": 3,
-  "llm_errors": [
-   "JSONDecodeError: Expecting value: line 6 column 11 (char 92)",
-   "JSONDecodeError: Unterminated string starting at: line 11 column 11 (char 297)"
-  ],
+  "scored": 2,
+  "llm_failed": 0,
+  "sent": 1,
+  "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 9.6,
+  "llm_avg_sec": 31.9,
   "llm_usage_sample": {
-   "prompt_tokens": 2232,
-   "completion_tokens": 3000,
-   "total_tokens": 5232,
+   "prompt_tokens": 2178,
+   "completion_tokens": 2201,
+   "total_tokens": 4379,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 3208,
+    "reasoning_tokens": 2702,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 2
+  "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hirehi:225508",
+   "source": "hirehi",
+   "title": "qa software engineer (c2) (manual)",
+   "company": "Kaluza",
+   "salary": "",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Бристоль",
+   "score": 1,
+   "match": "ручное тестирование в названии",
+   "gaps": "автоматизация, AI, работа в UK",
+   "url": "https://hirehi.ru/qa/qa-software-engineer-c2-manual-225508",
+   "published": null,
+   "found": "2026-11-11T05:22:26+00:00"
+  },
+  {
+   "id": "hirehi:223876",
+   "source": "hirehi",
+   "title": "Generalist Test Engineer (Manual)",
+   "company": "Intellias",
+   "salary": "",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "Mobile testing, API testing, Postman, Swagger, SQL, Charles, CI/CD, manual QA, test design, Agile",
+   "gaps": "Senior level (5+ years), Java/Kotlin automation",
+   "url": "https://hirehi.ru/qa/generalist-test-engineer-manual-223876",
+   "published": null,
+   "found": "2026-11-11T05:22:26+00:00"
+  },
   {
    "id": "hh:139338858",
    "source": "hh.ru",
@@ -16011,38 +16040,6 @@
    "gaps": "грейд Senior, неизвестный стек, возможно автоматизация",
    "url": "https://t.me/jobforqa/1579",
    "published": "2026-10-20T07:04:12+00:00",
-   "found": "2026-10-20T09:30:32+00:00"
-  },
-  {
-   "id": "hirehi:164536",
-   "source": "hirehi",
-   "title": "Тестировщик (manual) цифровых сервисов",
-   "company": "ГУП Московский социальный регистр",
-   "salary": "",
-   "grade": "senior",
-   "format": "офис",
-   "city": "Москва",
-   "score": 1,
-   "match": "Postman, SQL, REST API, CI/CD, Allure TestOps, Python",
-   "gaps": "автоматизация как основная задача, офис, нагрузочное тестирование, senior",
-   "url": "https://hirehi.ru/qa/testirovshchik-manual-tsifrovykh-servisov-164536",
-   "published": null,
-   "found": "2026-10-20T09:30:32+00:00"
-  },
-  {
-   "id": "hirehi:164525",
-   "source": "hirehi",
-   "title": "Тестировщик ПО (manual)",
-   "company": "Коммерсантъ КАРТОТЕКА",
-   "salary": "до 107 000 ₽",
-   "grade": "senior",
-   "format": "офис",
-   "city": "Москва",
-   "score": 2,
-   "match": "manual QA, API, SQL, HTML, XML",
-   "gaps": "офис, зарплата ниже 120к, техподдержка, senior",
-   "url": "https://hirehi.ru/qa/testirovshchik-po-manual-164525",
-   "published": null,
    "found": "2026-10-20T09:30:32+00:00"
   }
  ]
