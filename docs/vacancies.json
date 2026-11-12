@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T21:49:35+00:00",
+ "updated": "2026-11-12T06:26:18+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,37 +14,118 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 24,
-  "llm_failed": 2,
-  "sent": 14,
+  "scored": 5,
+  "llm_failed": 3,
+  "sent": 2,
   "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 2758, 'completion_tokens': 3000, 'total_tokens': 5758, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3423, 'image_tokens': 0, 'audio_tokens': 0}}",
-   "пустой ответ: finish=length usage={'prompt_tokens': 2813, 'completion_tokens': 3000, 'total_tokens': 5813, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3120, 'image_tokens': 0, 'audio_tokens': 0}}"
+   "пустой ответ: finish=length usage={'prompt_tokens': 2440, 'completion_tokens': 3000, 'total_tokens': 5440, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3896, 'image_tokens': 0, 'audio_tokens': 0}}",
+   "пустой ответ: finish=length usage={'prompt_tokens': 2817, 'completion_tokens': 3000, 'total_tokens': 5817, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 2978, 'image_tokens': 0, 'audio_tokens': 0}}",
+   "пустой ответ: finish=length usage={'prompt_tokens': 2777, 'completion_tokens': 3000, 'total_tokens': 5777, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3395, 'image_tokens': 0, 'audio_tokens': 0}}"
   ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 12.4,
+  "llm_avg_sec": 12.3,
   "llm_usage_sample": {
-   "prompt_tokens": 2394,
-   "completion_tokens": 1280,
-   "total_tokens": 3674,
+   "prompt_tokens": 2777,
+   "completion_tokens": 3000,
+   "total_tokens": 5777,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1446,
+    "reasoning_tokens": 3395,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 2
+  "left_for_next_run": 3
  },
  "vacancies": [
+  {
+   "id": "hh:139405502",
+   "source": "hh.ru",
+   "title": "Тестировщик мобильного приложения",
+   "company": "Новарус Груп",
+   "salary": "",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 9,
+   "match": "мобильное тестирование, удалёнка, ручное тестирование, API, SQL, Charles, Kibana",
+   "gaps": "",
+   "url": "https://hh.ru/vacancy/139405502",
+   "published": "2026-11-12T08:09:47.732000+03:00",
+   "found": "2026-11-12T06:26:15+00:00"
+  },
+  {
+   "id": "hirehi:229262",
+   "source": "hirehi",
+   "title": "QA Engineer (Manual) for Mobile Games",
+   "company": "Commit",
+   "salary": "",
+   "grade": "middle",
+   "format": "офис",
+   "city": "",
+   "score": 3,
+   "match": "Manual, API, Postman, SQL, Jira, mobile testing, test design, Git, backend testing",
+   "gaps": "game testing experience",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-mobile-games-229262",
+   "published": null,
+   "found": "2026-11-12T06:26:17+00:00"
+  },
+  {
+   "id": "hirehi:229233",
+   "source": "hirehi",
+   "title": "qa engineer (manual) for banking products",
+   "company": "Kaspi.kz",
+   "salary": "",
+   "grade": "middle",
+   "format": "офис",
+   "city": "Алматы",
+   "score": 2,
+   "match": "manual QA, middle, банковские продукты",
+   "gaps": "нет опыта в банкинге, офис, зарплата ниже 120k",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-banking-products-229233",
+   "published": null,
+   "found": "2026-11-12T06:26:17+00:00"
+  },
+  {
+   "id": "hirehi:229214",
+   "source": "hirehi",
+   "title": "тестировщик мобильного приложения (manual)",
+   "company": "Новарус Груп",
+   "salary": "не указана",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "ручное тестирование, API, мобильное, Postman, SQL, Docker, Kibana, Jira, GitLab, JSON, XML, Android Studio",
+   "gaps": "Oracle, RabbitMQ, Wiremock, Fiddler, Xray, PuTTY",
+   "url": "https://hirehi.ru/qa/testirovshchik-mobil-nogo-prilozheniia-manual-229214",
+   "published": null,
+   "found": "2026-11-12T06:26:17+00:00"
+  },
+  {
+   "id": "hirehi:229076",
+   "source": "hirehi",
+   "title": "QA Engineer (Manual) for Firmware and Embedded Systems",
+   "company": "Ohme",
+   "salary": "не указана",
+   "grade": "Middle",
+   "format": "гибрид",
+   "city": "Лондон",
+   "score": 2,
+   "match": "Manual QA, тест-планы, Jira, Agile",
+   "gaps": "Нет опыта firmware/embedded, hardware, Лондон",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-firmware-and-embedded-systems-229076",
+   "published": null,
+   "found": "2026-11-12T06:26:18+00:00"
+  },
   {
    "id": "hh:139395888",
    "source": "hh.ru",
@@ -15964,86 +16045,6 @@
    "url": "https://hirehi.ru/qa/qa-engineer-world-of-tanks-manual-167187",
    "published": null,
    "found": "2026-10-20T21:26:51+00:00"
-  },
-  {
-   "id": "hirehi:167200",
-   "source": "hirehi",
-   "title": "Quality Assurance Engineer (manual) / Senior",
-   "company": "Zeal Network",
-   "salary": "139 847 ₽",
-   "grade": "Senior",
-   "format": "гибрид",
-   "city": "Гамбург",
-   "score": 2,
-   "match": "ручное тестирование, API, SQL, CI/CD, Docker, Postman",
-   "gaps": "автоматизация Playwright+TypeScript, разработка фреймворков, Senior, офисный гибрид",
-   "url": "https://hirehi.ru/qa/quality-assurance-engineer-manual-167200",
-   "published": null,
-   "found": "2026-10-20T21:26:52+00:00"
-  },
-  {
-   "id": "hirehi:167347",
-   "source": "hirehi",
-   "title": "QA analyst (manual)",
-   "company": "Creative Clicks B.V.",
-   "salary": "от 139 847 ₽",
-   "grade": "middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 9,
-   "match": "ручное тестирование, удалёнка, BrowserStack, тест-дизайн, интеграции, опыт 4 года",
-   "gaps": "",
-   "url": "https://hirehi.ru/qa/qa-analyst-manual-167347",
-   "published": null,
-   "found": "2026-10-20T21:26:52+00:00"
-  },
-  {
-   "id": "hirehi:166682",
-   "source": "hirehi",
-   "title": "QA Engineer (manual)",
-   "company": "Hitachi Energy",
-   "salary": "",
-   "grade": "junior",
-   "format": "гибрид",
-   "city": "Krakow",
-   "score": 2,
-   "match": "manual QA, Agile, SQL, Docker, Kubernetes",
-   "gaps": "automation as main task, Python, energy domain",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-166682",
-   "published": null,
-   "found": "2026-10-20T21:26:54+00:00"
-  },
-  {
-   "id": "hh:138678827",
-   "source": "hh.ru",
-   "title": "Senior QA Engineer/Ведущий инженер по тестированию",
-   "company": "12 STOREEZ",
-   "salary": "",
-   "grade": "Senior",
-   "format": "удалёнка",
-   "city": "",
-   "score": 8,
-   "match": "e-commerce, manual+API, удалёнка, микросервисы",
-   "gaps": "грейд Senior (выше искомого)",
-   "url": "https://hh.ru/vacancy/138678827",
-   "published": "2026-10-20T18:26:41.571000+03:00",
-   "found": "2026-10-20T18:29:54+00:00"
-  },
-  {
-   "id": "hh:138680407",
-   "source": "hh.ru",
-   "title": "Специалист по тестированию (Manual QA Engineer (CRM/ERP/WMS системы)",
-   "company": "Кристалл Софт",
-   "salary": "",
-   "grade": "неясно",
-   "format": "гибрид",
-   "city": "",
-   "score": 7,
-   "match": "ручное тестирование, API, Postman, SQL, микросервисы, регресс",
-   "gaps": "нет опыта в CRM/ERP/WMS",
-   "url": "https://hh.ru/vacancy/138680407",
-   "published": "2026-10-20T20:16:17.681000+03:00",
-   "found": "2026-10-20T18:29:56+00:00"
   }
  ]
 }
