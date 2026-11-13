@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T23:21:50+00:00",
+ "updated": "2026-11-13T05:46:15+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,22 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 11,
-  "llm_failed": 2,
-  "sent": 5,
-  "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 2642, 'completion_tokens': 3000, 'total_tokens': 5642, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3410, 'image_tokens': 0, 'audio_tokens': 0}}",
-   "пустой ответ: finish=length usage={'prompt_tokens': 2346, 'completion_tokens': 3000, 'total_tokens': 5346, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3197, 'image_tokens': 0, 'audio_tokens': 0}}"
-  ],
+  "scored": 4,
+  "llm_failed": 0,
+  "sent": 1,
+  "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 10.2,
+  "llm_avg_sec": 21.8,
   "llm_usage_sample": {
-   "prompt_tokens": 2593,
-   "completion_tokens": 1104,
-   "total_tokens": 3697,
+   "prompt_tokens": 2276,
+   "completion_tokens": 923,
+   "total_tokens": 3199,
    "prompt_tokens_details": {
     "cached_tokens": 1280,
     "cache_write_tokens": 0,
@@ -37,14 +34,78 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 990,
+    "reasoning_tokens": 932,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 2
+  "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:139436082",
+   "source": "hh.ru",
+   "title": "Специалист нагр.тестирования",
+   "company": "Датаджайл",
+   "salary": "",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 1,
+   "match": "Удалёнка, формат работы",
+   "gaps": "Нагрузочное тестирование, не совпадает с опытом и предпочтениями кандидата",
+   "url": "https://hh.ru/vacancy/139436082",
+   "published": "2026-11-12T15:28:58.167000+03:00",
+   "found": "2026-11-13T05:46:14+00:00"
+  },
+  {
+   "id": "hirehi:232310",
+   "source": "hirehi",
+   "title": "macOS QA Engineer (manual) for endpoint security",
+   "company": "",
+   "salary": "не указана",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "manual QA, exploratory testing, security, remote",
+   "gaps": "macOS internals, system extensions, endpoint security, senior, US timezone",
+   "url": "https://hirehi.ru/qa/macos-qa-engineer-manual-for-endpoint-security-232310",
+   "published": null,
+   "found": "2026-11-13T05:46:14+00:00"
+  },
+  {
+   "id": "hirehi:230096",
+   "source": "hirehi",
+   "title": "qa tester for tactical rpgs (manual)",
+   "company": "TACTICAL ADVENTURES",
+   "salary": "",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Париж",
+   "score": 3,
+   "match": "ручное тестирование, Jira, баг-трекинг, test plans",
+   "gaps": "Unreal Engine 5, геймдев, RPG, тактические игры, Париж, гибрид, домен e-commerce не совпадает",
+   "url": "https://hirehi.ru/qa/qa-tester-for-tactical-rpgs-manual-230096",
+   "published": null,
+   "found": "2026-11-13T05:46:14+00:00"
+  },
+  {
+   "id": "hirehi:229468",
+   "source": "hirehi",
+   "title": "специалист по ручному тестированию (manual)",
+   "company": "Аренадата Софтвер",
+   "salary": "",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "ручное тестирование, REST API, SQL, Docker, Git, тест-дизайн, Linux, анализ логов",
+   "gaps": "ClickHouse, Prometheus, Grafana, администрирование СУБД, мониторинг",
+   "url": "https://hirehi.ru/qa/spetsialist-po-ruchnomu-testirovaniiu-manual-229468",
+   "published": null,
+   "found": "2026-11-13T05:46:14+00:00"
+  },
   {
    "id": "habr:1000169836",
    "source": "Хабр Карьера",
@@ -15980,70 +16041,6 @@
    "url": "https://hh.ru/vacancy/137584985",
    "published": "2026-10-21T12:50:24.122000+03:00",
    "found": "2026-10-21T12:33:24+00:00"
-  },
-  {
-   "id": "hh:138713267",
-   "source": "hh.ru",
-   "title": "Старший тестировщик (Middle Manual QA)",
-   "company": "Home Credit Bank (ДБ АО «ForteBank»)",
-   "salary": "",
-   "grade": "Middle",
-   "format": "гибрид",
-   "city": "",
-   "score": 7,
-   "match": "Manual QA, API, SQL, Postman, Swagger, Charles, Kibana, Jira, гибрид, Middle, финтех",
-   "gaps": "опыт в кредитных системах, банковская специфика",
-   "url": "https://hh.ru/vacancy/138713267",
-   "published": "2026-10-21T14:49:17.823000+03:00",
-   "found": "2026-10-21T12:33:24+00:00"
-  },
-  {
-   "id": "hh:137592634",
-   "source": "hh.ru",
-   "title": "Инженер по тестированию DWDM",
-   "company": "БУЛАТ",
-   "salary": "",
-   "grade": "неясно",
-   "format": "гибрид",
-   "city": "",
-   "score": 1,
-   "match": "ручное тестирование",
-   "gaps": "DWDM, оптические сети, телекоммуникации",
-   "url": "https://hh.ru/vacancy/137592634",
-   "published": "2026-10-21T14:39:12.286000+03:00",
-   "found": "2026-10-21T12:33:25+00:00"
-  },
-  {
-   "id": "hh:137586049",
-   "source": "hh.ru",
-   "title": "QA Engineer (Manual)",
-   "company": "Криптонит",
-   "salary": "",
-   "grade": "неясно",
-   "format": "гибрид",
-   "city": "",
-   "score": 7,
-   "match": "Manual QA, гибрид, возможно backend",
-   "gaps": "не указан стек, город",
-   "url": "https://hh.ru/vacancy/137586049",
-   "published": "2026-10-21T12:47:30.150000+03:00",
-   "found": "2026-10-21T12:33:25+00:00"
-  },
-  {
-   "id": "hirehi:168866",
-   "source": "hirehi",
-   "title": "инженер по тестированию (manual) банковских систем",
-   "company": "NDA",
-   "salary": "до 190 000 ₽",
-   "grade": "middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 10,
-   "match": "ручное тестирование, API, SQL, регресс, документация, анализ требований",
-   "gaps": "",
-   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-bankovskikh-sistem-168866",
-   "published": null,
-   "found": "2026-10-21T12:33:27+00:00"
   }
  ]
 }
