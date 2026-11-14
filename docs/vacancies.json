@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T21:17:33+00:00",
+ "updated": "2026-11-14T05:36:26+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,32 +14,34 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 21,
-  "llm_failed": 0,
-  "sent": 7,
-  "llm_errors": [],
+  "scored": 0,
+  "llm_failed": 1,
+  "sent": 0,
+  "llm_errors": [
+   "пустой ответ: finish=length usage={'prompt_tokens': 2255, 'completion_tokens': 3000, 'total_tokens': 5255, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3097, 'image_tokens': 0, 'audio_tokens': 0}}"
+  ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 8.1,
+  "llm_avg_sec": 24.2,
   "llm_usage_sample": {
-   "prompt_tokens": 2600,
-   "completion_tokens": 1367,
-   "total_tokens": 3967,
+   "prompt_tokens": 2255,
+   "completion_tokens": 3000,
+   "total_tokens": 5255,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1528,
+    "reasoning_tokens": 3097,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 0
+  "left_for_next_run": 1
  },
  "vacancies": [
   {
