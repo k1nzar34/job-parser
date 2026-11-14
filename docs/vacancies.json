@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T05:36:26+00:00",
+ "updated": "2026-11-14T13:12:57+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,21 +14,21 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 0,
+  "scored": 5,
   "llm_failed": 1,
-  "sent": 0,
+  "sent": 1,
   "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 2255, 'completion_tokens': 3000, 'total_tokens': 5255, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3097, 'image_tokens': 0, 'audio_tokens': 0}}"
+   "JSONDecodeError: Unterminated string starting at: line 2 column 3 (char 4)"
   ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 24.2,
+  "llm_avg_sec": 15.7,
   "llm_usage_sample": {
-   "prompt_tokens": 2255,
-   "completion_tokens": 3000,
-   "total_tokens": 5255,
+   "prompt_tokens": 2199,
+   "completion_tokens": 1199,
+   "total_tokens": 3398,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -36,7 +36,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 3097,
+    "reasoning_tokens": 1089,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -44,6 +44,86 @@
   "left_for_next_run": 1
  },
  "vacancies": [
+  {
+   "id": "tg:jobforqa/1639",
+   "source": "TG @jobforqa",
+   "title": "Junior QA Engineer (Manual Web Testing)",
+   "company": "CareeRoom",
+   "salary": "120 000–140 000 ₽",
+   "grade": "Junior",
+   "format": "офис",
+   "city": "Москва",
+   "score": 3,
+   "match": "ручное тестирование, web, junior, зарплата",
+   "gaps": "офис без удалёнки, возможно уровень ниже опыта",
+   "url": "https://t.me/jobforqa/1639",
+   "published": "2026-11-14T08:04:28+00:00",
+   "found": "2026-11-14T13:12:55+00:00"
+  },
+  {
+   "id": "hirehi:235611",
+   "source": "hirehi",
+   "title": "QA Engineer (manual) сайтов",
+   "company": "Corunit",
+   "salary": "не указана",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "ручное тестирование, функциональность, адаптивность, баг-репорты, браузеры, устройства",
+   "gaps": "нет опыта SEO, автотесты не нужны",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-saitov-235611",
+   "published": null,
+   "found": "2026-11-14T13:12:55+00:00"
+  },
+  {
+   "id": "hirehi:235601",
+   "source": "hirehi",
+   "title": "QA engineer (manual) for digital banking",
+   "company": "BankingON",
+   "salary": "~201 272 ₽",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "manual testing, remote, Postman, DevTools, Jira, Agile",
+   "gaps": "location restriction (not Russia/Ukraine/Belarus)",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-digital-banking-235601",
+   "published": null,
+   "found": "2026-11-14T13:12:57+00:00"
+  },
+  {
+   "id": "hirehi:235439",
+   "source": "hirehi",
+   "title": "QA Analyst (Manual) для торговой платформы",
+   "company": "Luxoft",
+   "salary": "",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "manual testing, remote, functional testing, test cases",
+   "gaps": "trading experience, senior level 5+ years, Linux/Unix",
+   "url": "https://hirehi.ru/qa/qa-analyst-manual-dlia-torgovoi-platformy-235439",
+   "published": null,
+   "found": "2026-11-14T13:12:57+00:00"
+  },
+  {
+   "id": "hirehi:235313",
+   "source": "hirehi",
+   "title": "QA Engineer (Manual) in Agentic AI",
+   "company": "Otera",
+   "salary": "",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 4,
+   "match": "Manual QA, exploratory testing, remote, agile, issue tracking",
+   "gaps": "Senior level requirement, AI/agentic domain, 5+ years experience",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-agentic-ai-235313",
+   "published": null,
+   "found": "2026-11-14T13:12:57+00:00"
+  },
   {
    "id": "hh:139488491",
    "source": "hh.ru",
@@ -15963,86 +16043,6 @@
    "url": "https://hh.ru/vacancy/138738022",
    "published": "2026-10-22T10:12:03.197000+03:00",
    "found": "2026-10-22T09:31:23+00:00"
-  },
-  {
-   "id": "hh:138740398",
-   "source": "hh.ru",
-   "title": "Middle Ручной тестировщик (РСХБ-Экосистема)",
-   "company": "РСХБ-Интех",
-   "salary": "",
-   "grade": "Middle",
-   "format": "гибрид",
-   "city": "",
-   "score": 7,
-   "match": "ручное тестирование, API, SQL, Postman, микросервисы",
-   "gaps": "",
-   "url": "https://hh.ru/vacancy/138740398",
-   "published": "2026-10-22T10:49:53.419000+03:00",
-   "found": "2026-10-22T09:31:23+00:00"
-  },
-  {
-   "id": "hh:138738408",
-   "source": "hh.ru",
-   "title": "QA-инженер",
-   "company": "Kcell",
-   "salary": "",
-   "grade": "неясно",
-   "format": "гибрид",
-   "city": "",
-   "score": 5,
-   "match": "должность QA, гибридный формат",
-   "gaps": "нет описания стека и задач",
-   "url": "https://hh.ru/vacancy/138738408",
-   "published": "2026-10-22T10:20:24.082000+03:00",
-   "found": "2026-10-22T09:31:24+00:00"
-  },
-  {
-   "id": "tg:jobforqa/1582",
-   "source": "TG @jobforqa",
-   "title": "QA Manual Taxi",
-   "company": "Wildberries",
-   "salary": "",
-   "grade": "неясно",
-   "format": "удалёнка",
-   "city": "",
-   "score": 9,
-   "match": "ручное тестирование, API, e-commerce, микросервисы, удалёнка",
-   "gaps": "",
-   "url": "https://t.me/jobforqa/1582",
-   "published": "2026-10-22T07:00:00+00:00",
-   "found": "2026-10-22T09:31:24+00:00"
-  },
-  {
-   "id": "hirehi:172067",
-   "source": "hirehi",
-   "title": "Тестировщик (manual) банковской системы",
-   "company": "РСХБ-Интех",
-   "salary": "не указана",
-   "grade": "middle",
-   "format": "гибрид",
-   "city": "Москва",
-   "score": 8,
-   "match": "ручное тестирование, API, SQL, Kafka, Kibana, Postman, DevTools, TestIT, Jira, микросервисы, веб-тестирование, тест-дизайн",
-   "gaps": "банковская сфера, Cypress, TypeScript, C#, Angular",
-   "url": "https://hirehi.ru/qa/testirovshchik-manual-bankovskoi-sistemy-172067",
-   "published": null,
-   "found": "2026-10-22T09:31:26+00:00"
-  },
-  {
-   "id": "hirehi:172035",
-   "source": "hirehi",
-   "title": "Инженер тестирования (manual) высоконагруженных систем",
-   "company": "МТС",
-   "salary": "",
-   "grade": "Middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 10,
-   "match": "микросервисы, REST API, Postman, Kafka, SQL, Docker, Kubernetes, Jira, Test IT, ELK, CI/CD, manual QA",
-   "gaps": "",
-   "url": "https://hirehi.ru/qa/inzhener-testirovaniia-manual-vysokonagruzhennykh-sistem-172035",
-   "published": null,
-   "found": "2026-10-22T09:31:27+00:00"
   }
  ]
 }
