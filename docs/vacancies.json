@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-15T10:32:21+00:00",
+ "updated": "2026-11-15T18:38:46+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
    "hh.ru": 100,
    "TG @jobforqa": 20,
-   "TG @qajoboffer": 18,
+   "TG @qajoboffer": 19,
    "TG @qajobsoffers": 15,
    "TG @jobsearchgod": 20,
    "TG @remoteeverafter": 17,
@@ -14,34 +14,100 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 3,
-  "llm_failed": 0,
-  "sent": 0,
-  "llm_errors": [],
+  "scored": 4,
+  "llm_failed": 1,
+  "sent": 2,
+  "llm_errors": [
+   "пустой ответ: finish=length usage={'prompt_tokens': 1443, 'completion_tokens': 3000, 'total_tokens': 4443, 'prompt_tokens_details': {'cached_tokens': 1280, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3863, 'image_tokens': 0, 'audio_tokens': 0}}"
+  ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 11.2,
+  "llm_avg_sec": 14.3,
   "llm_usage_sample": {
-   "prompt_tokens": 2258,
-   "completion_tokens": 2015,
-   "total_tokens": 4273,
+   "prompt_tokens": 2134,
+   "completion_tokens": 2265,
+   "total_tokens": 4399,
    "prompt_tokens_details": {
-    "cached_tokens": 0,
+    "cached_tokens": 1280,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1920,
+    "reasoning_tokens": 2158,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 0
+  "left_for_next_run": 1
  },
  "vacancies": [
+  {
+   "id": "tg:qajoboffer/2260",
+   "source": "TG @qajoboffer",
+   "title": "Fullstack QA Engineer",
+   "company": "Quickly Search",
+   "salary": "от 200 тыс. рублей",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "Backend, API, SQL, manual testing, microservices, remote",
+   "gaps": "",
+   "url": "https://t.me/qajoboffer/2260",
+   "published": "2026-11-15T15:55:57+00:00",
+   "found": "2026-11-15T18:38:43+00:00"
+  },
+  {
+   "id": "tg:qajobsoffers/2059",
+   "source": "TG @qajobsoffers",
+   "title": "QA Full stack инженер",
+   "company": "Selecty",
+   "salary": "190 000 - 230 000 ₽",
+   "grade": "Middle",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 7,
+   "match": "Fullstack QA, API, Postman, SQL, Docker, K8s, Kafka, GitLab CI",
+   "gaps": "",
+   "url": "https://t.me/qajobsoffers/2059",
+   "published": "2026-11-15T15:40:05+00:00",
+   "found": "2026-11-15T18:38:45+00:00"
+  },
+  {
+   "id": "tg:jobsearchgod/1045",
+   "source": "TG @jobsearchgod",
+   "title": "AQA Java Junior",
+   "company": "FinStream",
+   "salary": "до 120 000 руб/мес",
+   "grade": "Junior",
+   "format": "гибрид",
+   "city": "Москва",
+   "score": 1,
+   "match": "API, SQL, Docker, Kafka",
+   "gaps": "Java, автоматизация тестов, AQA",
+   "url": "https://t.me/jobsearchgod/1045",
+   "published": "2026-11-15T15:49:01+00:00",
+   "found": "2026-11-15T18:38:46+00:00"
+  },
+  {
+   "id": "hirehi:236395",
+   "source": "hirehi",
+   "title": "backend tester (manual)",
+   "company": "PROJECTS (GK Consulting)",
+   "salary": "от 69 000 ₽",
+   "grade": "Middle",
+   "format": "офис",
+   "city": "Ташкент",
+   "score": 2,
+   "match": "Backend/API testing, Postman, SQL, manual testing, bug reporting",
+   "gaps": "Redis, FastAPI, office only, salary below 120k",
+   "url": "https://hirehi.ru/qa/backend-tester-manual-236395",
+   "published": null,
+   "found": "2026-11-15T18:38:46+00:00"
+  },
   {
    "id": "tg:jobforqa/1640",
    "source": "TG @jobforqa",
@@ -15977,70 +16043,6 @@
    "url": "https://hirehi.ru/qa/testirovshchik-manual-ml-modelei-172949",
    "published": null,
    "found": "2026-10-22T12:35:19+00:00"
-  },
-  {
-   "id": "hirehi:172924",
-   "source": "hirehi",
-   "title": "Test engineer (manual) in automotive solutions",
-   "company": "Intellias",
-   "salary": "",
-   "grade": "senior",
-   "format": "офис",
-   "city": "Gothenburg",
-   "score": 2,
-   "match": "manual testing, Android Studio, ADB, Jira, Linux CLI",
-   "gaps": "automotive experience, senior level, office in Gothenburg, driving license, field testing",
-   "url": "https://hirehi.ru/qa/test-engineer-manual-in-automotive-solutions-172924",
-   "published": null,
-   "found": "2026-10-22T12:35:19+00:00"
-  },
-  {
-   "id": "hirehi:172906",
-   "source": "hirehi",
-   "title": "qa engineer (manual) банковских продуктов",
-   "company": "БСБ Банк",
-   "salary": "",
-   "grade": "senior",
-   "format": "офис",
-   "city": "Минск",
-   "score": 2,
-   "match": "ручное тестирование, API, SQL, Charles, DevTools, Jira, Postman, Swagger, тест-дизайн, финтех",
-   "gaps": "опыт от 5 лет, senior, офис Минск, нет удалёнки",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-bankovskikh-produktov-172906",
-   "published": null,
-   "found": "2026-10-22T12:35:19+00:00"
-  },
-  {
-   "id": "hirehi:172895",
-   "source": "hirehi",
-   "title": "qa engineer (manual) мобильных игр",
-   "company": "Fluffy Corp OÜ",
-   "salary": "",
-   "grade": "middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 6,
-   "match": "ручное тестирование, мобильные приложения, API, SQL, Charles, Kibana, DevTools, тест-кейсы, баг-репорты, клиент-сервер",
-   "gaps": "опыт тестирования игр, Firebase Test Lab, игровые механики, Match-3, Unreal Engine",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-mobil-nykh-igr-172895",
-   "published": null,
-   "found": "2026-10-22T12:35:19+00:00"
-  },
-  {
-   "id": "hirehi:172701",
-   "source": "hirehi",
-   "title": "Инженер по тестированию (manual) систем видеонаблюдения",
-   "company": "DSSL",
-   "salary": "",
-   "grade": "middle",
-   "format": "гибрид",
-   "city": "Москва",
-   "score": 7,
-   "match": "ручное тестирование, Linux, Docker, PostgreSQL, SQL, TMS",
-   "gaps": "опыт с desktop-приложениями, видеонаблюдением",
-   "url": "https://hirehi.ru/qa/inzhener-po-testirovaniiu-manual-sistem-videonabliudeniia-172701",
-   "published": null,
-   "found": "2026-10-22T12:35:20+00:00"
   }
  ]
 }
