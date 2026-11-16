@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T18:38:46+00:00",
+ "updated": "2026-11-16T00:52:32+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -15,20 +15,18 @@
   "llm_key_set": true,
   "resume_set": true,
   "scored": 4,
-  "llm_failed": 1,
+  "llm_failed": 0,
   "sent": 2,
-  "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 1443, 'completion_tokens': 3000, 'total_tokens': 4443, 'prompt_tokens_details': {'cached_tokens': 1280, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3863, 'image_tokens': 0, 'audio_tokens': 0}}"
-  ],
+  "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 14.3,
+  "llm_avg_sec": 12.4,
   "llm_usage_sample": {
-   "prompt_tokens": 2134,
-   "completion_tokens": 2265,
-   "total_tokens": 4399,
+   "prompt_tokens": 2569,
+   "completion_tokens": 1132,
+   "total_tokens": 3701,
    "prompt_tokens_details": {
     "cached_tokens": 1280,
     "cache_write_tokens": 0,
@@ -36,14 +34,78 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 2158,
+    "reasoning_tokens": 991,
     "image_tokens": 0,
     "audio_tokens": 0
    }
   },
-  "left_for_next_run": 1
+  "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:139504612",
+   "source": "hh.ru",
+   "title": "Fullstack-тестировщик",
+   "company": "ГКУ Инфогород",
+   "salary": "",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 5,
+   "match": "удалёнка, fullstack, тестирование",
+   "gaps": "нет информации о стеке и задачах",
+   "url": "https://hh.ru/vacancy/139504612",
+   "published": "2026-11-16T01:05:24.703000+03:00",
+   "found": "2026-11-16T00:52:29+00:00"
+  },
+  {
+   "id": "hh:139503514",
+   "source": "hh.ru",
+   "title": "Тестировщик мобильных приложений (iOS / Android)",
+   "company": "СИНЕРГИЯ",
+   "salary": "217 000 RUR",
+   "grade": "неясно",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "Мобильное тестирование iOS/Android, ручное, API, Charles, BrowserStack",
+   "gaps": "",
+   "url": "https://hh.ru/vacancy/139503514",
+   "published": "2026-11-16T00:01:03.722000+03:00",
+   "found": "2026-11-16T00:52:29+00:00"
+  },
+  {
+   "id": "hh:139500157",
+   "source": "hh.ru",
+   "title": "Fullstack QA Junior+ (JS/TS + Playwright)",
+   "company": "Сервис Плюс",
+   "salary": "",
+   "grade": "Junior+",
+   "format": "гибрид",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, API, микросервисы, Playwright (pet-проект)",
+   "gaps": "JS/TS, автоматизация как основная задача, гибридный формат",
+   "url": "https://hh.ru/vacancy/139500157",
+   "published": "2026-11-15T14:47:23.039000+03:00",
+   "found": "2026-11-16T00:52:30+00:00"
+  },
+  {
+   "id": "hirehi:236791",
+   "source": "hirehi",
+   "title": "тестировщик мобильных приложений (manual)",
+   "company": "СИНЕРГИЯ",
+   "salary": "до 217 000 ₽",
+   "grade": "senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 8,
+   "match": "ручное тестирование мобильных приложений, API, Postman, Charles, SQL, Jira, регресс, UI/UX",
+   "gaps": "требуется senior, кандидат Middle",
+   "url": "https://hirehi.ru/qa/testirovshchik-mobil-nykh-prilozhenii-manual-236791",
+   "published": null,
+   "found": "2026-11-16T00:52:30+00:00"
+  },
   {
    "id": "tg:qajoboffer/2260",
    "source": "TG @qajoboffer",
@@ -15979,70 +16041,6 @@
    "url": "https://t.me/jobforqa/1584",
    "published": "2026-10-22T11:54:06+00:00",
    "found": "2026-10-22T12:35:16+00:00"
-  },
-  {
-   "id": "tg:qajoboffer/2210",
-   "source": "TG @qajoboffer",
-   "title": "Руководитель QA",
-   "company": "",
-   "salary": "",
-   "grade": "Lead",
-   "format": "гибрид",
-   "city": "Москва, Санкт-Петербург",
-   "score": 2,
-   "match": "QA, гибрид, Москва/СПб, опыт 4 года",
-   "gaps": "нет опыта управления, грейд Lead",
-   "url": "https://t.me/qajoboffer/2210",
-   "published": "2026-10-22T11:54:03+00:00",
-   "found": "2026-10-22T12:35:18+00:00"
-  },
-  {
-   "id": "hirehi:172987",
-   "source": "hirehi",
-   "title": "qa engineer (manual) for web applications",
-   "company": "Uzcard",
-   "salary": "",
-   "grade": "middle",
-   "format": "офис",
-   "city": "Ташкент",
-   "score": 3,
-   "match": "ручное тестирование, API, SQL, Postman, Swagger, Jira, web, backend, CI/CD, Git, финтех",
-   "gaps": "офисный формат, Ташкент, нагрузочное тестирование",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-web-applications-172987",
-   "published": null,
-   "found": "2026-10-22T12:35:18+00:00"
-  },
-  {
-   "id": "hirehi:172968",
-   "source": "hirehi",
-   "title": "QA engineer (manual)",
-   "company": "Karuna",
-   "salary": "",
-   "grade": "senior",
-   "format": "удалёнка",
-   "city": "",
-   "score": 8,
-   "match": "ручное тестирование, web, API, Allure, Jira, Confluence, Agile, тест-дизайн",
-   "gaps": "ERP-системы, английский B1",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-172968",
-   "published": null,
-   "found": "2026-10-22T12:35:18+00:00"
-  },
-  {
-   "id": "hirehi:172949",
-   "source": "hirehi",
-   "title": "Тестировщик (manual) ML-моделей",
-   "company": "АЙФЭЛЛ",
-   "salary": "до 160 000 ₽",
-   "grade": "senior",
-   "format": "удалёнка",
-   "city": "",
-   "score": 4,
-   "match": "SQL, Postman, Swagger, Kafka, DevTools, Jira, REST, JSON, XML, ручное тестирование, тест-дизайн",
-   "gaps": "ML-модели, метрики, bias, adversarial examples, A/B тесты моделей",
-   "url": "https://hirehi.ru/qa/testirovshchik-manual-ml-modelei-172949",
-   "published": null,
-   "found": "2026-10-22T12:35:19+00:00"
   }
  ]
 }
