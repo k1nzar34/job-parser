@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T20:14:31+00:00",
+ "updated": "2026-11-20T02:06:57+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,31 +14,31 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 24,
+  "scored": 3,
   "llm_failed": 3,
-  "sent": 8,
+  "sent": 2,
   "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 2348, 'completion_tokens': 3000, 'total_tokens': 5348, 'prompt_tokens_details': {'cached_tokens': 1280, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3541, 'image_tokens': 0, 'audio_tokens': 0}}",
-   "пустой ответ: finish=length usage={'prompt_tokens': 1461, 'completion_tokens': 3000, 'total_tokens': 4461, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 2806, 'image_tokens': 0, 'audio_tokens': 0}}",
-   "пустой ответ: finish=length usage={'prompt_tokens': 2865, 'completion_tokens': 3000, 'total_tokens': 5865, 'prompt_tokens_details': {'cached_tokens': 1280, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3427, 'image_tokens': 0, 'audio_tokens': 0}}"
+   "пустой ответ: finish=length usage={'prompt_tokens': 2548, 'completion_tokens': 3000, 'total_tokens': 5548, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3281, 'image_tokens': 0, 'audio_tokens': 0}}",
+   "пустой ответ: finish=length usage={'prompt_tokens': 2352, 'completion_tokens': 3000, 'total_tokens': 5352, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3845, 'image_tokens': 0, 'audio_tokens': 0}}",
+   "пустой ответ: finish=length usage={'prompt_tokens': 2401, 'completion_tokens': 3000, 'total_tokens': 5401, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3284, 'image_tokens': 0, 'audio_tokens': 0}}"
   ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 11.4,
+  "llm_avg_sec": 10.6,
   "llm_usage_sample": {
-   "prompt_tokens": 2233,
-   "completion_tokens": 914,
-   "total_tokens": 3147,
+   "prompt_tokens": 2401,
+   "completion_tokens": 3000,
+   "total_tokens": 5401,
    "prompt_tokens_details": {
-    "cached_tokens": 1280,
+    "cached_tokens": 0,
     "cache_write_tokens": 0,
     "audio_tokens": 0,
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 783,
+    "reasoning_tokens": 3284,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -46,6 +46,54 @@
   "left_for_next_run": 3
  },
  "vacancies": [
+  {
+   "id": "hh:139670868",
+   "source": "hh.ru",
+   "title": "Специалист по тестированию и анализу iGaming-продуктов (Manual QA / Research)",
+   "company": "SpaceHub",
+   "salary": "1 000 – 1 500 USD",
+   "grade": "Middle",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "Manual QA, API, SQL, Postman, Charles, Kibana, DevTools, тест-дизайн, Agile, удалёнка",
+   "gaps": "iGaming опыт не указан, зарплата в USD, может быть ниже 120 000 ₽",
+   "url": "https://hh.ru/vacancy/139670868",
+   "published": "2026-11-19T17:05:47.620000+03:00",
+   "found": "2026-11-20T02:06:54+00:00"
+  },
+  {
+   "id": "hirehi:251517",
+   "source": "hirehi",
+   "title": "qa-специалист (manual) веб-приложений",
+   "company": "Fintech Talents",
+   "salary": "не указана",
+   "grade": "senior",
+   "format": "офис",
+   "city": "Лимасол",
+   "score": 2,
+   "match": "ручное тестирование, API, Postman, Charles, DevTools, SQL, тест-дизайн",
+   "gaps": "грейд senior, офис в Лимассоле, без удалёнки",
+   "url": "https://hirehi.ru/qa/qa-spetsialist-manual-veb-prilozhenii-251517",
+   "published": null,
+   "found": "2026-11-20T02:06:56+00:00"
+  },
+  {
+   "id": "hirehi:248782",
+   "source": "hirehi",
+   "title": "тестировщик (manual) деловых поездок",
+   "company": "Ракета",
+   "salary": "не указана",
+   "grade": "Senior",
+   "format": "гибрид",
+   "city": "Екатеринбург",
+   "score": 6,
+   "match": "Manual QA, REST API, тест-дизайн, TMS, регресс, интеграционное тестирование, веб-сервисы, наставничество",
+   "gaps": "гибрид в Екатеринбурге, грейд Senior, Gherkin/Behat, автотесты",
+   "url": "https://hirehi.ru/qa/testirovshchik-manual-delovykh-poezdok-248782",
+   "published": null,
+   "found": "2026-11-20T02:06:56+00:00"
+  },
   {
    "id": "hh:139673121",
    "source": "hh.ru",
@@ -15997,54 +16045,6 @@
    "url": "https://hirehi.ru/qa/ecosystem-qa-manual-184023",
    "published": null,
    "found": "2026-10-26T21:29:23+00:00"
-  },
-  {
-   "id": "hirehi:183999",
-   "source": "hirehi",
-   "title": "Quality Assurance – Regulatory Reporting Solutions (manual)",
-   "company": "Nasdaq",
-   "salary": "94 000 - 183 000 PLN",
-   "grade": "middle",
-   "format": "гибрид",
-   "city": "Wroclaw",
-   "score": 6,
-   "match": "ручное тестирование, SQL, регресс, гибрид, 3-5 лет опыта",
-   "gaps": "финансовый опыт, ETL, Basel, Python",
-   "url": "https://hirehi.ru/qa/quality-assurance-regulatory-reporting-solutions-manual-183999",
-   "published": null,
-   "found": "2026-10-26T21:29:24+00:00"
-  },
-  {
-   "id": "hirehi:183946",
-   "source": "hirehi",
-   "title": "Test Analyst (manual)",
-   "company": "Version 1",
-   "salary": "",
-   "grade": "middle",
-   "format": "гибрид",
-   "city": "Лондон",
-   "score": 1,
-   "match": "ручное тестирование, анализ требований, Agile",
-   "gaps": "SC Clearance, автоматизация, Oracle EBS, HP QC, гибрид Лондон",
-   "url": "https://hirehi.ru/qa/test-analyst-manual-183946",
-   "published": null,
-   "found": "2026-10-26T21:29:26+00:00"
-  },
-  {
-   "id": "hirehi:183945",
-   "source": "hirehi",
-   "title": "SC Cleared Test Analyst (manual)",
-   "company": "Version 1",
-   "salary": "",
-   "grade": "Middle",
-   "format": "гибрид",
-   "city": "Лондон",
-   "score": 2,
-   "match": "ручное тестирование, API, тест-дизайн",
-   "gaps": "SC Clearance, Лондон, автотесты",
-   "url": "https://hirehi.ru/qa/sc-cleared-test-analyst-manual-183945",
-   "published": null,
-   "found": "2026-10-26T21:29:26+00:00"
   }
  ]
 }
