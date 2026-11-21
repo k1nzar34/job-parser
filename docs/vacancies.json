@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T02:02:08+00:00",
+ "updated": "2026-11-21T10:47:18+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,21 +14,21 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 3,
+  "scored": 5,
   "llm_failed": 1,
   "sent": 1,
   "llm_errors": [
-   "пустой ответ: finish=length usage={'prompt_tokens': 2241, 'completion_tokens': 3000, 'total_tokens': 5241, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3099, 'image_tokens': 0, 'audio_tokens': 0}}"
+   "пустой ответ: finish=length usage={'prompt_tokens': 2241, 'completion_tokens': 3000, 'total_tokens': 5241, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0, 'audio_tokens': 0, 'video_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 3038, 'image_tokens': 0, 'audio_tokens': 0}}"
   ],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 14.6,
+  "llm_avg_sec": 12.5,
   "llm_usage_sample": {
-   "prompt_tokens": 1960,
-   "completion_tokens": 987,
-   "total_tokens": 2947,
+   "prompt_tokens": 2241,
+   "completion_tokens": 3000,
+   "total_tokens": 5241,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -36,7 +36,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 892,
+    "reasoning_tokens": 3038,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -44,6 +44,86 @@
   "left_for_next_run": 1
  },
  "vacancies": [
+  {
+   "id": "hirehi:255616",
+   "source": "hirehi",
+   "title": "qa engineer (manual) in fintech",
+   "company": "Andersen",
+   "salary": "",
+   "grade": "Senior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 7,
+   "match": "Manual QA, SQL, Postman, REST API, Jira, Confluence, CI/CD, GitLab, backend, integration, Scrum",
+   "gaps": "Senior грейд, отсутствие fintech опыта",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-in-fintech-255616",
+   "published": null,
+   "found": "2026-11-21T10:47:16+00:00"
+  },
+  {
+   "id": "hirehi:255536",
+   "source": "hirehi",
+   "title": "Test Engineer (manual) voor digitale dienstverlening",
+   "company": "UWV",
+   "salary": "~ 381 500 ₽",
+   "grade": "Senior",
+   "format": "гибрид",
+   "city": "Амстердам",
+   "score": 1,
+   "match": "ручное тестирование, API, SQL, CI/CD, Agile, регресс",
+   "gaps": "нидерландский язык, Robot Framework, ISTQB, Oracle, PRA, MQ",
+   "url": "https://hirehi.ru/qa/testengineer-manual-voor-digitale-dienstverlening-255536",
+   "published": null,
+   "found": "2026-11-21T10:47:18+00:00"
+  },
+  {
+   "id": "hirehi:255437",
+   "source": "hirehi",
+   "title": "QA engineer (manual) for salesforce transformation",
+   "company": "EPAM",
+   "salary": "не указана",
+   "grade": "Lead",
+   "format": "удалёнка",
+   "city": "",
+   "score": 2,
+   "match": "ручное тестирование, API, работа с Jira, Agile",
+   "gaps": "опыт Salesforce, лидерские навыки, уровень Lead",
+   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-salesforce-transformation-255437",
+   "published": null,
+   "found": "2026-11-21T10:47:18+00:00"
+  },
+  {
+   "id": "hirehi:255412",
+   "source": "hirehi",
+   "title": "QA инженер (manual) ИИ-администратора для бизнеса",
+   "company": "",
+   "salary": "~ 100 000 ₽",
+   "grade": "junior",
+   "format": "удалёнка",
+   "city": "",
+   "score": 3,
+   "match": "ручное тестирование, регресс, баг-репорты, тест-кейсы, чат-боты",
+   "gaps": "зарплата ниже 120 000, автоматизация Claude Code, нет опыта с ИИ",
+   "url": "https://hirehi.ru/qa/qa-inzhener-manual-ii-administratora-dlia-biznesa-255412",
+   "published": null,
+   "found": "2026-11-21T10:47:18+00:00"
+  },
+  {
+   "id": "hirehi:255224",
+   "source": "hirehi",
+   "title": "tester (manual) in banking",
+   "company": "Sii Poland",
+   "salary": "",
+   "grade": "senior",
+   "format": "гибрид",
+   "city": "Варшава",
+   "score": 4,
+   "match": "manual testing, SQL, Jira, Confluence, Postman, API testing",
+   "gaps": "банковский опыт, польский язык, резидентство Польши, senior грейд",
+   "url": "https://hirehi.ru/qa/tester-manual-in-banking-255224",
+   "published": null,
+   "found": "2026-11-21T10:47:18+00:00"
+  },
   {
    "id": "hirehi:254971",
    "source": "hirehi",
@@ -15963,86 +16043,6 @@
    "url": "https://hh.ru/vacancy/138891532",
    "published": "2026-10-27T16:28:24.061000+03:00",
    "found": "2026-10-27T15:42:57+00:00"
-  },
-  {
-   "id": "hh:138893652",
-   "source": "hh.ru",
-   "title": "Руководитель направления тестирования",
-   "company": "Devim",
-   "salary": "300 000 ₽",
-   "grade": "Lead",
-   "format": "гибрид",
-   "city": "",
-   "score": 3,
-   "match": "высокая зарплата, гибрид, релевантный стек",
-   "gaps": "нет управленческого опыта, уровень выше",
-   "url": "https://hh.ru/vacancy/138893652",
-   "published": "2026-10-27T17:23:25.416000+03:00",
-   "found": "2026-10-27T15:42:58+00:00"
-  },
-  {
-   "id": "hh:137055731",
-   "source": "hh.ru",
-   "title": "Инженер по функциональному тестированию",
-   "company": "Правительство Москвы",
-   "salary": "",
-   "grade": "неясно",
-   "format": "гибрид",
-   "city": "Москва",
-   "score": 8,
-   "match": "ручное и API-тестирование, функциональное тестирование, гибридный формат",
-   "gaps": "",
-   "url": "https://hh.ru/vacancy/137055731",
-   "published": "2026-10-27T15:53:32.231000+03:00",
-   "found": "2026-10-27T15:42:58+00:00"
-  },
-  {
-   "id": "hirehi:186438",
-   "source": "hirehi",
-   "title": "техник-тестировщик (manual) программного обеспечения",
-   "company": "НИИ Вектор",
-   "salary": "",
-   "grade": "middle",
-   "format": "офис",
-   "city": "Санкт-Петербург",
-   "score": 2,
-   "match": "Ручное тестирование, функциональное тестирование, тест-кейсы, баг-репорты",
-   "gaps": "Только офис, Санкт-Петербург, нет API/микросервисов, базовые сети",
-   "url": "https://hirehi.ru/qa/tekhnik-testirovshchik-manual-programmnogo-obespecheniia-186438",
-   "published": null,
-   "found": "2026-10-27T15:43:00+00:00"
-  },
-  {
-   "id": "hirehi:186433",
-   "source": "hirehi",
-   "title": "Руководитель направления тестирования (manual) в финтех",
-   "company": "Devim",
-   "salary": "до 300 000 ₽",
-   "grade": "head",
-   "format": "гибрид",
-   "city": "Санкт-Петербург",
-   "score": 5,
-   "match": "Manual API, SQL, Kafka, Docker, CI/CD, автоматизация, финтех",
-   "gaps": "Опыт управления командой, уровень head",
-   "url": "https://hirehi.ru/qa/rukovoditel-napravleniia-testirovaniia-manual-v-fintekh-186433",
-   "published": null,
-   "found": "2026-10-27T15:43:00+00:00"
-  },
-  {
-   "id": "hirehi:186417",
-   "source": "hirehi",
-   "title": "qa (manual)",
-   "company": "Azur Games",
-   "salary": "",
-   "grade": "middle",
-   "format": "удалёнка",
-   "city": "",
-   "score": 2,
-   "match": "Manual testing, mobile testing, test documentation, defect tracking",
-   "gaps": "Game dev experience, Unity, ADB, logcat, analytics/ad integration",
-   "url": "https://hirehi.ru/qa/qa-manual-186417",
-   "published": null,
-   "found": "2026-10-27T15:43:21+00:00"
   }
  ]
 }
