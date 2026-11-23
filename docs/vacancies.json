@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T19:15:04+00:00",
+ "updated": "2026-11-23T01:28:21+00:00",
  "last_run": {
   "sources": {
    "Хабр Карьера": 100,
@@ -14,19 +14,19 @@
   "errors": [],
   "llm_key_set": true,
   "resume_set": true,
-  "scored": 7,
+  "scored": 2,
   "llm_failed": 0,
-  "sent": 2,
+  "sent": 0,
   "llm_errors": [],
   "llm_used": {
    "base_url": "https://api.proxyapi.ru/v1",
    "model": "deepseek/deepseek-v4-flash"
   },
-  "llm_avg_sec": 10.2,
+  "llm_avg_sec": 7.9,
   "llm_usage_sample": {
-   "prompt_tokens": 2110,
-   "completion_tokens": 1599,
-   "total_tokens": 3709,
+   "prompt_tokens": 2270,
+   "completion_tokens": 737,
+   "total_tokens": 3007,
    "prompt_tokens_details": {
     "cached_tokens": 0,
     "cache_write_tokens": 0,
@@ -34,7 +34,7 @@
     "video_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1459,
+    "reasoning_tokens": 640,
     "image_tokens": 0,
     "audio_tokens": 0
    }
@@ -42,6 +42,38 @@
   "left_for_next_run": 0
  },
  "vacancies": [
+  {
+   "id": "hh:138423508",
+   "source": "hh.ru",
+   "title": "Head of QA (GameDev)",
+   "company": "MadOut Games",
+   "salary": "",
+   "grade": "Senior/Lead",
+   "format": "удалёнка",
+   "city": "",
+   "score": 1,
+   "match": "удалёнка",
+   "gaps": "GameDev, руководящая роль, нет совпадений по стеку",
+   "url": "https://hh.ru/vacancy/138423508",
+   "published": "2026-11-21T09:25:13.175000+03:00",
+   "found": "2026-11-23T01:28:21+00:00"
+  },
+  {
+   "id": "hirehi:257244",
+   "source": "hirehi",
+   "title": "test analyst (manual)",
+   "company": "LMAX Group",
+   "salary": "не указана",
+   "grade": "middle",
+   "format": "гибрид",
+   "city": "Лондон",
+   "score": 3,
+   "match": "manual testing, API, Kafka, Kubernetes, SQL, Postman",
+   "gaps": "Java coding, finance domain, London relocation",
+   "url": "https://hirehi.ru/qa/test-analyst-manual-257244",
+   "published": null,
+   "found": "2026-11-23T01:28:21+00:00"
+  },
   {
    "id": "habr:1000168913",
    "source": "Хабр Карьера",
@@ -16009,38 +16041,6 @@
    "url": "https://hh.ru/vacancy/138048391",
    "published": "2026-10-28T08:12:46.090000+03:00",
    "found": "2026-10-28T06:41:16+00:00"
-  },
-  {
-   "id": "hirehi:188194",
-   "source": "hirehi",
-   "title": "qa engineer (manual) for web and mobile apps",
-   "company": "ROODELL (ADM GLOBAL)",
-   "salary": "",
-   "grade": "senior",
-   "format": "гибрид",
-   "city": "Ташкент",
-   "score": 6,
-   "match": "REST API, Postman, Swagger, SQL, Kafka, CI/CD, manual testing, web/mobile",
-   "gaps": "senior level, гибрид Ташкент",
-   "url": "https://hirehi.ru/qa/qa-engineer-manual-for-web-and-mobile-apps-188194",
-   "published": null,
-   "found": "2026-10-28T06:41:16+00:00"
-  },
-  {
-   "id": "hirehi:188025",
-   "source": "hirehi",
-   "title": "Инженер по ручному тестированию (manual)",
-   "company": "МТС",
-   "salary": "",
-   "grade": "Senior/Lead",
-   "format": "гибрид",
-   "city": "Москва",
-   "score": 3,
-   "match": "ручное тестирование Android, мобильные приложения, Allure, TMS, логи",
-   "gaps": "нет опыта AOSP, системных драйверов, виртуализации, глубокой архитектуры ОС",
-   "url": "https://hirehi.ru/qa/inzhener-po-ruchnomu-testirovaniiu-manual-188025",
-   "published": null,
-   "found": "2026-10-28T00:41:22+00:00"
   }
  ]
 }
